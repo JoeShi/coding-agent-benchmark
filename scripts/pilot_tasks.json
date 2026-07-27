@@ -1,0 +1,27 @@
+{
+  "seed": 42,
+  "terminal_bench_2": [
+    "torch-pipeline-parallelism",
+    "constraints-scheduling",
+    "build-cython-ext",
+    "headless-terminal",
+    "gcode-to-text",
+    "fix-code-vulnerability",
+    "custom-memory-heap-crash",
+    "configure-git-webserver",
+    "vulnerable-secret",
+    "query-optimize"
+  ],
+  "deep_swe": [
+    "bandit-interprocedural-taint-checks",
+    "participle-grammar-conflict-analysis",
+    "koota-deferred-mutation-buffer",
+    "aiomonitor-task-snapshots-diff",
+    "adaptix-name-mapping-aliases",
+    "expr-try-catch-errors",
+    "fastapi-implicit-head-options",
+    "narwhals-rolling-window-suite",
+    "pest-character-class-coalescing",
+    "opa-rego-rule-profiling"
+  ]
+}
