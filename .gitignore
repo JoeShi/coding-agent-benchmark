@@ -4,3 +4,11 @@ __pycache__/
 *.log
 .DS_Store
 results/raw/
+
+# kiro-cli auth material is read from the host at run time; never commit it
+**/data.sqlite3
+**/kiro-auth-token*.json
+**/sso/cache/
+
+# harness run output (jobs/ is created by harbor/pier runs)
+jobs/
