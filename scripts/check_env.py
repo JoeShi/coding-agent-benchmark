@@ -38,6 +38,10 @@ def check_tool(name, version_cmd):
     except (OSError, subprocess.TimeoutExpired) as exc:
         return False, f"found at {path} but failed to run: {exc}"
 
+    if result.returncode != 0:
+        stderr = result.stderr.strip() or "(no error output)"
+        return False, f"found at {path} but exited with code {result.returncode}: {stderr}"
+
     output = (result.stdout or result.stderr).strip()
     version = output.splitlines()[0] if output else "(no version output)"
     return True, version
