@@ -14,6 +14,12 @@ LOG_DIR="${PILOT_LOG_DIR:-$REPO/../pilot/logs}"
 TASKS_JSON="$REPO/scripts/pilot_tasks.json"
 mkdir -p "$LOG_DIR"
 
+# Harbor/pier create per-trial temp files under TMPDIR. The Multica runtime
+# hands this session a TMPDIR it deletes when a turn ends, which kills any
+# detached run -- pin TMPDIR to a durable location instead.
+export TMPDIR="$REPO/../pilot/tmp"
+mkdir -p "$TMPDIR"
+
 mapfile -t TB_TASKS < <(python3 -c "import json;print('\n'.join(json.load(open('$TASKS_JSON'))['terminal_bench_2']))")
 mapfile -t DS_TASKS < <(python3 -c "import json;print('\n'.join(json.load(open('$TASKS_JSON'))['deep_swe']))")
 
