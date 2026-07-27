@@ -29,7 +29,9 @@ DS_INCLUDES=(); for t in "${DS_TASKS[@]}"; do DS_INCLUDES+=(-i "$t"); done
 run() { # run <log-name> <command...>
   local name="$1"; shift
   echo "[$(date -Is)] START $name: $*" >> "$LOG_DIR/pilot.log"
-  sg docker -c "cd '$REPO' && PYTHONPATH='$REPO' $*" > "$LOG_DIR/$name.log" 2>&1
+  # NB: `sg` sanitizes the environment (TMPDIR is stripped), so TMPDIR must
+  # be re-exported *inside* the sg command string.
+  sg docker -c "export TMPDIR='$TMPDIR'; cd '$REPO' && PYTHONPATH='$REPO' $*" > "$LOG_DIR/$name.log" 2>&1
   echo "[$(date -Is)] END $name rc=$?" >> "$LOG_DIR/pilot.log"
 }
 
