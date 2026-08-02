@@ -1,0 +1,153 @@
+#!/bin/bash
+# Worker bootstrap for the kiro-bench benchmark fleet.
+# Rendered by Terraform (templatefile); runs once at instance launch as root.
+set -euxo pipefail
+
+# --- Logging ---------------------------------------------------------------
+# Tee all setup output to a local log file.
+# TODO: also ship this log to CloudWatch log group "${log_group_name}"
+# (e.g. via the CloudWatch agent) so setup failures are visible centrally.
+exec > >(tee -a /var/log/kiro-bench-setup.log) 2>&1
+
+echo "=== kiro-bench worker setup starting ==="
+
+# --- System packages --------------------------------------------------------
+# Docker for running the harbor/pier harnesses, git for the repos, jq for
+# parsing the API-key secret below, unzip for the kiro-cli installer.
+dnf install -y docker git jq unzip
+
+# Enable and start Docker.
+systemctl enable --now docker
+
+# AL2023's docker package lacks the Compose v2 plugin (harbor needs
+# `docker compose --project-name ...`) and ships buildx 0.12.x, too old for
+# pier's `compose build` (needs >= 0.17). Install both plugins.
+mkdir -p /usr/local/lib/docker/cli-plugins
+curl -fsSL https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64 \
+  -o /usr/local/lib/docker/cli-plugins/docker-compose
+curl -fsSL https://github.com/docker/buildx/releases/download/v0.35.0/buildx-v0.35.0.linux-amd64 \
+  -o /usr/local/lib/docker/cli-plugins/docker-buildx
+chmod +x /usr/local/lib/docker/cli-plugins/docker-compose \
+         /usr/local/lib/docker/cli-plugins/docker-buildx
+docker compose version
+docker buildx version
+
+# Let ec2-user run docker without sudo.
+usermod -aG docker ec2-user
+
+# --- uv + harness tools -----------------------------------------------------
+# Install uv for ec2-user (it manages the harness CLIs and their deps).
+sudo -u ec2-user bash -lc 'curl -LsSf https://astral.sh/uv/install.sh | sh'
+export UV_BIN=/home/ec2-user/.local/bin
+
+# Install the two benchmark harnesses as uv tools.
+sudo -u ec2-user "$UV_BIN/uv" tool install harbor
+sudo -u ec2-user "$UV_BIN/uv" tool install datacurve-pier
+
+# --- kiro-cli ---------------------------------------------------------------
+# The benchmark adapters upload the host's kiro-cli binaries into each task
+# container, so the worker itself needs a full install at ~/.local/bin
+# (both kiro-cli and kiro-cli-chat). x86_64 glibc build; AL2023 has glibc 2.34.
+sudo -u ec2-user bash -lc '
+  set -e
+  curl --proto "=https" --tlsv1.2 -sSf \
+    "https://desktop-release.q.us-east-1.amazonaws.com/latest/kirocli-x86_64-linux.zip" \
+    -o /tmp/kirocli.zip
+  unzip -qo /tmp/kirocli.zip -d /tmp
+  /tmp/kirocli/install.sh --no-confirm
+  rm -rf /tmp/kirocli.zip /tmp/kirocli
+  ~/.local/bin/kiro-cli --version
+'
+# Musl build at ~/.local/bin-musl: adapters fall back to it in task images
+# with glibc < 2.34 (the glibc build hard-requires GLIBC_2.34).
+sudo -u ec2-user bash -lc '
+  set -e
+  curl --proto "=https" --tlsv1.2 -sSf \
+    "https://desktop-release.q.us-east-1.amazonaws.com/latest/kirocli-x86_64-linux-musl.zip" \
+    -o /tmp/kirocli-musl.zip
+  mkdir -p ~/.local/bin-musl
+  unzip -jo /tmp/kirocli-musl.zip kirocli/bin/kiro-cli kirocli/bin/kiro-cli-chat \
+    -d ~/.local/bin-musl/
+  chmod +x ~/.local/bin-musl/kiro-cli ~/.local/bin-musl/kiro-cli-chat
+  rm -f /tmp/kirocli-musl.zip
+  ~/.local/bin-musl/kiro-cli --version
+'
+
+# --- Repo checkouts ---------------------------------------------------------
+# This benchmark repo is distributed via S3 (the working tree may contain
+# uncommitted changes, so git clone is not authoritative): the operator syncs
+# it to s3://<results-bucket>/repo/ before/while workers boot. Best effort
+# here; scripts/worker.sh retries the sync at startup until it succeeds.
+aws s3 sync "s3://${results_bucket}/repo/" /opt/kiro-bench || true
+# DeepSWE task definitions (pier runs against this tasks dir; public repo).
+git clone --depth 1 "${deepswe_repo_url}" /opt/benchmarks-src/deep-swe
+chown -R ec2-user:ec2-user /opt/kiro-bench /opt/benchmarks-src || true
+
+# --- Kiro API keys ----------------------------------------------------------
+# Fetch the API key list from Secrets Manager. All keys go into the env file
+# (KIRO_API_KEYS) so worker loops can rotate across accounts and dodge
+# per-key rate limits; KIRO_API_KEY keeps one stable pick as a fallback.
+INSTANCE_ID="$(curl -s http://169.254.169.254/latest/meta-data/instance-id)"
+KEYS_JSON="$(aws secretsmanager get-secret-value \
+  --region "${aws_region}" \
+  --secret-id "${api_keys_secret_id}" \
+  --query SecretString --output text)"
+KEY_COUNT="$(echo "$KEYS_JSON" | jq '.keys | length')"
+if [ "$KEY_COUNT" -gt 0 ]; then
+  INDEX=$(( (16#$(echo -n "$INSTANCE_ID" | md5sum | cut -c1-8)) % KEY_COUNT ))
+  KIRO_API_KEY="$(echo "$KEYS_JSON" | jq -r ".keys[$INDEX]")"
+  KIRO_API_KEYS="$(echo "$KEYS_JSON" | jq -r '.keys | join(" ")')"
+else
+  echo "WARNING: no API keys in secret; worker runs will need another auth path"
+  KIRO_API_KEY=""
+  KIRO_API_KEYS=""
+fi
+
+# --- Runtime config ---------------------------------------------------------
+# Environment file consumed by the worker service (scripts/worker.sh).
+# RUN_ID comes from each SQS job message; the env value is only a fallback
+# for messages without one.
+cat > /etc/kiro-bench.env <<EOF
+PATH=/home/ec2-user/.local/bin:/usr/local/bin:/usr/bin:/bin
+JOBS_QUEUE_URL=${queue_url}
+RESULTS_BUCKET=${results_bucket}
+RUN_ID=default
+KIRO_API_KEY="$KIRO_API_KEY"
+KIRO_API_KEYS="$KIRO_API_KEYS"
+DEEPSWE_TASKS=/opt/benchmarks-src/deep-swe/tasks
+REPO_DIR=/opt/kiro-bench
+WORKER_CONCURRENCY=${worker_concurrency}
+OPENAI_API_KEY=${judge_api_key}
+OPENAI_API_BASE=${judge_api_base}
+EVAL_MODEL=${judge_eval_model}
+AWS_REGION=${aws_region}
+LOG_GROUP=${log_group_name}
+GHCR_ECR_PREFIX=${ghcr_ecr_prefix}
+EOF
+chmod 600 /etc/kiro-bench.env
+chown ec2-user:ec2-user /etc/kiro-bench.env
+
+# --- Start the worker loop --------------------------------------------------
+# systemd unit running the SQS worker loop (poll jobs, run harness trials in
+# Docker, upload trial records to S3). Restarts on failure.
+cat > /etc/systemd/system/kiro-bench-worker.service <<'EOF'
+[Unit]
+Description=kiro-bench benchmark worker
+After=docker.service network-online.target
+Requires=docker.service
+
+[Service]
+Type=simple
+User=ec2-user
+WorkingDirectory=/opt/kiro-bench
+ExecStart=/bin/bash /opt/kiro-bench/scripts/worker.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl daemon-reload
+systemctl enable --now kiro-bench-worker
+
+echo "=== kiro-bench worker setup complete ==="

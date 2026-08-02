@@ -1,0 +1,19 @@
+{
+  "run": "smoke batch: 3 tasks per benchmark, end-to-end pipeline validation",
+  "seed": 42,
+  "terminal_bench_2": [
+    "torch-pipeline-parallelism",
+    "constraints-scheduling",
+    "build-cython-ext"
+  ],
+  "deep_swe": [
+    "bandit-interprocedural-taint-checks",
+    "participle-grammar-conflict-analysis",
+    "koota-deferred-mutation-buffer"
+  ],
+  "swe_atlas_qna": [
+    "scale-ai/task-6905333b74f22949d97ba998",
+    "scale-ai/task-6905333b74f22949d97ba999",
+    "scale-ai/task-6905333b74f22949d97ba99a"
+  ]
+}

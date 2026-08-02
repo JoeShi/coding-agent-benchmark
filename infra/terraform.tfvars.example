@@ -1,0 +1,20 @@
+# Copy to terraform.tfvars and fill in. Do NOT commit real API keys.
+
+# aws_region = "us-east-1"
+
+# worker_count         = 2
+# worker_instance_type = "c7i.8xlarge"
+# worker_concurrency   = 4      # parallel job loops per worker
+# ebs_volume_size_gb   = 500
+
+# Optional SSH access (leave empty to disable SSH ingress).
+# ssh_key_name     = "my-keypair"
+# ssh_ingress_cidr = "203.0.113.10/32"  # tighten to your IP
+
+# Kiro API keys — distributed round-robin to workers.
+# Prefer passing via TF_VAR_kiro_api_keys or an untracked *.auto.tfvars instead.
+# kiro_api_keys = ["ksk-1", "ksk-2"]
+
+# SWE-Atlas-QnA LLM judge endpoint (only needed for swe-atlas-qna jobs).
+# judge_api_key  = "..."
+# judge_api_base = "https://..."

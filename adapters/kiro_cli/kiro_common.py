@@ -1,11 +1,20 @@
 """Shared helpers for the Kiro CLI benchmark adapters.
 
 kiro-cli ships as a single (dynamically linked, glibc) binary on the host at
-``~/.local/bin/kiro-cli``. Its login state is portable: copying
-``~/.local/share/kiro-cli/data.sqlite3`` and ``~/.aws/sso/`` into any ``$HOME``
-preserves the session, and short-lived OIDC tokens auto-refresh. The adapters
-therefore upload the host binary and auth state into each task container at
-run time -- no credentials are stored in this repo.
+``~/.local/bin/kiro-cli``. Two authentication modes are supported:
+
+1. **API key (preferred for CI/benchmarks).** Set ``KIRO_API_KEY`` on the
+   host (keys are created at app.kiro.dev, Pro tier or above); the adapters
+   inject it into the container environment and skip auth-file staging.
+2. **Uploaded login state.** Copying ``~/.local/share/kiro-cli/data.sqlite3``
+   and ``~/.aws/sso/`` into any ``$HOME`` preserves an interactive session,
+   and short-lived OIDC tokens auto-refresh. The adapters upload these from
+   the host at run time when no API key is set.
+
+Per kiro.dev/docs/cli/authentication, an active browser session takes
+precedence over ``KIRO_API_KEY``, so the API-key path deliberately does NOT
+stage sqlite login state into the container. No credentials are stored in
+this repo either way.
 
 Telemetry: kiro-cli does not expose token counts. Each headless run prints a
 trailing ``Credits: X.XX • Time: Ys`` line; credits are the cost unit and are
@@ -55,6 +64,8 @@ def _parse_times(text: str) -> list[float]:
 # cover the generic cases ("rate limit", "API Error", "Not logged in", ...).
 KIRO_ERROR_REGEXES: list[tuple[str, str]] = [
     (r"ThrottlingException|[Tt]hrottled", "rate_limit"),
+    (r"[Rr]ate limit reached|[Rr]equest quota exceeded|quota exceeded",
+     "rate_limit"),
     (r"usage (limit|quota)|monthly (credit )?limit|credits? (exhausted|depleted)",
      "usage_limit"),
     (r"[Pp]lease (log ?in|authenticate)|[Ll]ogin required|[Uu]nauthorized|"
@@ -74,11 +85,39 @@ def host_kiro_binaries() -> list[Path]:
     return [bindir / "kiro-cli", bindir / "kiro-cli-chat"]
 
 
+def host_musl_binaries() -> list[Path]:
+    """Optional musl-linked kiro-cli pair, for task images with glibc < 2.34.
+
+    The glibc binary hard-requires GLIBC_2.34; older images (e.g. some qemu
+    tasks) need kiro's musl build. Present when the host has the pair under
+    ``KIRO_CLI_MUSL_BINARY_DIR`` (default ``~/.local/bin-musl``).
+    """
+    bindir = Path(
+        os.environ.get("KIRO_CLI_MUSL_BINARY_DIR", Path.home() / ".local/bin-musl")
+    )
+    return [bindir / "kiro-cli", bindir / "kiro-cli-chat"]
+
+
+def musl_fallback_command(staging_dir: str) -> str:
+    """Shell snippet swapping in the staged musl pair if the glibc one can't run."""
+    return (
+        'if ! PATH="$HOME/.local/bin:$PATH" kiro-cli --version >/dev/null 2>&1; then '
+        f"cp {staging_dir}/kiro-cli-musl ~/.local/bin/kiro-cli && "
+        f"cp {staging_dir}/kiro-cli-chat-musl ~/.local/bin/kiro-cli-chat && "
+        "chmod +x ~/.local/bin/kiro-cli ~/.local/bin/kiro-cli-chat; "
+        "fi"
+    )
+
+
 def host_ca_bundle() -> Path:
-    """Host CA bundle, used as fallback for images without ca-certificates."""
+    """Host CA bundle, used as fallback for images without ca-certificates.
+
+    ``resolve()`` because the default path is a symlink on some distros
+    (e.g. AL2023) and ``docker cp`` refuses symlinked upload sources.
+    """
     return Path(
         os.environ.get("KIRO_CLI_CA_BUNDLE", "/etc/ssl/certs/ca-certificates.crt")
-    )
+    ).resolve()
 
 
 def host_auth_home() -> Path:
@@ -93,6 +132,21 @@ def host_auth_files() -> tuple[Path, Path]:
         home / ".local/share/kiro-cli/data.sqlite3",
         home / ".aws/sso",
     )
+
+
+def host_api_key() -> str | None:
+    """Kiro API key (``KIRO_API_KEY`` on the host), or None if unset.
+
+    When set, adapters authenticate containers by injecting the key into the
+    container environment instead of uploading login state.
+    """
+    return os.environ.get("KIRO_API_KEY") or None
+
+
+def auth_env() -> dict[str, str]:
+    """Container env vars needed for authentication (empty in file-auth mode)."""
+    key = host_api_key()
+    return {"KIRO_API_KEY": key} if key else {}
 
 
 def kiro_region() -> str:
@@ -137,12 +191,24 @@ def parse_telemetry(text: str) -> dict:
 
 
 def build_chat_command(model: str, instruction: str) -> str:
-    """Shell command running one headless kiro-cli session, teeing output."""
+    """Shell command running one headless kiro-cli session, teeing output.
+
+    Invokes kiro-cli-chat (the real binary) directly, NOT the kiro-cli
+    launcher: kiro-cli 2.15.x re-splits argv when forwarding to kiro-cli-chat,
+    so a multi-line instruction containing bullet lines starting with "- "
+    dies in clap argument parsing ("unexpected argument '- ' found") before
+    the session even starts. kiro-cli-chat parses the same prompt fine.
+    """
     return (
         'export PATH="$HOME/.local/bin:$PATH"; '
-        f"kiro-cli chat --no-interactive --trust-all-tools "
+        f"kiro-cli-chat chat --no-interactive --trust-all-tools "
         f"--model {shlex.quote(model)} {shlex.quote(instruction)} "
-        f"2>&1 </dev/null | stdbuf -oL tee {CONTAINER_LOG_PATH}"
+        f"2>&1 </dev/null | "
+        # stdbuf (coreutils) is absent in some minimal task images (e.g. the
+        # SWE-Atlas QnA repos); without it the whole pipeline fails instantly
+        # and the agent never starts. Fall back to plain tee there.
+        f"if command -v stdbuf >/dev/null 2>&1; then stdbuf -oL tee {CONTAINER_LOG_PATH}; "
+        f"else tee {CONTAINER_LOG_PATH}; fi"
     )
 
 

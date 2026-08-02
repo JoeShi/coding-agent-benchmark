@@ -21,11 +21,15 @@ from .kiro_common import (
     CONTAINER_STAGING_DIR,
     KIRO_ERROR_REGEXES,
     LOG_FILENAME,
+    auth_env,
     build_chat_command,
     ca_certificates_command,
+    host_api_key,
     host_auth_files,
     host_ca_bundle,
     host_kiro_binaries,
+    host_musl_binaries,
+    musl_fallback_command,
     parse_telemetry,
     resolve_model,
 )
@@ -40,9 +44,11 @@ _LABEL_TO_ERROR = {
 class KiroCliAgent(BaseInstalledAgent):
     """Runs kiro-cli headless inside the task container.
 
-    install() uploads the host's kiro-cli binary and login state
-    (data.sqlite3 + ~/.aws/sso) into the agent user's $HOME; run() executes
-    the instruction via `kiro-cli chat --no-interactive --trust-all-tools`.
+    install() uploads the host's kiro-cli binary into the agent user's $HOME.
+    Authentication is either a Kiro API key (``KIRO_API_KEY`` on the host,
+    injected as container env) or uploaded login state (data.sqlite3 +
+    ~/.aws/sso). run() executes the instruction via
+    `kiro-cli chat --no-interactive --trust-all-tools`.
     """
 
     ERROR_PATTERNS = BaseInstalledAgent.ERROR_PATTERNS + [
@@ -59,9 +65,11 @@ class KiroCliAgent(BaseInstalledAgent):
 
     async def install(self, environment: BaseEnvironment) -> None:
         binaries = host_kiro_binaries()
-        data_sqlite, sso_dir = host_auth_files()
         ca_bundle = host_ca_bundle()
-        for path in [*binaries, data_sqlite, sso_dir, ca_bundle]:
+        # API-key auth: no login state is staged (a staged browser session
+        # would take precedence over KIRO_API_KEY).
+        auth_files = () if host_api_key() else host_auth_files()
+        for path in [*binaries, *auth_files, ca_bundle]:
             if not path.exists():
                 raise RuntimeError(f"kiro-cli host file missing: {path}")
 
@@ -72,9 +80,17 @@ class KiroCliAgent(BaseInstalledAgent):
         # Uploads land root-owned with host perms; hand them to the agent user.
         for binary in binaries:
             await environment.upload_file(binary, f"{staging}/{binary.name}")
-        await environment.upload_file(data_sqlite, f"{staging}/data.sqlite3")
         await environment.upload_file(ca_bundle, f"{staging}/ca-certificates.crt")
-        await environment.upload_dir(sso_dir, f"{staging}/sso")
+        # Musl pair is optional: present for old-glibc task images.
+        musl = host_musl_binaries()
+        has_musl = all(p.exists() for p in musl)
+        if has_musl:
+            for binary in musl:
+                await environment.upload_file(binary, f"{staging}/{binary.name}-musl")
+        if auth_files:
+            data_sqlite, sso_dir = auth_files
+            await environment.upload_file(data_sqlite, f"{staging}/data.sqlite3")
+            await environment.upload_dir(sso_dir, f"{staging}/sso")
         if environment.default_user is not None:
             await self.exec_as_root(
                 environment, f"chown -R {environment.default_user} {staging}"
@@ -89,27 +105,32 @@ class KiroCliAgent(BaseInstalledAgent):
             command=ca_certificates_command(staging),
             env={"DEBIAN_FRONTEND": "noninteractive"},
         )
-        await self.exec_as_agent(
-            environment,
-            command=(
-                "mkdir -p ~/.local/bin ~/.local/share/kiro-cli ~/.aws && "
-                f"cp {staging}/kiro-cli {staging}/kiro-cli-chat ~/.local/bin/ && "
-                "chmod +x ~/.local/bin/kiro-cli ~/.local/bin/kiro-cli-chat && "
+        install_cmd = (
+            "mkdir -p ~/.local/bin && "
+            f"cp {staging}/kiro-cli {staging}/kiro-cli-chat ~/.local/bin/ && "
+            "chmod +x ~/.local/bin/kiro-cli ~/.local/bin/kiro-cli-chat"
+        )
+        if auth_files:
+            install_cmd += (
+                " && mkdir -p ~/.local/share/kiro-cli ~/.aws && "
                 f"cp {staging}/data.sqlite3 ~/.local/share/kiro-cli/data.sqlite3 && "
                 "chmod 600 ~/.local/share/kiro-cli/data.sqlite3 && "
                 f"rm -rf ~/.aws/sso && cp -r {staging}/sso ~/.aws/sso && "
                 "chmod 600 ~/.aws/sso/*"
-            ),
-        )
+            )
+        if has_musl:
+            install_cmd += f"; {musl_fallback_command(staging)}"
+        await self.exec_as_agent(environment, command=install_cmd)
         await self.exec_as_root(environment, f"rm -rf {staging}")
 
-        # Fail fast if the uploaded login state does not work in-container.
+        # Fail fast if authentication does not work in-container.
         await self.exec_as_agent(
             environment,
             command=(
                 'export PATH="$HOME/.local/bin:$PATH"; '
                 "kiro-cli --version && kiro-cli whoami"
             ),
+            env=auth_env(),
         )
 
     @with_prompt_template
@@ -123,6 +144,7 @@ class KiroCliAgent(BaseInstalledAgent):
         await self.exec_as_agent(
             environment,
             command=build_chat_command(model, instruction),
+            env=auth_env(),
         )
 
     def populate_context_post_run(self, context: AgentContext) -> None:

@@ -9,6 +9,21 @@ results/raw/
 **/data.sqlite3
 **/kiro-auth-token*.json
 **/sso/cache/
+kiro-pats*.txt
 
 # harness run output (jobs/ is created by harbor/pier runs)
 jobs/
+
+# terraform local state/secrets (vars are passed via TF_VAR_* at run time)
+infra/.terraform/
+*.tfstate
+*.tfstate.*
+infra/*.tfvars
+!infra/terraform.tfvars.example
+# saved plans embed the same TF_VAR_* values, and are tied to one state serial
+*.tfplan
+
+# dashboard app: local S3 record mirror + frontend build artifacts
+app/.cache/
+app/web/node_modules/
+app/web/dist/
