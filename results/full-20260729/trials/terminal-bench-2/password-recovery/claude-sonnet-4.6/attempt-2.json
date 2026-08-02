@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "password-recovery",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 6.16,
+ "cost_usd": 0.2464,
+ "time_seconds": 293.0,
+ "error_kind": null
+}

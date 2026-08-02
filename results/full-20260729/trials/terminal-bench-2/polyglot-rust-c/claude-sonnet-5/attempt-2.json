@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "polyglot-rust-c",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 17.29,
+ "cost_usd": 0.6916,
+ "time_seconds": 649.0,
+ "error_kind": null
+}

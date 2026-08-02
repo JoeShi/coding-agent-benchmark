@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "winning-avg-corewars",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 50.31,
+ "cost_usd": 2.0124,
+ "time_seconds": 2206.0,
+ "error_kind": null
+}

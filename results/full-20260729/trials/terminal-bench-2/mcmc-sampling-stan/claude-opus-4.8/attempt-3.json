@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "mcmc-sampling-stan",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 3.6,
+ "cost_usd": 0.144,
+ "time_seconds": 423.0,
+ "error_kind": null
+}

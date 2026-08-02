@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "pytorch-model-cli",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 7.25,
+ "cost_usd": 0.29,
+ "time_seconds": 509.0,
+ "error_kind": null
+}

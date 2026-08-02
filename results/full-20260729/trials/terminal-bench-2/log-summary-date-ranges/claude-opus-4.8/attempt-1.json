@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "log-summary-date-ranges",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 0.93,
+ "cost_usd": 0.0372,
+ "time_seconds": 41.0,
+ "error_kind": null
+}

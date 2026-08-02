@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "crack-7z-hash",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 1.04,
+ "cost_usd": 0.0416,
+ "time_seconds": 213.0,
+ "error_kind": null
+}

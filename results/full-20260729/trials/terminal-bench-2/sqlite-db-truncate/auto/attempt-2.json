@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "sqlite-db-truncate",
+ "model": "auto",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 0.89,
+ "cost_usd": 0.0356,
+ "time_seconds": 60.0,
+ "error_kind": null
+}

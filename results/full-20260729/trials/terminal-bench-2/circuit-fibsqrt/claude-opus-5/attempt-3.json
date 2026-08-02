@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "circuit-fibsqrt",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 7.25,
+ "cost_usd": 0.29,
+ "time_seconds": 388.0,
+ "error_kind": null
+}

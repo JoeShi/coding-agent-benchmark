@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "configure-git-webserver",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 0.85,
+ "cost_usd": 0.034,
+ "time_seconds": 307.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+  "run_id": "full-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "distribution-search",
+  "model": "claude-opus-4.8",
+  "attempt": 3,
+  "status": "passed",
+  "credits": 3.18,
+  "cost_usd": 0.1272,
+  "time_seconds": 145.0,
+  "error_kind": null
+}

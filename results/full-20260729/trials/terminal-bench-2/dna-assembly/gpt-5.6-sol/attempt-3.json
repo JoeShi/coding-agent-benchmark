@@ -1,0 +1,12 @@
+{
+  "run_id": "full-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "dna-assembly",
+  "model": "gpt-5.6-sol",
+  "attempt": 3,
+  "status": "failed",
+  "credits": 5.21,
+  "cost_usd": 0.2084,
+  "time_seconds": 339.0,
+  "error_kind": null
+}

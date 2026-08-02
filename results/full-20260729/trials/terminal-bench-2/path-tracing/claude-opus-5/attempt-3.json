@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "path-tracing",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 6.46,
+ "cost_usd": 0.2584,
+ "time_seconds": 244.0,
+ "error_kind": null
+}

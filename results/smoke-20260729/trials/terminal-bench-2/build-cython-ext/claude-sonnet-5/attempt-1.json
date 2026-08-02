@@ -1,0 +1,12 @@
+{
+  "run_id": "smoke-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "build-cython-ext",
+  "model": "claude-sonnet-5",
+  "attempt": 1,
+  "status": "passed",
+  "credits": 8.47,
+  "cost_usd": 0.3388,
+  "time_seconds": 778.0,
+  "error_kind": null
+}

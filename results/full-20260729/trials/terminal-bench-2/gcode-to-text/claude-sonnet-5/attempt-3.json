@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "gcode-to-text",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 1.95,
+ "cost_usd": 0.078,
+ "time_seconds": 138.0,
+ "error_kind": null
+}

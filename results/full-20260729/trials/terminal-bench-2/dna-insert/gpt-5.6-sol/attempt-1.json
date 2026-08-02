@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "dna-insert",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 2.48,
+ "cost_usd": 0.0992,
+ "time_seconds": 298.0,
+ "error_kind": null
+}

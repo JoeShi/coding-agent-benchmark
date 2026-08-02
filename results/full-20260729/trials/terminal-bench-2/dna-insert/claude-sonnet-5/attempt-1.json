@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "dna-insert",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 3.8,
+ "cost_usd": 0.152,
+ "time_seconds": 146.0,
+ "error_kind": null
+}

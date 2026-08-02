@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "winning-avg-corewars",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 61.33,
+ "cost_usd": 2.4532,
+ "time_seconds": 2058.0,
+ "error_kind": null
+}

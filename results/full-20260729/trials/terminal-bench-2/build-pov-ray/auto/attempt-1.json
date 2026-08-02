@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "build-pov-ray",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 1.66,
+ "cost_usd": 0.0664,
+ "time_seconds": 171.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "gcode-to-text",
+ "model": "claude-opus-4.8",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 6.84,
+ "cost_usd": 0.2736,
+ "time_seconds": 323.0,
+ "error_kind": null
+}

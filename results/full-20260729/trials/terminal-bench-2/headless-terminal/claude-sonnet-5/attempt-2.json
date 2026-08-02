@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "headless-terminal",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 1.62,
+ "cost_usd": 0.0648,
+ "time_seconds": 107.0,
+ "error_kind": null
+}

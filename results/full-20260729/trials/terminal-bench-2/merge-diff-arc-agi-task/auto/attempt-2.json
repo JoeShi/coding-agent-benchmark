@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "merge-diff-arc-agi-task",
+ "model": "auto",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 1.09,
+ "cost_usd": 0.0436,
+ "time_seconds": 146.0,
+ "error_kind": null
+}

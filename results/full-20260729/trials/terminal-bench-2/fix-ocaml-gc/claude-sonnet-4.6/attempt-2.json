@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "fix-ocaml-gc",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 8.76,
+ "cost_usd": 0.3504,
+ "time_seconds": 641.0,
+ "error_kind": null
+}

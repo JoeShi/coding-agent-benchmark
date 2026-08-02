@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "sparql-university",
+ "model": "gpt-5.6-sol",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 1.99,
+ "cost_usd": 0.0796,
+ "time_seconds": 124.0,
+ "error_kind": null
+}

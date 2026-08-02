@@ -1,0 +1,12 @@
+{
+  "run_id": "full-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "chess-best-move",
+  "model": "claude-opus-4.8",
+  "attempt": 2,
+  "status": "failed",
+  "credits": 1.11,
+  "cost_usd": 0.0444,
+  "time_seconds": 76.0,
+  "error_kind": null
+}

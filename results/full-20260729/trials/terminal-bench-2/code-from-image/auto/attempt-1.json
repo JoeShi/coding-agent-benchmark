@@ -1,0 +1,12 @@
+{
+  "run_id": "full-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "code-from-image",
+  "model": "auto",
+  "attempt": 1,
+  "status": "passed",
+  "credits": 0.19,
+  "cost_usd": 0.0076,
+  "time_seconds": 25.0,
+  "error_kind": null
+}

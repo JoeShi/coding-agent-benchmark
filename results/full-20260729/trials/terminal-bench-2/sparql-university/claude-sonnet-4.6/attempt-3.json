@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "sparql-university",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 1.08,
+ "cost_usd": 0.0432,
+ "time_seconds": 152.0,
+ "error_kind": null
+}

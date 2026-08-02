@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "make-mips-interpreter",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 67.46,
+ "cost_usd": 2.6984,
+ "time_seconds": 1567.0,
+ "error_kind": null
+}

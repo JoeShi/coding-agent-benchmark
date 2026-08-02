@@ -1,0 +1,11 @@
+ghcr.io/scaleapi/swe-atlas:swe_atlas_QnA_Automattic_wp-calypso_1.0
+ghcr.io/scaleapi/swe-atlas:swe_atlas_QnA_drakkan_sftpgo_1.0
+ghcr.io/scaleapi/swe-atlas:swe_atlas_QnA_foxcpp_maddy_1.0
+ghcr.io/scaleapi/swe-atlas:swe_atlas_QnA_grafana_grafana_1.0
+ghcr.io/scaleapi/swe-atlas:swe_atlas_QnA_grafana_k6_1.0
+ghcr.io/scaleapi/swe-atlas:swe_atlas_QnA_kovidgoyal_kitty_1.0
+ghcr.io/scaleapi/swe-atlas:swe_atlas_QnA_minio_minio_1.0
+ghcr.io/scaleapi/swe-atlas:swe_atlas_QnA_paperless-ngx_paperless-ngx_e233ae8334038a4b615ea2e4ce663e30_qna_1.01
+ghcr.io/scaleapi/swe-atlas:swe_atlas_QnA_secdev_scapy_1.0
+ghcr.io/scaleapi/swe-atlas:swe_atlas_QnA_simple-login_app_1.0
+ghcr.io/scaleapi/swe-atlas:swe_atlas_QnA_trufflesecurity_trufflehog_1.0

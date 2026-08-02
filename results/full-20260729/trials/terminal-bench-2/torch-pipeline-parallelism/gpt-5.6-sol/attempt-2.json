@@ -1,0 +1,12 @@
+{
+  "run_id": "full-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "torch-pipeline-parallelism",
+  "model": "gpt-5.6-sol",
+  "attempt": 2,
+  "status": "failed",
+  "credits": 3.61,
+  "cost_usd": 0.1444,
+  "time_seconds": 343.0,
+  "error_kind": null
+}

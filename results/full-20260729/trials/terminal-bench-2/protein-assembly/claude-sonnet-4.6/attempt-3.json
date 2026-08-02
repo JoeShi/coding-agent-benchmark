@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "protein-assembly",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 29.85,
+ "cost_usd": 1.194,
+ "time_seconds": 1330.0,
+ "error_kind": null
+}

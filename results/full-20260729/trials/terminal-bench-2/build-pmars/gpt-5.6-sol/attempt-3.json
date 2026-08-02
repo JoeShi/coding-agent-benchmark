@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "build-pmars",
+ "model": "gpt-5.6-sol",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 3.08,
+ "cost_usd": 0.1232,
+ "time_seconds": 159.0,
+ "error_kind": null
+}

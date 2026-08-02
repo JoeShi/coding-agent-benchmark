@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "feal-differential-cryptanalysis",
+ "model": "claude-opus-4.8",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 4.79,
+ "cost_usd": 0.1916,
+ "time_seconds": 266.0,
+ "error_kind": null
+}

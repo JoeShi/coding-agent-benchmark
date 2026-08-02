@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "train-fasttext",
+ "model": "claude-opus-4.8",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 7.32,
+ "cost_usd": 0.2928,
+ "time_seconds": 758.0,
+ "error_kind": null
+}

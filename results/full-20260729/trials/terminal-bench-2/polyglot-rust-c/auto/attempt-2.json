@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "polyglot-rust-c",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 2.7,
+ "cost_usd": 0.108,
+ "time_seconds": 354.0,
+ "error_kind": null
+}

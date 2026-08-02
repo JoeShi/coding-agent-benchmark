@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "kv-store-grpc",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 1.96,
+ "cost_usd": 0.0784,
+ "time_seconds": 156.0,
+ "error_kind": null
+}

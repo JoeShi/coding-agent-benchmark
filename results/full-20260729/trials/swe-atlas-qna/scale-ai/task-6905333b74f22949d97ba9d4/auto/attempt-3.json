@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "swe-atlas-qna",
+ "task": "scale-ai/task-6905333b74f22949d97ba9d4",
+ "model": "auto",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 11.15,
+ "cost_usd": 0.446,
+ "time_seconds": 768.0,
+ "error_kind": null
+}

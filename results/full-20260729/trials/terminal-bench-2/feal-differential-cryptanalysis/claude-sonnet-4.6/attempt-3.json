@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "feal-differential-cryptanalysis",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 4.58,
+ "cost_usd": 0.1832,
+ "time_seconds": 484.0,
+ "error_kind": null
+}

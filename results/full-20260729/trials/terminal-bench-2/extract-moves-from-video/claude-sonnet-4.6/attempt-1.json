@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "extract-moves-from-video",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 6.33,
+ "cost_usd": 0.2532,
+ "time_seconds": 560.0,
+ "error_kind": null
+}

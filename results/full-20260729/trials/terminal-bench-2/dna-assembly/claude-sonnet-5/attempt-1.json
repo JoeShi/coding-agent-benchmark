@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "dna-assembly",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 15.78,
+ "cost_usd": 0.6312,
+ "time_seconds": 651.0,
+ "error_kind": null
+}

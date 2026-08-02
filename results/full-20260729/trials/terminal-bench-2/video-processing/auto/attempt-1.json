@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "video-processing",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 6.17,
+ "cost_usd": 0.2468,
+ "time_seconds": 439.0,
+ "error_kind": null
+}

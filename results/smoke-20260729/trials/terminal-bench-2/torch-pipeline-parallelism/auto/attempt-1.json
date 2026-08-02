@@ -1,0 +1,12 @@
+{
+  "run_id": "smoke-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "torch-pipeline-parallelism",
+  "model": "auto",
+  "attempt": 1,
+  "status": "failed",
+  "credits": 1.69,
+  "cost_usd": 0.0676,
+  "time_seconds": 148.0,
+  "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "modernize-scientific-stack",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 0.85,
+ "cost_usd": 0.034,
+ "time_seconds": 281.0,
+ "error_kind": null
+}

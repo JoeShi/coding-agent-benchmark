@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "overfull-hbox",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 4.71,
+ "cost_usd": 0.1884,
+ "time_seconds": 348.0,
+ "error_kind": null
+}

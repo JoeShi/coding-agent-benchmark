@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "regex-log",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 0.77,
+ "cost_usd": 0.0308,
+ "time_seconds": 111.0,
+ "error_kind": null
+}

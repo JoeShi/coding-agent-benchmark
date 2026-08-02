@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "chess-best-move",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 2.02,
+ "cost_usd": 0.0808,
+ "time_seconds": 201.0,
+ "error_kind": null
+}

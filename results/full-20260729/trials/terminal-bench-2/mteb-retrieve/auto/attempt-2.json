@@ -1,0 +1,12 @@
+{
+  "run_id": "full-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "mteb-retrieve",
+  "model": "auto",
+  "attempt": 2,
+  "status": "failed",
+  "credits": 0.18,
+  "cost_usd": 0.0072,
+  "time_seconds": 20.0,
+  "error_kind": null
+}

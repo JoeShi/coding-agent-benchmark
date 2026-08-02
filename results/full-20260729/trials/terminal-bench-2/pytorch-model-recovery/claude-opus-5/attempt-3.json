@@ -1,0 +1,12 @@
+{
+  "run_id": "full-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "pytorch-model-recovery",
+  "model": "claude-opus-5",
+  "attempt": 3,
+  "status": "error",
+  "credits": null,
+  "cost_usd": null,
+  "time_seconds": null,
+  "error_kind": "no_telemetry"
+}

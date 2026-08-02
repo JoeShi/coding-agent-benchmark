@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "reshard-c4-data",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 8.01,
+ "cost_usd": 0.3204,
+ "time_seconds": 341.0,
+ "error_kind": null
+}

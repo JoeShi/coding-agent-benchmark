@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "protein-assembly",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 8.55,
+ "cost_usd": 0.342,
+ "time_seconds": 330.0,
+ "error_kind": null
+}

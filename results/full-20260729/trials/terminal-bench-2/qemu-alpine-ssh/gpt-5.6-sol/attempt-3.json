@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "qemu-alpine-ssh",
+ "model": "gpt-5.6-sol",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 2.34,
+ "cost_usd": 0.0936,
+ "time_seconds": 281.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "path-tracing",
+ "model": "gpt-5.6-sol",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 7.65,
+ "cost_usd": 0.306,
+ "time_seconds": 287.0,
+ "error_kind": null
+}

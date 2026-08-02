@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "polyglot-c-py",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 3.52,
+ "cost_usd": 0.1408,
+ "time_seconds": 161.0,
+ "error_kind": null
+}

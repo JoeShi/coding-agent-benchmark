@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "compile-compcert",
+ "model": "auto",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 1.73,
+ "cost_usd": 0.0692,
+ "time_seconds": 1392.0,
+ "error_kind": null
+}

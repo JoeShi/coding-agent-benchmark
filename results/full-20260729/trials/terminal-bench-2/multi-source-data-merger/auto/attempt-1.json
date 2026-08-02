@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "multi-source-data-merger",
+ "model": "auto",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 0.56,
+ "cost_usd": 0.0224,
+ "time_seconds": 44.0,
+ "error_kind": null
+}

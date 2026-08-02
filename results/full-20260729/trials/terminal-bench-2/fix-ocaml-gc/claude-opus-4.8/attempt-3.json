@@ -1,0 +1,12 @@
+{
+  "run_id": "full-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "fix-ocaml-gc",
+  "model": "claude-opus-4.8",
+  "attempt": 3,
+  "status": "passed",
+  "credits": 6.67,
+  "cost_usd": 0.2668,
+  "time_seconds": 705.0,
+  "error_kind": null
+}

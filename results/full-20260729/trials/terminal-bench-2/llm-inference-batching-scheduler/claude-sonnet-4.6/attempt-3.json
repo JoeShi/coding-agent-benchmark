@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "llm-inference-batching-scheduler",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 15.53,
+ "cost_usd": 0.6212,
+ "time_seconds": 804.0,
+ "error_kind": null
+}

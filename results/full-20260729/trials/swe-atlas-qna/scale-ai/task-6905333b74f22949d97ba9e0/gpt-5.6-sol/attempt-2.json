@@ -1,0 +1,12 @@
+{
+  "run_id": "full-20260729",
+  "benchmark": "swe-atlas-qna",
+  "task": "scale-ai/task-6905333b74f22949d97ba9e0",
+  "model": "gpt-5.6-sol",
+  "attempt": 2,
+  "status": "passed",
+  "credits": 7.23,
+  "cost_usd": 0.2892,
+  "time_seconds": 225.0,
+  "error_kind": null
+}

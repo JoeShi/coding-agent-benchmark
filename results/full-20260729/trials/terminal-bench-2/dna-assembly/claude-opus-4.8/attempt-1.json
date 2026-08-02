@@ -1,0 +1,12 @@
+{
+  "run_id": "full-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "dna-assembly",
+  "model": "claude-opus-4.8",
+  "attempt": 1,
+  "status": "passed",
+  "credits": 21.59,
+  "cost_usd": 0.8636,
+  "time_seconds": 979.0,
+  "error_kind": null
+}

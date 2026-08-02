@@ -1,0 +1,12 @@
+{
+  "run_id": "full-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "sqlite-with-gcov",
+  "model": "claude-sonnet-4.6",
+  "attempt": 2,
+  "status": "failed",
+  "credits": 1.18,
+  "cost_usd": 0.0472,
+  "time_seconds": 178.0,
+  "error_kind": null
+}

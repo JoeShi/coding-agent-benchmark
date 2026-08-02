@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "polyglot-rust-c",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 5.41,
+ "cost_usd": 0.2164,
+ "time_seconds": 284.0,
+ "error_kind": null
+}

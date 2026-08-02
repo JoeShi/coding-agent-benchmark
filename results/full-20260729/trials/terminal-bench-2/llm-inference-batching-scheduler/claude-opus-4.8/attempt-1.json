@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "llm-inference-batching-scheduler",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 18.67,
+ "cost_usd": 0.7468,
+ "time_seconds": 1692.0,
+ "error_kind": null
+}

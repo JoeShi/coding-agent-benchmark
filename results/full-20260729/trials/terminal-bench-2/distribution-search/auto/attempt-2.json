@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "distribution-search",
+ "model": "auto",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 2.48,
+ "cost_usd": 0.0992,
+ "time_seconds": 207.0,
+ "error_kind": null
+}

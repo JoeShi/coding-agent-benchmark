@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "make-mips-interpreter",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 21.57,
+ "cost_usd": 0.8628,
+ "time_seconds": 789.0,
+ "error_kind": null
+}

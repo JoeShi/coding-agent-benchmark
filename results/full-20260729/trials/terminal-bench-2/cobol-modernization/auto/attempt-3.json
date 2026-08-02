@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "cobol-modernization",
+ "model": "auto",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 5.75,
+ "cost_usd": 0.23,
+ "time_seconds": 385.0,
+ "error_kind": null
+}

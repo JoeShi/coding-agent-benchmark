@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "nginx-request-logging",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 0.66,
+ "cost_usd": 0.0264,
+ "time_seconds": 71.0,
+ "error_kind": null
+}

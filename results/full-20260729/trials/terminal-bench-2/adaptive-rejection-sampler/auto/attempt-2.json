@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "adaptive-rejection-sampler",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 9.78,
+ "cost_usd": 0.3912,
+ "time_seconds": 875.0,
+ "error_kind": null
+}

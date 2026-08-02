@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "openssl-selfsigned-cert",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 1.43,
+ "cost_usd": 0.0572,
+ "time_seconds": 61.0,
+ "error_kind": null
+}

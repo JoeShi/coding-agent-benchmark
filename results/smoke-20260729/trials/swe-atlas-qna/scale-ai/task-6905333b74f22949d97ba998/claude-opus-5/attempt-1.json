@@ -1,0 +1,12 @@
+{
+  "run_id": "smoke-20260729",
+  "benchmark": "swe-atlas-qna",
+  "task": "scale-ai/task-6905333b74f22949d97ba998",
+  "model": "claude-opus-5",
+  "attempt": 1,
+  "status": "failed",
+  "credits": 45.9,
+  "cost_usd": 1.836,
+  "time_seconds": 1445.0,
+  "error_kind": null
+}

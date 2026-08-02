@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "openssl-selfsigned-cert",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 1.58,
+ "cost_usd": 0.0632,
+ "time_seconds": 46.0,
+ "error_kind": null
+}

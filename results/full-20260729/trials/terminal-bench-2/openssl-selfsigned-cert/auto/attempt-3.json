@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "openssl-selfsigned-cert",
+ "model": "auto",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 0.44,
+ "cost_usd": 0.0176,
+ "time_seconds": 31.0,
+ "error_kind": null
+}

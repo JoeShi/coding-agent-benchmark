@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "count-dataset-tokens",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 0.52,
+ "cost_usd": 0.0208,
+ "time_seconds": 59.0,
+ "error_kind": null
+}

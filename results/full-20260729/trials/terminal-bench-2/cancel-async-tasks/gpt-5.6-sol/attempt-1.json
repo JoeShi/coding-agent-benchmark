@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "cancel-async-tasks",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 0.71,
+ "cost_usd": 0.0284,
+ "time_seconds": 61.0,
+ "error_kind": null
+}

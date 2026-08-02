@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "sqlite-db-truncate",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 1.1,
+ "cost_usd": 0.044,
+ "time_seconds": 69.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "headless-terminal",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 2.9,
+ "cost_usd": 0.116,
+ "time_seconds": 102.0,
+ "error_kind": null
+}

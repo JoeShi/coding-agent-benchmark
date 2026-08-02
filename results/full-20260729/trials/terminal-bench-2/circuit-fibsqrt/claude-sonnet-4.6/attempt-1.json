@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "circuit-fibsqrt",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 3.56,
+ "cost_usd": 0.1424,
+ "time_seconds": 311.0,
+ "error_kind": null
+}

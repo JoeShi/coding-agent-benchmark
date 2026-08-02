@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "pytorch-model-cli",
+ "model": "auto",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 1.23,
+ "cost_usd": 0.0492,
+ "time_seconds": 134.0,
+ "error_kind": null
+}

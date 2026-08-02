@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "modernize-scientific-stack",
+ "model": "claude-opus-4.8",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 1.28,
+ "cost_usd": 0.0512,
+ "time_seconds": 35.0,
+ "error_kind": null
+}

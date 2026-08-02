@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "tune-mjcf",
+ "model": "auto",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 5.49,
+ "cost_usd": 0.2196,
+ "time_seconds": 869.0,
+ "error_kind": null
+}

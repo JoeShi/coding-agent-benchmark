@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "raman-fitting",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 2.79,
+ "cost_usd": 0.1116,
+ "time_seconds": 129.0,
+ "error_kind": null
+}

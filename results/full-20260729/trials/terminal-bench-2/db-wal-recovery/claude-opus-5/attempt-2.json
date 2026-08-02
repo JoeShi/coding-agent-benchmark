@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "db-wal-recovery",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 1.5,
+ "cost_usd": 0.06,
+ "time_seconds": 75.0,
+ "error_kind": null
+}

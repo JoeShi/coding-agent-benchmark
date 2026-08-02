@@ -1,0 +1,12 @@
+{
+  "run_id": "smoke-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "constraints-scheduling",
+  "model": "claude-sonnet-5",
+  "attempt": 2,
+  "status": "passed",
+  "credits": 0.78,
+  "cost_usd": 0.0312,
+  "time_seconds": 60.0,
+  "error_kind": null
+}

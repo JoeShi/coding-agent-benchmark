@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "crack-7z-hash",
+ "model": "auto",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 2.12,
+ "cost_usd": 0.0848,
+ "time_seconds": 620.0,
+ "error_kind": null
+}

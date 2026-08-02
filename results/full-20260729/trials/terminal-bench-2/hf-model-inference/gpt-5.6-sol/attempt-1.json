@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "hf-model-inference",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 1.14,
+ "cost_usd": 0.0456,
+ "time_seconds": 141.0,
+ "error_kind": null
+}

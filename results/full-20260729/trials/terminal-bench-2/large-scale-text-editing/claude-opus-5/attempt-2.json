@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "large-scale-text-editing",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 3.32,
+ "cost_usd": 0.1328,
+ "time_seconds": 258.0,
+ "error_kind": null
+}

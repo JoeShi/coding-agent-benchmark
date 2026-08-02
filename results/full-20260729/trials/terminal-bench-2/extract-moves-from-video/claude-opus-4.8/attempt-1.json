@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "extract-moves-from-video",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 22.43,
+ "cost_usd": 0.8972,
+ "time_seconds": 1046.0,
+ "error_kind": null
+}

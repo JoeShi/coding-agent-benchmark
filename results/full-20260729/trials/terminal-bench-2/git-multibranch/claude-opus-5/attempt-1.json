@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "git-multibranch",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 10.65,
+ "cost_usd": 0.426,
+ "time_seconds": 470.0,
+ "error_kind": null
+}

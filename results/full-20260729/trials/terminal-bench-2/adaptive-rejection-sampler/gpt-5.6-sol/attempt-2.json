@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "adaptive-rejection-sampler",
+ "model": "gpt-5.6-sol",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 4.25,
+ "cost_usd": 0.17,
+ "time_seconds": 165.0,
+ "error_kind": null
+}

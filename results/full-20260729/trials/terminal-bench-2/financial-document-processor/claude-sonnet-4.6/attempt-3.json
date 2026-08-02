@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "financial-document-processor",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 3.01,
+ "cost_usd": 0.1204,
+ "time_seconds": 174.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "reshard-c4-data",
+ "model": "claude-opus-4.8",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 14.05,
+ "cost_usd": 0.562,
+ "time_seconds": 415.0,
+ "error_kind": null
+}

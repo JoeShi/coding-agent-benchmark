@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "model-extraction-relu-logits",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 5.19,
+ "cost_usd": 0.2076,
+ "time_seconds": 279.0,
+ "error_kind": null
+}

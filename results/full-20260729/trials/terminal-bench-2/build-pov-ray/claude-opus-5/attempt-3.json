@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "build-pov-ray",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 13.79,
+ "cost_usd": 0.5516,
+ "time_seconds": 686.0,
+ "error_kind": null
+}

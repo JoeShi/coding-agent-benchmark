@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "cobol-modernization",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 8.12,
+ "cost_usd": 0.3248,
+ "time_seconds": 302.0,
+ "error_kind": null
+}

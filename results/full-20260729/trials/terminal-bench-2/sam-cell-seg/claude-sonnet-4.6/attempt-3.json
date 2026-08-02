@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "sam-cell-seg",
+ "model": "claude-sonnet-4.6",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 1.42,
+ "cost_usd": 0.0568,
+ "time_seconds": 121.0,
+ "error_kind": null
+}

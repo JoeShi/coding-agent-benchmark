@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "torch-tensor-parallelism",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 3.38,
+ "cost_usd": 0.1352,
+ "time_seconds": 132.0,
+ "error_kind": null
+}

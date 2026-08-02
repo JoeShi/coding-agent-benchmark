@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "vulnerable-secret",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 1.24,
+ "cost_usd": 0.0496,
+ "time_seconds": 58.0,
+ "error_kind": null
+}

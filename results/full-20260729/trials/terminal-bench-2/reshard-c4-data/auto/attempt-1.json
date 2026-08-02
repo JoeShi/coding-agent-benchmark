@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "reshard-c4-data",
+ "model": "auto",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 5.12,
+ "cost_usd": 0.2048,
+ "time_seconds": 213.0,
+ "error_kind": null
+}

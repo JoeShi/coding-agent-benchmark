@@ -1,0 +1,12 @@
+{
+  "run_id": "smoke-20260729",
+  "benchmark": "swe-atlas-qna",
+  "task": "scale-ai/task-6905333b74f22949d97ba998",
+  "model": "claude-sonnet-5",
+  "attempt": 2,
+  "status": "passed",
+  "credits": 3.1,
+  "cost_usd": 0.124,
+  "time_seconds": 340.0,
+  "error_kind": null
+}

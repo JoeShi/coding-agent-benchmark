@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "db-wal-recovery",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 1.64,
+ "cost_usd": 0.0656,
+ "time_seconds": 149.0,
+ "error_kind": null
+}

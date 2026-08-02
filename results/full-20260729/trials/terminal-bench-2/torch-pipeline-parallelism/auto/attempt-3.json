@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "torch-pipeline-parallelism",
+ "model": "auto",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 0.71,
+ "cost_usd": 0.0284,
+ "time_seconds": 66.0,
+ "error_kind": null
+}

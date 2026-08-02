@@ -1,0 +1,12 @@
+{
+  "run_id": "smoke-20260729",
+  "benchmark": "terminal-bench-2",
+  "task": "build-cython-ext",
+  "model": "gpt-5.6-sol",
+  "attempt": 3,
+  "status": "passed",
+  "credits": 7.79,
+  "cost_usd": 0.3116,
+  "time_seconds": 462.0,
+  "error_kind": null
+}

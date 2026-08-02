@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "merge-diff-arc-agi-task",
+ "model": "gpt-5.6-sol",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 2.65,
+ "cost_usd": 0.106,
+ "time_seconds": 193.0,
+ "error_kind": null
+}

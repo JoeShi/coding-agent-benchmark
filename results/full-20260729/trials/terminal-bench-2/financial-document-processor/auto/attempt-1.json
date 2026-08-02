@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "financial-document-processor",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 5.29,
+ "cost_usd": 0.2116,
+ "time_seconds": 1034.0,
+ "error_kind": null
+}

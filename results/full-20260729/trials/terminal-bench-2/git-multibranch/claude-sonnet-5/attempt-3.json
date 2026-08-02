@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "git-multibranch",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 2.51,
+ "cost_usd": 0.1004,
+ "time_seconds": 342.0,
+ "error_kind": null
+}

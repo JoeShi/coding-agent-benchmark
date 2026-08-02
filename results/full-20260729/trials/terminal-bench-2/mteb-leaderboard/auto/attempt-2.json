@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "mteb-leaderboard",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 3.53,
+ "cost_usd": 0.1412,
+ "time_seconds": 108.0,
+ "error_kind": null
+}

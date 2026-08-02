@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "cancel-async-tasks",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 5.34,
+ "cost_usd": 0.2136,
+ "time_seconds": 260.0,
+ "error_kind": null
+}

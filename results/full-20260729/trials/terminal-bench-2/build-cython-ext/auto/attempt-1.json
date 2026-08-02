@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "build-cython-ext",
+ "model": "auto",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 5.61,
+ "cost_usd": 0.2244,
+ "time_seconds": 312.0,
+ "error_kind": null
+}

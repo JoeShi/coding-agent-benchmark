@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "tune-mjcf",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 2.23,
+ "cost_usd": 0.0892,
+ "time_seconds": 192.0,
+ "error_kind": null
+}

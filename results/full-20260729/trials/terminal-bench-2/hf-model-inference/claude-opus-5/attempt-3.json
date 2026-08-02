@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "hf-model-inference",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 2.27,
+ "cost_usd": 0.0908,
+ "time_seconds": 123.0,
+ "error_kind": null
+}

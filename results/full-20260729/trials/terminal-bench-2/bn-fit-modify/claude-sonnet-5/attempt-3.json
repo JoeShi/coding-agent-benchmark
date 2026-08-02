@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "bn-fit-modify",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 2.92,
+ "cost_usd": 0.1168,
+ "time_seconds": 209.0,
+ "error_kind": null
+}

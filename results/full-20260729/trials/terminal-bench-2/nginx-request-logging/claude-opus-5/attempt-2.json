@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "nginx-request-logging",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 1.79,
+ "cost_usd": 0.0716,
+ "time_seconds": 50.0,
+ "error_kind": null
+}

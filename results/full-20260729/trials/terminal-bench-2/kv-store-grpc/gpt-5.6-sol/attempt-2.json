@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "kv-store-grpc",
+ "model": "gpt-5.6-sol",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 0.8,
+ "cost_usd": 0.032,
+ "time_seconds": 54.0,
+ "error_kind": null
+}

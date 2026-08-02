@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "qemu-startup",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 0.88,
+ "cost_usd": 0.0352,
+ "time_seconds": 412.0,
+ "error_kind": null
+}

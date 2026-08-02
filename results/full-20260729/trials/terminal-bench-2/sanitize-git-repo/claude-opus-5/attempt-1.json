@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "sanitize-git-repo",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 3.94,
+ "cost_usd": 0.1576,
+ "time_seconds": 80.0,
+ "error_kind": null
+}

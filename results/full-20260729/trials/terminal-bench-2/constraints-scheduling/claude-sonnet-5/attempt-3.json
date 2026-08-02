@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "terminal-bench-2",
+ "task": "constraints-scheduling",
+ "model": "claude-sonnet-5",
+ "attempt": 3,
+ "status": "passed",
+ "credits": 0.86,
+ "cost_usd": 0.0344,
+ "time_seconds": 68.0,
+ "error_kind": null
+}

