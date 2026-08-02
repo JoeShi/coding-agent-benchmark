@@ -1,0 +1,438 @@
+{
+  "title": "Kiro CLI Coding Agent Benchmark",
+  "run_id": "full-20260729",
+  "generated_at": "2026-08-02",
+  "methodology_version": "v1.3",
+  "benchmarks": [
+    {
+      "id": "deep-swe",
+      "label": "DeepSWE",
+      "tasks": 113
+    },
+    {
+      "id": "terminal-bench-2",
+      "label": "Terminal-Bench v2",
+      "tasks": 84
+    },
+    {
+      "id": "swe-atlas-qna",
+      "label": "SWE-Atlas-QnA",
+      "tasks": 124
+    }
+  ],
+  "kiro": [
+    {
+      "id": "auto",
+      "agent": "Kiro CLI",
+      "model": "Auto",
+      "label": "Kiro CLI - Auto",
+      "creator": "Kiro",
+      "official": {
+        "index": 0.3653395351225783,
+        "benchmarks": {
+          "terminal-bench-2": 0.5992063492063492,
+          "deep-swe": 0.20648967551622419,
+          "swe-atlas-qna": 0.2903225806451613
+        }
+      },
+      "normalized": {
+        "index": 0.3716781727460807,
+        "benchmarks": {
+          "terminal-bench-2": 0.606425702811245,
+          "deep-swe": 0.20833333333333331,
+          "swe-atlas-qna": 0.30027548209366395
+        }
+      },
+      "cost_usd": 0.41189336384439357,
+      "time_seconds": 499.6842105263158,
+      "cost_coverage": 0.9075804776739356,
+      "time_coverage": 0.9075804776739356,
+      "n_trials": 963,
+      "n_errors": 18
+    },
+    {
+      "id": "claude-opus-4.8",
+      "agent": "Kiro CLI",
+      "model": "Claude Opus 4.8",
+      "label": "Kiro CLI - Claude Opus 4.8",
+      "creator": "Kiro",
+      "official": {
+        "index": 0.6026021535584768,
+        "benchmarks": {
+          "terminal-bench-2": 0.7301587301587302,
+          "deep-swe": 0.5722713864306785,
+          "swe-atlas-qna": 0.5053763440860215
+        }
+      },
+      "normalized": {
+        "index": 0.6111376493949271,
+        "benchmarks": {
+          "terminal-bench-2": 0.7479674796747968,
+          "deep-swe": 0.5773809523809524,
+          "swe-atlas-qna": 0.5080645161290323
+        }
+      },
+      "cost_usd": 1.0633003420752565,
+      "time_seconds": 651.4458380843786,
+      "cost_coverage": 0.9106957424714434,
+      "time_coverage": 0.9106957424714434,
+      "n_trials": 963,
+      "n_errors": 12
+    },
+    {
+      "id": "claude-opus-5",
+      "agent": "Kiro CLI",
+      "model": "Claude Opus 5",
+      "label": "Kiro CLI - Claude Opus 5",
+      "creator": "Kiro",
+      "official": {
+        "index": 0.6477641235705751,
+        "benchmarks": {
+          "terminal-bench-2": 0.7658730158730158,
+          "deep-swe": 0.6666666666666666,
+          "swe-atlas-qna": 0.510752688172043
+        }
+      },
+      "normalized": {
+        "index": 0.683083160800552,
+        "benchmarks": {
+          "terminal-bench-2": 0.8041666666666666,
+          "deep-swe": 0.6726190476190476,
+          "swe-atlas-qna": 0.572463768115942
+        }
+      },
+      "cost_usd": 1.5122938364779874,
+      "time_seconds": 884.9471698113208,
+      "cost_coverage": 0.8255451713395638,
+      "time_coverage": 0.8255451713395638,
+      "n_trials": 963,
+      "n_errors": 52
+    },
+    {
+      "id": "claude-sonnet-4.6",
+      "agent": "Kiro CLI",
+      "model": "Claude Sonnet 4.6",
+      "label": "Kiro CLI - Claude Sonnet 4.6",
+      "creator": "Kiro",
+      "official": {
+        "index": 0.3574003839490565,
+        "benchmarks": {
+          "terminal-bench-2": 0.6031746031746031,
+          "deep-swe": 0.13569321533923304,
+          "swe-atlas-qna": 0.33333333333333337
+        }
+      },
+      "normalized": {
+        "index": 0.3656029648548109,
+        "benchmarks": {
+          "terminal-bench-2": 0.610441767068273,
+          "deep-swe": 0.1369047619047619,
+          "swe-atlas-qna": 0.34946236559139787
+        }
+      },
+      "cost_usd": 0.6080538812785389,
+      "time_seconds": 515.933789954338,
+      "cost_coverage": 0.9096573208722741,
+      "time_coverage": 0.9096573208722741,
+      "n_trials": 963,
+      "n_errors": 18
+    },
+    {
+      "id": "claude-sonnet-5",
+      "agent": "Kiro CLI",
+      "model": "Claude Sonnet 5",
+      "label": "Kiro CLI - Claude Sonnet 5",
+      "creator": "Kiro",
+      "official": {
+        "index": 0.4573211623597007,
+        "benchmarks": {
+          "terminal-bench-2": 0.6904761904761905,
+          "deep-swe": 0.3185840707964602,
+          "swe-atlas-qna": 0.3629032258064516
+        }
+      },
+      "normalized": {
+        "index": 0.46433098547575336,
+        "benchmarks": {
+          "terminal-bench-2": 0.7073170731707317,
+          "deep-swe": 0.32142857142857145,
+          "swe-atlas-qna": 0.36424731182795694
+        }
+      },
+      "cost_usd": 1.2006367816091954,
+      "time_seconds": 692.7701149425287,
+      "cost_coverage": 0.9034267912772586,
+      "time_coverage": 0.9034267912772586,
+      "n_trials": 963,
+      "n_errors": 10
+    },
+    {
+      "id": "gpt-5.6-sol",
+      "agent": "Kiro CLI",
+      "model": "GPT-5.6 Sol",
+      "label": "Kiro CLI - GPT-5.6 Sol",
+      "creator": "Kiro",
+      "official": {
+        "index": 0.6558286396996075,
+        "benchmarks": {
+          "terminal-bench-2": 0.7658730158730158,
+          "deep-swe": 0.6666666666666666,
+          "swe-atlas-qna": 0.5349462365591398
+        }
+      },
+      "normalized": {
+        "index": 0.6623382807264676,
+        "benchmarks": {
+          "terminal-bench-2": 0.7751004016064257,
+          "deep-swe": 0.6726190476190476,
+          "swe-atlas-qna": 0.5392953929539295
+        }
+      },
+      "cost_usd": 0.5669891891891892,
+      "time_seconds": 553.5207631874299,
+      "cost_coverage": 0.9221183800623053,
+      "time_coverage": 0.9252336448598131,
+      "n_trials": 963,
+      "n_errors": 13
+    }
+  ],
+  "artificial_analysis": {
+    "source": "https://artificialanalysis.ai/agents/coding-agents?coding-agents-performance-chart=index#coding-agents-index",
+    "retrieved_at": "2026-08-02",
+    "methodology_version": "v1.3",
+    "scope": "15 models selected by default on the Artificial Analysis Coding Agent Index chart",
+    "models": [
+      {
+        "id": "62664948892cc9fc91e5efbd2eef6587",
+        "agent": "Claude Code",
+        "model": "Opus 5 (xhigh)",
+        "creator": "Anthropic",
+        "label": "Claude Code - Opus 5 (xhigh)",
+        "index": 0.6674377366641141,
+        "benchmarks": {
+          "deep-swe": 0.604719764011799,
+          "swe-atlas-qna": 0.548387096774194,
+          "terminal-bench-2": 0.849206349206349
+        },
+        "cost_usd": 8.234594254641607,
+        "time_seconds": 1418.8133717549326
+      },
+      {
+        "id": "0ed87f4672c6820504f9402f198df0a6",
+        "agent": "Codex",
+        "model": "GPT-5.6 Sol (max)",
+        "creator": "OpenAI",
+        "label": "Codex - GPT-5.6 Sol (max)",
+        "index": 0.6656984867090491,
+        "benchmarks": {
+          "deep-swe": 0.687315634218289,
+          "swe-atlas-qna": 0.432795698924731,
+          "terminal-bench-2": 0.876984126984127
+        },
+        "cost_usd": 7.0835100321910645,
+        "time_seconds": 610.0822637590861
+      },
+      {
+        "id": "3dc51da6d8a643b1053c74af93b012b8",
+        "agent": "Claude Code",
+        "model": "Fable 5 (max) (with fallback)",
+        "creator": "Anthropic",
+        "label": "Claude Code - Fable 5 (max) (with fallback)",
+        "index": 0.658470366292233,
+        "benchmarks": {
+          "deep-swe": 0.660766961651917,
+          "swe-atlas-qna": 0.489247311827957,
+          "terminal-bench-2": 0.825396825396825
+        },
+        "cost_usd": 11.710527040238846,
+        "time_seconds": 1403.4044693665628
+      },
+      {
+        "id": "42d261a806e9a96a4769ed568662ad9c",
+        "agent": "Claude Code",
+        "model": "Opus 5 (max)",
+        "creator": "Anthropic",
+        "label": "Claude Code - Opus 5 (max)",
+        "index": 0.655251281214741,
+        "benchmarks": {
+          "deep-swe": 0.631268436578171,
+          "swe-atlas-qna": 0.489247311827957,
+          "terminal-bench-2": 0.845238095238095
+        },
+        "cost_usd": 8.949660113613344,
+        "time_seconds": 1423.987122533748
+      },
+      {
+        "id": "27ee60d5f3819ed24fe64a9c6d5529c5",
+        "agent": "Grok Build",
+        "model": "Grok 4.5 (high)",
+        "creator": "xAI",
+        "label": "Grok Build - Grok 4.5 (high)",
+        "index": 0.6443924859568593,
+        "benchmarks": {
+          "deep-swe": 0.59882005899705,
+          "swe-atlas-qna": 0.481182795698925,
+          "terminal-bench-2": 0.853174603174603
+        },
+        "cost_usd": 2.594053333333331,
+        "time_seconds": 991.6222637590873
+      },
+      {
+        "id": "bf63573db2966abb8e5df6aeb89d4a7a",
+        "agent": "Codex",
+        "model": "GPT-5.6 Terra (max)",
+        "creator": "OpenAI",
+        "label": "Codex - GPT-5.6 Terra (max)",
+        "index": 0.6228044140547706,
+        "benchmarks": {
+          "deep-swe": 0.669616519174041,
+          "swe-atlas-qna": 0.35752688172043,
+          "terminal-bench-2": 0.841269841269841
+        },
+        "cost_usd": 2.205787872897198,
+        "time_seconds": 502.37997507788145
+      },
+      {
+        "id": "7cf3f9a8ffd09d3ac7c6986bd9530811",
+        "agent": "Codex",
+        "model": "GPT-5.5 (xhigh)",
+        "creator": "OpenAI",
+        "label": "Codex - GPT-5.5 (xhigh)",
+        "index": 0.6148509138803173,
+        "benchmarks": {
+          "deep-swe": 0.64306784660767,
+          "swe-atlas-qna": 0.360215053763441,
+          "terminal-bench-2": 0.841269841269841
+        },
+        "cost_usd": 5.069575952232609,
+        "time_seconds": 604.9694164070614
+      },
+      {
+        "id": "0280f5ae3ebf36c3d322dedc04f12c7d",
+        "agent": "Kimi Code CLI",
+        "model": "Kimi K3",
+        "creator": "Moonshot AI",
+        "label": "Kimi Code CLI - Kimi K3",
+        "index": 0.6133537089146567,
+        "benchmarks": {
+          "deep-swe": 0.63716814159292,
+          "swe-atlas-qna": 0.365591397849463,
+          "terminal-bench-2": 0.837301587301587
+        },
+        "cost_usd": 3.1751868971339587,
+        "time_seconds": 1427.7253894081002
+      },
+      {
+        "id": "d68a924ec12a4f20f77e1c039573fae4",
+        "agent": "Claude Code",
+        "model": "Opus 4.8 (max)",
+        "creator": "Anthropic",
+        "label": "Claude Code - Opus 4.8 (max)",
+        "index": 0.6054088936618194,
+        "benchmarks": {
+          "deep-swe": 0.557522123893805,
+          "swe-atlas-qna": 0.46505376344086,
+          "terminal-bench-2": 0.793650793650793
+        },
+        "cost_usd": 7.697531218302191,
+        "time_seconds": 1387.705426272068
+      },
+      {
+        "id": "5062f510436fd9929027de5e98e49f60",
+        "agent": "Codex",
+        "model": "GPT-5.6 Luna (max)",
+        "creator": "OpenAI",
+        "label": "Codex - GPT-5.6 Luna (max)",
+        "index": 0.5865981086506353,
+        "benchmarks": {
+          "deep-swe": 0.634218289085546,
+          "swe-atlas-qna": 0.327956989247312,
+          "terminal-bench-2": 0.797619047619048
+        },
+        "cost_usd": 0.31339139950155764,
+        "time_seconds": 479.7352201453791
+      },
+      {
+        "id": "ef32f4245e6f9d0b7d390fbf075bc909",
+        "agent": "Opencode",
+        "model": "Muse Spark 1.1 (xhigh)",
+        "creator": "Meta",
+        "label": "Opencode - Muse Spark 1.1 (xhigh)",
+        "index": 0.5354216416163317,
+        "benchmarks": {
+          "deep-swe": 0.542772861356932,
+          "swe-atlas-qna": 0.333333333333333,
+          "terminal-bench-2": 0.73015873015873
+        },
+        "cost_usd": 1.428240683805814,
+        "time_seconds": 755.2098182762193
+      },
+      {
+        "id": "23a4b1945147ca7027b1207f6664e9f8",
+        "agent": "Claude Code",
+        "model": "GLM-5.2",
+        "creator": "Z.ai",
+        "label": "Claude Code - GLM-5.2",
+        "index": 0.4317779252895107,
+        "benchmarks": {
+          "deep-swe": 0.286135693215339,
+          "swe-atlas-qna": 0.290322580645161,
+          "terminal-bench-2": 0.718875502008032
+        },
+        "cost_usd": 6.5111001416041745,
+        "time_seconds": 1505.0868187500016
+      },
+      {
+        "id": "f588e30be09e15d29f17336fc27d80de",
+        "agent": "Cursor CLI",
+        "model": "Composer 2.5 Fast",
+        "creator": "Cursor",
+        "label": "Cursor CLI - Composer 2.5 Fast",
+        "index": 0.3819077223302173,
+        "benchmarks": {
+          "deep-swe": 0.15929203539823,
+          "swe-atlas-qna": 0.3118279569892475,
+          "terminal-bench-2": 0.6746031746031745
+        },
+        "cost_usd": 0.5493899408099688,
+        "time_seconds": 406.07837279335405
+      },
+      {
+        "id": "191c8ab738f67c70506375676fd133a1",
+        "agent": "Claude Code",
+        "model": "DeepSeek V4 Pro (high)",
+        "creator": "DeepSeek",
+        "label": "Claude Code - DeepSeek V4 Pro (high)",
+        "index": 0.31440020420893977,
+        "benchmarks": {
+          "deep-swe": 0.0855457227138643,
+          "swe-atlas-qna": 0.198924731182796,
+          "terminal-bench-2": 0.658730158730159
+        },
+        "cost_usd": 0.2719346130986499,
+        "time_seconds": 1072.4858556593977
+      },
+      {
+        "id": "a96f1513a8b251ea2cdcfaba32e9f98b",
+        "agent": "Gemini CLI",
+        "model": "Gemini 3.1 Pro (high)",
+        "creator": "Google",
+        "label": "Gemini CLI - Gemini 3.1 Pro (high)",
+        "index": 0.30338470275666973,
+        "benchmarks": {
+          "deep-swe": 0.141592920353982,
+          "swe-atlas-qna": 0.0860215053763441,
+          "terminal-bench-2": 0.682539682539683
+        },
+        "cost_usd": 1.9964071032191046,
+        "time_seconds": 649.431679127727
+      }
+    ]
+  },
+  "notes": {
+    "official": "Failed and errored attempts score 0, matching Artificial Analysis.",
+    "normalized": "Kiro-only sensitivity analysis: errored attempts are excluded within each task before task and benchmark averages are calculated.",
+    "cost": "Kiro cost is observed Kiro Credits x $0.04 per trial; AA cost uses pay-per-token API pricing. These bases are not directly equivalent.",
+    "telemetry": "Kiro cost and time exclude trials without telemetry. Cost is an observed lower-bound estimate; most three-hour timeouts are absent from mean time."
+  }
+}

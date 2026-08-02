@@ -1,0 +1,16 @@
+section.bg-brand-blue-light.pt-32.pb-0 [0,0,1425,608]
+  div.container [0,128,1425,480]
+    div.grid.grid-cols-12.gap-4.mb-10 [20,128,1385,404]
+      div.col-span-12.lg:col-span-9.lg:pr-24 [20,128,1035,404]
+        h1.text-4xl.mb-4.max-w-[36ch].lg:max-w-[40ch] [20,128,863,40] «Artificial Analysis Coding Agent Benchmarks»
+        div.text-sm.space-y-4.[&_a]:underline.[&_a:hover]:text-brand-purple.[&_a]:transition-colors.max-w-[72ch] [20,184,666,96]
+          p. [20,184,666,60] «We measure real-world performance of coding agents on software engineering tasks, including cost, token usage, and execu»
+          p. [20,260,666,20] «To compare language models see our .»
+      div.col-span-12.lg:col-span-3 [1071,128,334,404]
+        div.flex.flex-col.gap-5 [1071,128,334,404]
+          div.flex.justify-end.overflow-x-auto [1071,128,334,36]
+          div.bg-background.p-4.text-xs.text-neutral-700.space-y-3 [1071,184,334,348]
+    div.flex.min-w-0.overflow-x-auto [20,572,1385,36]
+      div.flex.items-center.gap-4.min-w-0 [20,572,960,36]
+        div.min-w-0.flex.overflow-x-auto [20,572,960,36]
+          div. [20,572,960,36]

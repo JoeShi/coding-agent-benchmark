@@ -1,0 +1,37 @@
+section.container.mt-8.mb-24 [0,640,1425,455]
+  p.text-sm.font-medium.border-b.pb-3.mb-6 [20,640,1385,33] «Highlights»
+  div.mb-16.lg:mb-24 [20,697,1385,398]
+    div.grid.gap-4.sm:grid-cols-1.lg:grid-cols-3 [20,697,1385,398]
+      div.border.rounded-lg.p-4.relative [20,697,451,398]
+        div.flex.items-baseline.gap-2.mb-3 [37,714,417,32]
+          div.w-4.h-4.shrink-0.bg-brand-purple [37,723.5,16,16]
+          h3.text-2xl.font-brand-serif.font-medium [61,714,206,32]
+            a [61,714,206,31.5] «Coding Agent Index»
+        div.text-xs.text-neutral-500.mb-4 [37,758,417,16] «Artificial Analysis Coding Agent Index v1.3 · Higher is better»
+        div.w-full [37,790,417,288]
+          div.h-60.lg:h-72.w-full [37,790,417,288]
+            div.recharts-responsive-container [37,790,417,288]
+              …1 more
+          script [0,0,0,0] «{"@context":"https://schema.org","@type":"Dataset","name":"Coding Agent Index","creator":{»
+      div.border.rounded-lg.p-4.relative [487,697,451,398]
+        div.flex.items-baseline.gap-2.mb-3 [504,714,417,32]
+          div.w-4.h-4.shrink-0.bg-brand-yellow [504,723.5,16,16]
+          h3.text-2xl.font-brand-serif.font-medium [528,714,147.4,32]
+            a [528,714,147.4,31.5] «Time per Task»
+        div.text-xs.text-neutral-500.mb-4 [504,758,417,16] «Average agent wall time per task · Lower is better»
+        div.w-full [504,790,417,288]
+          div.h-60.lg:h-72.w-full [504,790,417,288]
+            div.recharts-responsive-container [504,790,417,288]
+              …1 more
+          script [0,0,0,0] «{"@context":"https://schema.org","@type":"Dataset","name":"Time per Task","creator":{"@typ»
+      div.border.rounded-lg.p-4.relative [954,697,451,398]
+        div.flex.items-baseline.gap-2.mb-3 [971,714,417,32]
+          div.w-4.h-4.shrink-0.bg-brand-orange [971,723.5,16,16]
+          h3.text-2xl.font-brand-serif.font-medium [995,714,141.1,32]
+            a [995,714,141.1,31.5] «Cost per Task»
+        div.text-xs.text-neutral-500.mb-4 [971,758,417,16] «Average API cost per task (USD) · Lower is better»
+        div.w-full [971,790,417,288]
+          div.h-60.lg:h-72.w-full [971,790,417,288]
+            div.recharts-responsive-container [971,790,417,288]
+              …1 more
+          script [0,0,0,0] «{"@context":"https://schema.org","@type":"Dataset","name":"Cost per Task","creator":{"@typ»

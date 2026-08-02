@@ -1,0 +1,37 @@
+div.flex.flex-col.gap-8.overflow-hidden [256,1337,1149.5,619] n=1
+  div.scroll-mt-24.border.rounded-lg [256,1337,1149.5,619] n=6
+    div.w-full.overflow-x-auto.border-b.py-3.bg-neutral-50.px-1 [257,1338,1147.5,61] n=1
+        CLS: w-full overflow-x-auto border-b py-3 bg-neutral-50 px-1 light-scrollbar rounded-t-lg
+      div.h-9.rounded-lg.bg-brand-blue-light.p-1.text-neutral-500.relative [261,1350,1139.5,36] n=6 role=tablist
+          CLS: h-9 rounded-lg bg-brand-blue-light p-1 text-neutral-500 relative min-w-full !bg-transparent !p-0 !rounded-none !border-0 !shadow-none !h-auto justify-start inline-flex items-center
+        button.justify-center.rounded.px-3.font-medium.ring-offset-background.data-[state=active]:bg-background [261,1350,84.02,36] n=0 role=tab dstate=active typ=button «Index»
+            CLS: justify-center rounded px-3 font-medium ring-offset-background data-[state=active]:bg-background data-[state=active]:text-foreground inline-flex items-center whitespace-nowrap text-sm gap-2 text-neutral-700 data-[state=active]:!text-black z-10 !rounded-none pl-6 pr-6 py-2 !bg-transparent data-[state=active]:!bg-transparent data-[state=active]:!shadow-none transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-
+        button.justify-center.rounded.px-3.font-medium.ring-offset-background.data-[state=active]:bg-background [345,1350,183.78,36] n=0 role=tab dstate=inactive typ=button «Score by Benchmark»
+            CLS: justify-center rounded px-3 font-medium ring-offset-background data-[state=active]:bg-background data-[state=active]:text-foreground inline-flex items-center whitespace-nowrap text-sm gap-2 text-neutral-700 data-[state=active]:!text-black z-10 !rounded-none pl-6 pr-6 py-2 !bg-transparent data-[state=active]:!bg-transparent data-[state=active]:!shadow-none transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-
+        button.justify-center.rounded.px-3.font-medium.ring-offset-background.data-[state=active]:bg-background [528,1350,113.35,36] n=0 role=tab dstate=inactive typ=button «DeepSWE»
+            CLS: justify-center rounded px-3 font-medium ring-offset-background data-[state=active]:bg-background data-[state=active]:text-foreground inline-flex items-center whitespace-nowrap text-sm gap-2 text-neutral-700 data-[state=active]:!text-black z-10 !rounded-none pl-6 pr-6 py-2 !bg-transparent data-[state=active]:!bg-transparent data-[state=active]:!shadow-none transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-
+        button.justify-center.rounded.px-3.font-medium.ring-offset-background.data-[state=active]:bg-background [642,1350,170.39,36] n=0 role=tab dstate=inactive typ=button «Terminal-Bench v2»
+            CLS: justify-center rounded px-3 font-medium ring-offset-background data-[state=active]:bg-background data-[state=active]:text-foreground inline-flex items-center whitespace-nowrap text-sm gap-2 text-neutral-700 data-[state=active]:!text-black z-10 !rounded-none pl-6 pr-6 py-2 !bg-transparent data-[state=active]:!bg-transparent data-[state=active]:!shadow-none transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-
+        button.justify-center.rounded.px-3.font-medium.ring-offset-background.data-[state=active]:bg-background [812,1350,151.61,36] n=0 role=tab dstate=inactive typ=button «SWE-Atlas-QnA»
+            CLS: justify-center rounded px-3 font-medium ring-offset-background data-[state=active]:bg-background data-[state=active]:text-foreground inline-flex items-center whitespace-nowrap text-sm gap-2 text-neutral-700 data-[state=active]:!text-black z-10 !rounded-none pl-6 pr-6 py-2 !bg-transparent data-[state=active]:!bg-transparent data-[state=active]:!shadow-none transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-
+        div.absolute.bg-neutral-100.pointer-events-none.rounded.ease-out [273,1350,60,36] n=0
+    div.mt-0.ring-offset-background.focus-visible:outline-none.focus-visible:ring-2.focus-visible:ring-ring.focus-visible:ring-offset-2 [257,1399,1147.5,556] n=1 role=tabpanel dstate=active
+        CLS: mt-0 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 p-4
+      div.scroll-mt-24 [273,1415,1115.5,524] n=2
+        div.flex.flex-col.gap-5.mb-5 [273,1415,1115.5,467] n=2
+          div.grid.grid-cols-12.gap-6.xl:gap-12 [273,1415,1115.5,112] n=2
+            div.col-span-12.sm:col-span-7.xl:col-span-8.flex.flex-col.gap-1 [273,1415,727.66,112] n=2
+            div.col-span-12.sm:col-span-5.xl:col-span-4.flex.flex-col.gap-2 [1048,1415,339.83,112] n=2
+          div.w-full [273,1547,1115.5,335] n=1
+            div.w-full [273,1547,1115.5,335] n=3
+        div [273,1902,1115.5,37] n=1
+          div [273,1902,1115.5,37] n=1
+            div.w-full.text-sm [273,1902,1115.5,37] n=1
+    div.mt-0.ring-offset-background.focus-visible:outline-none.focus-visible:ring-2.focus-visible:ring-ring.focus-visible:ring-offset-2 [0,0,0,0] n=0 role=tabpanel dstate=inactive
+        CLS: mt-0 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 p-4
+    div.mt-0.ring-offset-background.focus-visible:outline-none.focus-visible:ring-2.focus-visible:ring-ring.focus-visible:ring-offset-2 [0,0,0,0] n=0 role=tabpanel dstate=inactive
+        CLS: mt-0 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 p-4
+    div.mt-0.ring-offset-background.focus-visible:outline-none.focus-visible:ring-2.focus-visible:ring-ring.focus-visible:ring-offset-2 [0,0,0,0] n=0 role=tabpanel dstate=inactive
+        CLS: mt-0 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 p-4
+    div.mt-0.ring-offset-background.focus-visible:outline-none.focus-visible:ring-2.focus-visible:ring-ring.focus-visible:ring-offset-2 [0,0,0,0] n=0 role=tabpanel dstate=inactive
+        CLS: mt-0 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 p-4

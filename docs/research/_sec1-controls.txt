@@ -1,0 +1,196 @@
+==========================================================================================
+### controls
+div.grid.grid-cols-12.gap-6.xl:gap-12 [273,1415,1115.5,112] n=2
+    CLS: grid grid-cols-12 gap-6 xl:gap-12
+    CSS: {"fontSize": "16px", "fontWeight": "400", "lineHeight": "24px", "color": "rgb(0, 0, 0)", "gap": "48px", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "grid", "flexDirection": "row", "width": "1115.5px", "height": "112px"}
+  div.col-span-12.sm:col-span-7.xl:col-span-8.flex.flex-col [273,1415,727.66,112] n=2
+      CLS: col-span-12 sm:col-span-7 xl:col-span-8 flex flex-col gap-1
+      CSS: {"fontSize": "16px", "fontWeight": "400", "lineHeight": "24px", "color": "rgb(0, 0, 0)", "gap": "4px", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "flex", "flexDirection": "column", "width": "727.664px", "height": "112px"}
+    h3.text-xl.font-brand-serif [273,1415,727.66,28] n=1
+        CLS: text-xl font-brand-serif
+        CSS: {"fontSize": "20px", "fontWeight": "400", "lineHeight": "28px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "727.664px", "height": "28px"}
+      span [273,1416,329.82,26] n=0 «Artificial Analysis Coding Agent Index»
+          CSS: {"fontSize": "20px", "fontWeight": "400", "lineHeight": "28px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row"}
+    div.text-xs.text-neutral-500.inline-flex.items-baseline.gap-0 [273,1447,475.66,40] n=1
+        CLS: text-xs text-neutral-500 inline-flex items-baseline gap-0 max-w-[60ch]
+        CSS: {"fontSize": "12px", "fontWeight": "400", "lineHeight": "16px", "color": "rgb(148, 148, 148)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "flex", "flexDirection": "row", "alignItems": "baseline", "width": "475.664px", "height": "40px"}
+      span [273,1447,475.66,40] n=1
+          STYLE: text-wrap:pretty
+          CSS: {"fontSize": "12px", "fontWeight": "400", "lineHeight": "16px", "color": "rgb(148, 148, 148)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "475.664px", "height": "40px"}
+        span.block.min-h-[2.5rem] [273,1447,475.66,40] n=0 «Artificial Analysis Coding Agent Index v1.3 incorporates 3 benchmarks: DeepSWE, Terminal-Bench v2, and SWE-Atlas-QnA · Higher is better»
+            CLS: block min-h-[2.5rem]
+            CSS: {"fontSize": "12px", "fontWeight": "400", "lineHeight": "16px", "color": "rgb(148, 148, 148)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "475.664px", "height": "40px"}
+  div.col-span-12.sm:col-span-5.xl:col-span-4.flex.flex-col [1048,1415,339.83,112] n=2
+      CLS: col-span-12 sm:col-span-5 xl:col-span-4 flex flex-col gap-2
+      CSS: {"fontSize": "16px", "fontWeight": "400", "lineHeight": "24px", "color": "rgb(0, 0, 0)", "gap": "8px", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "flex", "flexDirection": "column", "width": "339.828px", "height": "112px"}
+    div.flex.items-center.justify-end.gap-1.hide-during-screenshot [1048,1415,339.83,32] n=3
+        CLS: flex items-center justify-end gap-1 hide-during-screenshot
+        CSS: {"fontSize": "16px", "fontWeight": "400", "lineHeight": "24px", "color": "rgb(0, 0, 0)", "gap": "4px", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "flex", "flexDirection": "row", "alignItems": "center", "justifyContent": "flex-end", "width": "339.828px", "height": "32px"}
+      button.inline-flex.items-center.justify-center.gap-2.whitespace-nowrap [1284,1415,32,32] n=1 aria=Copy link to this section dstate=closed
+          CLS: inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:h-4 [&_svg]:shrink-0 rounded-lg leading-none border border-neutral-100 bg-white text-black hover:border-neutral-700 h-8 w-8
+          CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "backgroundColor": "rgb(255, 255, 255)", "gap": "8px", "border": "1px solid rgb(231, 231, 231)", "borderBottom": "1px solid rgb(231, 231, 231)", "borderRadius": "8px", "display": "flex", "flexDirection": "row", "alignItems": "center", "justifyContent": "center", "width": "32px", "height": "32px", "cursor": "pointer"}
+        svg.[object.SVGAnimatedString] [1292,1423,16,16] n=3
+            CLS: [object SVGAnimatedString]
+            CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "16px", "height": "16px", "cursor": "pointer"}
+          path.[object.SVGAnimatedString] [1293,1428,4.67,6.67] n=0
+              CLS: [object SVGAnimatedString]
+              CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+          path.[object.SVGAnimatedString] [1302,1428,4.67,6.67] n=0
+              CLS: [object SVGAnimatedString]
+              CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+          line.[object.SVGAnimatedString] [1297,1431,5.33,0] n=0
+              CLS: [object SVGAnimatedString]
+              CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+      button.inline-flex.items-center.justify-center.gap-2.whitespace-nowrap [1320,1415,32,32] n=1 aria=Download chart as image dstate=closed
+          CLS: inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:h-4 [&_svg]:shrink-0 rounded-lg leading-none border border-neutral-100 bg-white text-black hover:border-neutral-700 h-8 w-8
+          CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "backgroundColor": "rgb(255, 255, 255)", "gap": "8px", "border": "1px solid rgb(231, 231, 231)", "borderBottom": "1px solid rgb(231, 231, 231)", "borderRadius": "8px", "display": "flex", "flexDirection": "row", "alignItems": "center", "justifyContent": "center", "width": "32px", "height": "32px", "cursor": "pointer"}
+        svg.[object.SVGAnimatedString] [1328,1423,16,16] n=4
+            CLS: [object SVGAnimatedString]
+            CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "16px", "height": "16px", "cursor": "pointer"}
+          path.[object.SVGAnimatedString] [1330,1425,12,12] n=0
+              CLS: [object SVGAnimatedString]
+              CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+          path.[object.SVGAnimatedString] [1337,1434,2,3.67] n=0
+              CLS: [object SVGAnimatedString]
+              CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+          path.[object.SVGAnimatedString] [1339,1436,2,2] n=0
+              CLS: [object SVGAnimatedString]
+              CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+          circle.[object.SVGAnimatedString] [1333,1428,2.67,2.67] n=0
+              CLS: [object SVGAnimatedString]
+              CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+      button.inline-flex.items-center.justify-center.gap-2.whitespace-nowrap [1356,1415,32,32] n=1 aria=Download data dstate=closed
+          CLS: inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:h-4 [&_svg]:shrink-0 rounded-lg leading-none border border-neutral-100 bg-white text-black hover:border-neutral-700 h-8 w-8
+          CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "backgroundColor": "rgb(255, 255, 255)", "gap": "8px", "border": "1px solid rgb(231, 231, 231)", "borderBottom": "1px solid rgb(231, 231, 231)", "borderRadius": "8px", "display": "flex", "flexDirection": "row", "alignItems": "center", "justifyContent": "center", "width": "32px", "height": "32px", "cursor": "pointer"}
+        svg.[object.SVGAnimatedString] [1364,1423,16,16] n=4
+            CLS: [object SVGAnimatedString]
+            CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "16px", "height": "16px", "cursor": "pointer"}
+          path.[object.SVGAnimatedString] [1372,1425,0,12] n=0
+              CLS: [object SVGAnimatedString]
+              CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+          rect.[object.SVGAnimatedString] [1366,1425,12,12] n=0
+              CLS: [object SVGAnimatedString]
+              CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "width": "18px", "height": "18px", "cursor": "pointer"}
+          path.[object.SVGAnimatedString] [1366,1429,12,0] n=0
+              CLS: [object SVGAnimatedString]
+              CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+          path.[object.SVGAnimatedString] [1366,1433,12,0] n=0
+              CLS: [object SVGAnimatedString]
+              CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+    div.flex.flex-wrap.justify-end.gap-1.hide-during-screenshot [1048,1455,339.83,72] n=1
+        CLS: flex flex-wrap justify-end gap-1 hide-during-screenshot
+        CSS: {"fontSize": "16px", "fontWeight": "400", "lineHeight": "24px", "color": "rgb(0, 0, 0)", "gap": "4px", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "flex", "flexDirection": "row", "justifyContent": "flex-end", "width": "339.828px", "height": "72px"}
+      div.flex.items-center.justify-end.gap-1.lg:flex-col [1072,1451,316,76] n=2
+          CLS: flex items-center justify-end gap-1 lg:flex-col lg:items-end lg:gap-2 lg:-mt-1
+          CSS: {"fontSize": "16px", "fontWeight": "400", "lineHeight": "24px", "color": "rgb(0, 0, 0)", "margin": "-4px 0px 0px", "gap": "8px", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "flex", "flexDirection": "column", "alignItems": "flex-end", "justifyContent": "flex-end", "width": "316px", "height": "76px"}
+        div.flex.items-center.gap-1 [1210,1451,178.33,36] n=2
+            CLS: flex items-center gap-1
+            CSS: {"fontSize": "16px", "fontWeight": "400", "lineHeight": "24px", "color": "rgb(0, 0, 0)", "gap": "4px", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "flex", "flexDirection": "row", "alignItems": "center", "width": "178.328px", "height": "36px"}
+          span.hidden.whitespace-nowrap.text-xs.text-neutral-600.sm:inline [1210,1461,45.59,16] n=0 «Color by»
+              CLS: hidden whitespace-nowrap text-xs text-neutral-600 sm:inline
+              CSS: {"fontSize": "12px", "fontWeight": "400", "lineHeight": "16px", "color": "rgb(120, 120, 120)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "45.5859px", "height": "16px"}
+          div.flex.items-center.justify-center.gap-1.rounded [1259,1451,128.74,36] n=2 role=group
+              CLS: flex items-center justify-center gap-1 rounded bg-brand-blue-light p-0.5
+              STYLE: outline:none
+              CSS: {"fontSize": "16px", "fontWeight": "400", "lineHeight": "24px", "color": "rgb(0, 0, 0)", "backgroundColor": "rgb(241, 242, 244)", "padding": "2px", "gap": "4px", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "borderRadius": "4px", "display": "flex", "flexDirection": "row", "alignItems": "center", "justifyContent": "center", "width": "128.742px", "height": "36px"}
+            button.inline-flex.items-center.justify-center.gap-2.font-medium [1261,1453,61.23,32] n=0 role=radio dstate=on «Model»
+                CLS: inline-flex items-center justify-center gap-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:h-4 [&_svg]:shrink-0 bg-transparent hover:bg-accent hover:text-accent-foreground min-w-9 h-8 rounded border border-neutral-100 px-2 text-xs shadow-none data-[state=on]:bg-background data-[state=on]:text-foreground sm:px-3
+                CSS: {"fontSize": "12px", "fontWeight": "500", "lineHeight": "16px", "color": "rgb(0, 0, 0)", "backgroundColor": "rgb(255, 255, 255)", "padding": "0px 12px", "gap": "8px", "border": "1px solid rgb(231, 231, 231)", "borderBottom": "1px solid rgb(231, 231, 231)", "borderRadius": "4px", "display": "flex", "flexDirection": "row", "alignItems": "center", "justifyContent": "center", "width": "61.2266px", "height": "32px", "cursor": "pointer", "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"}
+            button.inline-flex.items-center.justify-center.gap-2.font-medium [1326,1453,59.52,32] n=0 role=radio dstate=off «Agent»
+                CLS: inline-flex items-center justify-center gap-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:h-4 [&_svg]:shrink-0 bg-transparent hover:bg-accent hover:text-accent-foreground min-w-9 h-8 rounded border border-neutral-100 px-2 text-xs shadow-none data-[state=on]:bg-background data-[state=on]:text-foreground sm:px-3
+                CSS: {"fontSize": "12px", "fontWeight": "500", "lineHeight": "16px", "color": "rgb(0, 0, 0)", "padding": "0px 12px", "gap": "8px", "border": "1px solid rgb(231, 231, 231)", "borderBottom": "1px solid rgb(231, 231, 231)", "borderRadius": "4px", "display": "flex", "flexDirection": "row", "alignItems": "center", "justifyContent": "center", "width": "59.5156px", "height": "32px", "cursor": "pointer", "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"}
+        div.flex.gap-1 [1072,1495,316,32] n=2
+            CLS: flex gap-1
+            CSS: {"fontSize": "16px", "fontWeight": "400", "lineHeight": "24px", "color": "rgb(0, 0, 0)", "gap": "4px", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "flex", "flexDirection": "row", "width": "316px", "height": "32px"}
+          div.w-auto.min-w-[11rem].sm:w-[280px] [1072,1495,280,32] n=1
+              CLS: w-auto min-w-[11rem] sm:w-[280px]
+              CSS: {"fontSize": "16px", "fontWeight": "400", "lineHeight": "24px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "280px", "height": "32px"}
+            button.inline-flex.items-center.gap-2.whitespace-nowrap.text-sm [1072,1495,280,32] n=2 role=combobox dstate=closed
+                CLS: inline-flex items-center gap-2 whitespace-nowrap text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:h-4 [&_svg]:shrink-0 rounded-lg leading-none border border-neutral-100 bg-brand-blue-light text-black hover:border-neutral-700 h-8 px-3 py-2 w-full justify-between
+                CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "backgroundColor": "rgb(241, 242, 244)", "padding": "8px 12px", "gap": "8px", "border": "1px solid rgb(231, 231, 231)", "borderBottom": "1px solid rgb(231, 231, 231)", "borderRadius": "8px", "display": "inline-flex", "flexDirection": "row", "alignItems": "center", "justifyContent": "space-between", "width": "280px", "height": "32px", "cursor": "pointer"}
+              span.truncate [1085,1504,101.23,14] n=0 «15 of 52 models»
+                  CLS: truncate
+                  CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "101.227px", "height": "14px", "cursor": "pointer"}
+              svg.[object.SVGAnimatedString] [1323,1503,16,16] n=2
+                  CLS: [object SVGAnimatedString]
+                  CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "16px", "height": "16px", "cursor": "pointer"}
+          button.inline-flex.items-center.justify-center.gap-2.whitespace-nowrap [1356,1495,32,32] n=2 aria=Open chart display settings dstate=closed
+              CLS: inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:h-4 [&_svg]:shrink-0 rounded-lg leading-none border border-neutral-100 bg-white text-black hover:border-neutral-700 h-8 w-8 relative
+              CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "backgroundColor": "rgb(255, 255, 255)", "gap": "8px", "border": "1px solid rgb(231, 231, 231)", "borderBottom": "1px solid rgb(231, 231, 231)", "borderRadius": "8px", "display": "flex", "flexDirection": "row", "alignItems": "center", "justifyContent": "center", "width": "32px", "height": "32px", "cursor": "pointer"}
+            svg.[object.SVGAnimatedString] [1364,1503,16,16] n=9
+                CLS: [object SVGAnimatedString]
+                CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "16px", "height": "16px", "cursor": "pointer"}
+              path.[object.SVGAnimatedString] [1366,1506,4.67,0] n=0
+                  CLS: [object SVGAnimatedString]
+                  CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+              path.[object.SVGAnimatedString] [1366,1516,6,0] n=0
+                  CLS: [object SVGAnimatedString]
+                  CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+              path.[object.SVGAnimatedString] [1373,1505,0,2.67] n=0
+                  CLS: [object SVGAnimatedString]
+                  CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+              path.[object.SVGAnimatedString] [1375,1514,0,2.67] n=0
+                  CLS: [object SVGAnimatedString]
+                  CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+              path.[object.SVGAnimatedString] [1372,1511,6,0] n=0
+                  CLS: [object SVGAnimatedString]
+                  CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+              path.[object.SVGAnimatedString] [1375,1516,3.33,0] n=0
+                  CLS: [object SVGAnimatedString]
+                  CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+              path.[object.SVGAnimatedString] [1373,1506,4.67,0] n=0
+                  CLS: [object SVGAnimatedString]
+                  CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+              path.[object.SVGAnimatedString] [1369,1510,0,2.67] n=0
+                  CLS: [object SVGAnimatedString]
+                  CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+              path.[object.SVGAnimatedString] [1366,1511,3.33,0] n=0
+                  CLS: [object SVGAnimatedString]
+                  CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "14px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+            span.absolute.-top-1.5.-right-1.5.rounded-full.bg-brand-purple-dark [1369,1490,24.03,13] n=0 «NEW»
+                CLS: absolute -top-1.5 -right-1.5 rounded-full bg-brand-purple-dark px-[4px] py-[3px] text-[7px] leading-none text-white
+                CSS: {"fontSize": "7px", "fontWeight": "400", "lineHeight": "7px", "color": "rgb(255, 255, 255)", "backgroundColor": "rgb(116, 26, 102)", "padding": "3px 4px", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "borderRadius": "9999px", "display": "block", "flexDirection": "row", "width": "24.0312px", "height": "13px", "cursor": "pointer"}
+==========================================================================================
+### accordion
+div [273,1902,1115.5,37] n=1
+    CSS: {"fontSize": "16px", "fontWeight": "400", "lineHeight": "24px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "1115.5px", "height": "37px"}
+  div [273,1902,1115.5,37] n=1
+      CSS: {"fontSize": "16px", "fontWeight": "400", "lineHeight": "24px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "1115.5px", "height": "37px"}
+    div.w-full.text-sm [273,1902,1115.5,37] n=1
+        CLS: w-full text-sm
+        CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "20px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "1115.5px", "height": "37px"}
+      div.border-none [273,1902,1115.5,37] n=2 dstate=closed
+          CLS: border-none
+          CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "20px", "color": "rgb(0, 0, 0)", "border": "0px none rgb(217, 217, 217)", "borderBottom": "0px none rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "1115.5px", "height": "37px"}
+        h3.flex [273,1902,1115.5,37] n=1 dstate=closed
+            CLS: flex
+            CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "20px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "flex", "flexDirection": "row", "width": "1115.5px", "height": "37px"}
+          button.flex.flex-1.items-center.justify-between.[&[data-state=open]>svg]:rotate-45 [273,1902,1115.5,29] n=2 dstate=closed
+              CLS: flex flex-1 items-center justify-between [&[data-state=open]>svg]:rotate-45 text-xs text-left font-normal text-muted-foreground border-b border-neutral-100 py-1.5 mb-2 transition-colors hover:text-foreground hover:no-underline
+              CSS: {"fontSize": "12px", "fontWeight": "400", "lineHeight": "16px", "color": "rgb(120, 120, 120)", "padding": "6px 0px", "margin": "0px 0px 8px", "borderBottom": "1px solid rgb(231, 231, 231)", "display": "flex", "flexDirection": "row", "alignItems": "center", "justifyContent": "space-between", "width": "1115.5px", "height": "29px", "cursor": "pointer"}
+            div.flex.items-center.gap-1 [273,1908,148.49,16] n=1
+                CLS: flex items-center gap-1
+                CSS: {"fontSize": "12px", "fontWeight": "400", "lineHeight": "16px", "color": "rgb(120, 120, 120)", "gap": "4px", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "flex", "flexDirection": "row", "alignItems": "center", "width": "148.492px", "height": "16px", "cursor": "pointer"}
+              svg.[object.SVGAnimatedString] [273,1910,12,12] n=1
+                  CLS: [object SVGAnimatedString]
+                  CSS: {"fontSize": "12px", "fontWeight": "400", "lineHeight": "16px", "color": "rgb(120, 120, 120)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "12px", "height": "12px", "cursor": "pointer"}
+            svg.[object.SVGAnimatedString] [1372,1908,16,16] n=1
+                CLS: [object SVGAnimatedString]
+                CSS: {"fontSize": "12px", "fontWeight": "400", "lineHeight": "16px", "color": "rgb(120, 120, 120)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "16px", "height": "16px", "cursor": "pointer"}
+              path.[object.SVGAnimatedString] [1374,1910,11.2,11.2] n=0
+                  CLS: [object SVGAnimatedString]
+                  CSS: {"fontSize": "12px", "fontWeight": "400", "lineHeight": "16px", "color": "rgb(120, 120, 120)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "inline", "flexDirection": "row", "cursor": "pointer"}
+        div.overflow-hidden.transition-all.duration-300.text-sm [273,1939,1115.5,0] n=1 role=region dstate=closed
+            CLS: overflow-hidden transition-all duration-300 text-sm
+            STYLE: --radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); max-height: 0px; opacity: 0; transition-duration: 0s; animation-name: none; --radix-collapsible-content-width: 1115.5px;
+            CSS: {"fontSize": "14px", "fontWeight": "400", "lineHeight": "20px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "1115.5px"}
+          div.pt-0.hide-during-screenshot.text-xs.[&_a]:underline.pb-2 [273,1939,1115.5,64] n=1
+              CLS: pt-0 hide-during-screenshot text-xs [&_a]:underline pb-2
+              CSS: {"fontSize": "12px", "fontWeight": "400", "lineHeight": "16px", "color": "rgb(0, 0, 0)", "padding": "0px 0px 8px", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "1115.5px", "height": "64px"}
+            div.space-y-2 [273,1939,1115.5,56] n=2
+                CLS: space-y-2
+                CSS: {"fontSize": "12px", "fontWeight": "400", "lineHeight": "16px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "1115.5px", "height": "56px"}
+              p [273,1939,1115.5,16] n=0
+                  CSS: {"fontSize": "12px", "fontWeight": "400", "lineHeight": "16px", "color": "rgb(0, 0, 0)", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "1115.5px", "height": "16px"}
+              p [273,1963,1115.5,32] n=0 «It is useful for quick comparison, but it should be read alongside the per-eval breakdowns. Two agents with similar index values can still have different strengths across repository tasks, terminal workflows, and rubric-based evaluations.»
+                  CSS: {"fontSize": "12px", "fontWeight": "400", "lineHeight": "16px", "color": "rgb(0, 0, 0)", "margin": "8px 0px 0px", "border": "0px solid rgb(217, 217, 217)", "borderBottom": "0px solid rgb(217, 217, 217)", "display": "block", "flexDirection": "row", "width": "1115.5px", "height": "32px"}
