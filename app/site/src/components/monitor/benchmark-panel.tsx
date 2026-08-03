@@ -4,7 +4,9 @@
  * Per-benchmark view: model summary counts plus the task × model × attempt
  * matrix. Ported 1:1 from the dark dashboard's `BenchmarkPanel.jsx` — same
  * benchmark ids, same filters, same 14×14 cells, same tooltip text — restyled
- * onto the AA tokens and translated to English.
+ * onto the AA tokens and translated to English. The cell tooltip is a real
+ * bubble here rather than the browser's `title` popup, which needs a long hover
+ * before it appears and looks nothing like the rest of the site.
  *
  * Selecting a benchmark refetches upstream (`/api/tasks?benchmark=…`), so the
  * active id lives in the page, not here; the filter is local.
@@ -26,6 +28,7 @@ import {
   STATUS_BG,
   STATUS_LABEL,
   type BenchmarksResponse,
+  type TaskCell,
   type TasksResponse,
 } from "@/lib/monitor";
 
@@ -88,6 +91,22 @@ function shortName(name: string): string {
   return `${name.slice(0, 45)}\u2026`;
 }
 
+/**
+ * Hover state for the matrix's single shared tooltip. A benchmark is up to
+ * 124 tasks x 18 cells, so a `<Tooltip>` root per cell is far too much; cells
+ * instead carry their label in `data-tip` and the grid delegates hover. Fixed
+ * coordinates are viewport-relative, which keeps the bubble outside the scroll
+ * container's overflow clip.
+ */
+type Tip = { text: string; x: number; y: number; below: boolean };
+
+function cellLabel(c: TaskCell): string {
+  const status = STATUS_LABEL[c.status] ?? c.status;
+  return `${c.model} attempt-${c.attempt}: ${status}${
+    c.error_kind ? ` (${c.error_kind})` : ""
+  }`;
+}
+
 export function BenchmarkPanel({
   benchmarks,
   tasks,
@@ -100,6 +119,25 @@ export function BenchmarkPanel({
   onSelectBenchmark: (id: string) => void;
 }) {
   const [filter, setFilter] = React.useState<Filter>("all");
+  const [tip, setTip] = React.useState<Tip | null>(null);
+
+  const showTip = (e: React.MouseEvent<HTMLDivElement>) => {
+    const cell = (e.target as HTMLElement).closest<HTMLElement>("[data-tip]");
+    if (!cell?.dataset.tip) {
+      setTip(null);
+      return;
+    }
+    const r = cell.getBoundingClientRect();
+    // Flip below when the cell sits too close to the top of the viewport to
+    // fit the bubble above it (the matrix is its own scroll region).
+    const below = r.top < 44;
+    setTip({
+      text: cell.dataset.tip,
+      x: r.left + r.width / 2,
+      y: below ? r.bottom + 6 : r.top - 6,
+      below,
+    });
+  };
 
   const summary = benchmarks?.benchmarks?.[activeBenchmark] ?? {};
   const models = Object.keys(summary);
@@ -157,7 +195,11 @@ export function BenchmarkPanel({
         </span>
       </div>
 
-      <div className="mt-3 max-h-[70vh] overflow-auto">
+      <div
+        className="mt-3 max-h-[70vh] overflow-auto"
+        onMouseOver={showTip}
+        onMouseLeave={() => setTip(null)}
+      >
         <table>
           <tbody>
             {filtered.map((t) => (
@@ -169,17 +211,19 @@ export function BenchmarkPanel({
                   {shortName(t.task)}
                 </td>
                 <td className="whitespace-nowrap py-0.5">
-                  {(t.cells ?? []).map((c, i) => (
-                    <span
-                      key={`${c.model}-${c.attempt}-${i}`}
-                      title={`${c.model} attempt-${c.attempt}: ${
-                        STATUS_LABEL[c.status] ?? c.status
-                      }${c.error_kind ? ` (${c.error_kind})` : ""}`}
-                      className={`mr-0.5 inline-block h-3.5 w-3.5 rounded-[3px] align-middle ${
-                        STATUS_BG[c.status] ?? STATUS_BG.missing
-                      }`}
-                    />
-                  ))}
+                  {(t.cells ?? []).map((c, i) => {
+                    const label = cellLabel(c);
+                    return (
+                      <span
+                        key={`${c.model}-${c.attempt}-${i}`}
+                        data-tip={label}
+                        aria-label={label}
+                        className={`mr-0.5 inline-block h-3.5 w-3.5 rounded-[3px] align-middle ${
+                          STATUS_BG[c.status] ?? STATUS_BG.missing
+                        }`}
+                      />
+                    );
+                  })}
                   {t.complete && (
                     <span className="ml-1.5 font-bold text-brand-green-dark">
                       ✓
@@ -191,6 +235,18 @@ export function BenchmarkPanel({
           </tbody>
         </table>
       </div>
+
+      {tip && (
+        <div
+          role="tooltip"
+          style={{ left: tip.x, top: tip.y }}
+          className={`pointer-events-none fixed z-50 -translate-x-1/2 whitespace-nowrap rounded-md bg-foreground px-2.5 py-1 font-mono text-xs text-background shadow-md ${
+            tip.below ? "" : "-translate-y-full"
+          }`}
+        >
+          {tip.text}
+        </div>
+      )}
     </Panel>
   );
 }
