@@ -41,7 +41,11 @@ python3 scripts/enqueue_jobs.py --run-id <run-id> --jobs-file <retry-list.json> 
 # Live ops: run monitor + dashboard while a batch is in flight
 python3 scripts/monitor.py --queue-url <jobs-queue-url> --dlq-url <dlq-url> \
   --bucket <results-bucket> --run-id <run-id>
-python3 app/server.py        # dashboard at http://127.0.0.1:8080
+python3 app/server.py                    # monitor API on 127.0.0.1:8081 (live runs only)
+cd app/site && npm run dev               # UI: localhost:3000 (+ /monitor)
+
+# Refresh /monitor's static snapshot (no daemon needed once a run is finished)
+python3 scripts/build_monitor_snapshot.py --run-id <run-id>
 
 # Rebuild trial records from worker job dirs (multi-worker safe path):
 # 1) on each worker: reparse_records.py --jobs-dir ... --report-file r.json && upload r.json
@@ -79,7 +83,7 @@ The two agents are near-mirrors but differ in **where staging happens**, which i
 
 **Repair workflow (do not skip).** To re-derive records fleet-wide, never run `reparse_records.py --upload` on every worker — stale job dirs on other workers clobber newer records (last writer wins on the same S3 key). Use `--report-file` + `scripts/merge_reparse_reports.py` (keeps the record from the newest trial result.json per key). QnA job dirs are nested (`scale-ai/` in the task name) — the reparse handles it; keep any new job-name logic compatible.
 
-**Observability.** `scripts/monitor.py` watches queue depth + records and raises quality alerts on rolling-window rate-limit/no-telemetry deaths and 45-min stalls (agent stream hangs are real — kiro API streams can die silently; kill trials whose kiro-cli.txt is silent >45 min, they retry cleanly). `app/` is a localhost dashboard (`python3 app/server.py`, Vite+React UI in `app/web/`): queue, worker fleet, per-key credit usage via `scripts/kiro_account_usage.py`, and the task × model × attempt status matrix.
+**Observability.** `scripts/monitor.py` watches queue depth + records and raises quality alerts on rolling-window rate-limit/no-telemetry deaths and 45-min stalls (agent stream hangs are real — kiro API streams can die silently; kill trials whose kiro-cli.txt is silent >45 min, they retry cleanly). `app/` is the localhost UI: `app/site` is a Next.js site, and `app/server.py` is an **API-only** process (`/api/*`, stdlib + `aws` CLI, port 8081) that the site proxies via `rewrites()` — one origin, no CORS. `/monitor` is the dashboard (queue, worker fleet, per-key credit usage via `scripts/kiro_account_usage.py`, task × model × attempt matrix); `/` is the Artificial-Analysis-style leaderboard, rendered from the static `app/site/src/data/leaderboard.json` that `scripts/build_leaderboard_data.py --out` writes. **Both pages are static by default and `server.py` is only needed while a run is in flight** — a finished run has a drained queue, a torn-down fleet and settled records, so the daemon would just be re-reading constants. `scripts/build_monitor_snapshot.py` runs the same collectors once and freezes them into `app/site/public/data/monitor.json` in the *exact* `/api/*` response shapes (hence no component changes; keep them in step if an endpoint's shape moves); `/monitor`'s Source selector flips back to Live when there is something to poll. Open the dev server as `localhost:3000`, not `127.0.0.1:3000` — Next blocks other hosts as cross-origin dev requests and the page silently fails to hydrate. See `app/README.md`.
 
 **Telemetry = credits, not tokens.** Kiro CLI does not expose token counts. Each headless run prints a trailing `Credits: X.XX • Time: Ys` line; output is teed to `kiro-cli.txt` in the trial's logs. `parse_telemetry()` sums credits across turns, takes the last time value, and computes `cost_usd = credits × $0.04` (`CREDIT_USD_RATE`, the published overage rate). `populate_context_post_run()` writes this into the harness `result.json`. Exact credit values are also queryable from `data.sqlite3` (`conversations_v2` → `user_turn_metadata.usage_info`).
 

@@ -13,13 +13,17 @@
  *
  * There is intentionally **no scroll state**: computed styles at scrollY 0 and
  * 4000 are byte-identical on the target, so the nav is a constant floating pill.
+ *
+ * Third deviation: the target's Log in / search / share / social cluster is gone,
+ * and the purple Premium pill is repurposed as the "Task Monitor" link to
+ * `/monitor`. Those controls have no backing feature here, whereas the monitor
+ * does; the pill keeps the target's exact styling.
  */
 
 import Link from "next/link";
 import { useLayoutEffect, useRef, useState } from "react";
-import { Command, Menu, Search, Share2 } from "lucide-react";
-import { LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
-import { AaLogoIcon, YouTubeIcon } from "@/components/icons";
+import { Menu } from "lucide-react";
+import { AaLogoIcon } from "@/components/icons";
 
 /**
  * The target derives Log in / search / social / menu from one shadcn `Button` cva.
@@ -36,29 +40,13 @@ const BTN_BASE =
 const BRAND_PILL_CLASS =
   "flex-shrink-0 flex items-center select-none gap-2 px-3 bg-black rounded-full self-stretch";
 
-const PREMIUM_CLASS =
+/** The target's Premium pill, reused verbatim for the Task Monitor link. */
+const MONITOR_CLASS =
   "inline-flex h-9 w-fit flex-none items-center justify-center whitespace-nowrap rounded-lg px-3 " +
   "text-sm text-white transition-colors bg-brand-purple-dark shadow-sm " +
   "hover:bg-brand-purple-dark/90 active:bg-brand-purple-dark/75 focus-visible:outline-none " +
   "focus-visible:ring-2 focus-visible:ring-brand-purple-dark/50 focus-visible:ring-offset-2 " +
   "focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50";
-
-const PREMIUM_HREF = "/pricing?source=nav&from=%2Fagents%2Fcoding-agents";
-
-const LOGIN_CLASS =
-  BTN_BASE +
-  " bg-black text-white hover:bg-neutral-700 h-9 px-3 py-2 flex-none flex items-center " +
-  "justify-center overflow-hidden !rounded-lg w-fit !transition-[width,border-radius] " +
-  "ease-out motion-reduce:transition-none !duration-300";
-
-const SEARCH_CLASS =
-  BTN_BASE + " bg-neutral-100 hover:bg-neutral-200 h-9 w-9 2xl:w-auto 2xl:px-3";
-
-const SOCIAL_TRIGGER_CLASS =
-  BTN_BASE + " bg-neutral-100 hover:bg-neutral-200 text-neutral-500 h-9 w-9 2xl:hidden";
-
-const SOCIAL_LINK_CLASS =
-  BTN_BASE + " bg-neutral-100 text-neutral-500 h-9 w-9 duration-200";
 
 const MENU_CLASS = BTN_BASE + " bg-neutral-100 hover:bg-neutral-200 h-9 w-9";
 
@@ -108,32 +96,6 @@ const NAV_GROUPS: { className: string; items: NavItem[] }[] = [
   },
 ];
 
-const SOCIAL_LINKS: {
-  label: string;
-  href: string;
-  hoverClass: string;
-  icon: React.ReactNode;
-}[] = [
-  {
-    label: "X",
-    href: "https://x.com/ArtificialAnlys",
-    hoverClass: "hover:text-black",
-    icon: <TwitterLogoIcon className="w-4 h-4" />,
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/company/artificial-analysis/",
-    hoverClass: "hover:text-[#0A66C2]",
-    icon: <LinkedInLogoIcon className="w-4 h-4" />,
-  },
-  {
-    label: "YouTube",
-    href: "https://www.youtube.com/@ArtificialAnalysisAI",
-    hoverClass: "hover:text-[#FF0033]",
-    icon: <YouTubeIcon className="w-4 h-4" />,
-  },
-];
-
 function BrandPill() {
   return (
     <Link href="/" className={BRAND_PILL_CLASS}>
@@ -145,31 +107,11 @@ function BrandPill() {
   );
 }
 
-function PremiumLink() {
+function MonitorLink() {
   return (
-    <Link href={PREMIUM_HREF} className={PREMIUM_CLASS}>
-      Premium
+    <Link href="/monitor" className={MONITOR_CLASS}>
+      Task Monitor
     </Link>
-  );
-}
-
-function LoginLink() {
-  return (
-    <Link href="/login" aria-label="Log in" className={LOGIN_CLASS}>
-      Log in
-    </Link>
-  );
-}
-
-/** Inert in the clone (no command dialog) — kept a real button so hover reads correctly. */
-function SearchButton() {
-  return (
-    <button type="button" className={SEARCH_CLASS}>
-      <Search />
-      <span className="hidden 2xl:inline-flex gap-0.5 items-center text-neutral-700">
-        <Command className="!w-3 !h-3" />K
-      </span>
-    </button>
   );
 }
 
@@ -211,16 +153,14 @@ export function SiteNav() {
 
   return (
     <div className="z-50 w-full sticky top-6 -mb-9">
-      {/* Mobile bar — brand + Premium + Log in + search + menu only. */}
+      {/* Mobile bar — brand + Task Monitor + menu only. */}
       <div className="container xl:hidden">
         <div className="flex items-center justify-between gap-2">
           <BrandPill />
           <div className="min-w-0 flex items-center gap-1">
             <div className="flex items-center gap-2">
-              <PremiumLink />
+              <MonitorLink />
             </div>
-            <LoginLink />
-            <SearchButton />
             <button type="button" className={MENU_CLASS}>
               <Menu />
             </button>
@@ -285,30 +225,7 @@ export function SiteNav() {
 
           <div className="flex items-center gap-1">
             <div className="flex items-center gap-2">
-              <PremiumLink />
-            </div>
-            <LoginLink />
-            <SearchButton />
-            <button
-              type="button"
-              aria-label="Social links"
-              className={SOCIAL_TRIGGER_CLASS}
-            >
-              <Share2 />
-            </button>
-            <div className="hidden items-center gap-1 2xl:flex">
-              {SOCIAL_LINKS.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={social.label}
-                  className={`${SOCIAL_LINK_CLASS} ${social.hoverClass}`}
-                >
-                  {social.icon}
-                </a>
-              ))}
+              <MonitorLink />
             </div>
           </div>
         </nav>

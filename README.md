@@ -40,7 +40,7 @@ enqueue_jobs.py ──► SQS jobs queue ──► EC2 workers (ASG, c7i.8xlarge
 - **Repo distribution**: the working tree (adapters + scripts) is synced to `s3://<results-bucket>/repo/` by the operator; workers pull it at boot — no git push needed to run uncommitted changes.
 - **SWE-Atlas-QnA judging**: the QnA verifier is an LLM judge (rubric → binary pass/fail); workers carry `OPENAI_API_KEY`/`OPENAI_API_BASE`/`EVAL_MODEL` for the judge endpoint. Judge cost is separate from Kiro credits.
 - **Aggregation** (`scripts/aggregate.py`): task-normalized pass@1 per benchmark, composite index, credits/cost/time per variant; errored trials score 0 per AA convention.
-- **Live dashboard** (`app/`): localhost web UI (`python3 app/server.py`, Vite+React frontend in `app/web/`) showing queue depth, worker fleet health, per-key Kiro credit usage, and the per-task completion matrix. See `app/README.md`.
+- **Local web UI** (`app/`): `cd app/site && npm run dev` serves the Next.js site on 3000. `/` is the results leaderboard, `/monitor` shows queue depth, worker fleet health, per-key Kiro credit usage, and the per-task completion matrix. Both read static snapshots by default; while a run is in flight, start `python3 app/server.py` (monitor API on 8081, proxied as `/api/*`) and switch `/monitor` to Live. See `app/README.md`.
 
 The full runbook (batch sizing, timeline, risks) is in [`docs/test-plan.md`](docs/test-plan.md).
 

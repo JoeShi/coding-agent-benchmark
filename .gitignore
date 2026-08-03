@@ -23,7 +23,5 @@ infra/*.tfvars
 # saved plans embed the same TF_VAR_* values, and are tied to one state serial
 *.tfplan
 
-# dashboard app: local S3 record mirror + frontend build artifacts
+# dashboard app: local S3 record mirror (app/site has its own .gitignore)
 app/.cache/
-app/web/node_modules/
-app/web/dist/

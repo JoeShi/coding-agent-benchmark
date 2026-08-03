@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Localhost dashboard for the kiro-cli benchmark run.
+"""JSON API for the kiro-cli benchmark Task Monitor.
 
-Serves a JSON API (data from app/collectors.py) and, once the frontend has
-been built (cd app/web && npm run build), the React app from app/web/dist/.
+Data comes from app/collectors.py. The UI is the Next.js site in app/site,
+which proxies /api/* here (see app/site/next.config.ts), so this process
+serves no HTML or assets of its own.
 
-    python3 app/server.py [--port 8080] [--run-id full-20260729]
+    python3 app/server.py [--port 8081] [--run-id full-20260729]
 
 Stdlib only; AWS access via the aws CLI (default profile).
 """
@@ -13,23 +14,9 @@ import argparse
 import json
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
-from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 from collectors import Snapshot
-
-APP_DIR = Path(__file__).resolve().parent
-DIST_DIR = APP_DIR / "web" / "dist"
-
-CONTENT_TYPES = {
-    ".html": "text/html; charset=utf-8",
-    ".js": "text/javascript; charset=utf-8",
-    ".css": "text/css; charset=utf-8",
-    ".svg": "image/svg+xml",
-    ".json": "application/json",
-    ".png": "image/png",
-    ".ico": "image/x-icon",
-}
 
 
 class Config:
@@ -54,18 +41,6 @@ def make_handler(snapshot, cfg):
             self.send_response(status)
             self.send_header("Content-Type", "application/json")
             self.send_header("Cache-Control", "no-store")
-            self.send_header("Content-Length", str(len(body)))
-            self.end_headers()
-            self.wfile.write(body)
-
-        def _static(self, path):
-            if not path.is_file() or DIST_DIR not in path.resolve().parents:
-                self._json({"error": "not found"}, 404)
-                return
-            body = path.read_bytes()
-            self.send_response(200)
-            self.send_header("Content-Type",
-                             CONTENT_TYPES.get(path.suffix, "application/octet-stream"))
             self.send_header("Content-Length", str(len(body)))
             self.end_headers()
             self.wfile.write(body)
@@ -117,23 +92,15 @@ def make_handler(snapshot, cfg):
                                         "error": view["records"]["error"]})
                 elif route == "/api/health":
                     self._json({"ok": True})
-                elif route in ("/", "/index.html", "/leaderboard"):
-                    index = DIST_DIR / "index.html"
-                    if index.is_file():
-                        self._static(index)
-                    else:
-                        self._json({
-                            "message": "frontend not built yet; run "
-                                       "`cd app/web && npm install && npm run build`, "
-                                       "or use `npm run dev` (Vite proxies /api here).",
-                            "endpoints": ["/api/overview", "/api/workers",
-                                          "/api/keys", "/api/benchmarks",
-                                          "/api/tasks?benchmark=terminal-bench-2"],
-                        })
-                elif route.startswith("/assets/"):
-                    self._static(DIST_DIR / route.lstrip("/"))
-                elif route.startswith("/data/"):
-                    self._static(DIST_DIR / route.lstrip("/"))
+                elif route == "/":
+                    self._json({
+                        "message": "API only; the UI lives in app/site "
+                                   "(cd app/site && npm run dev, then open "
+                                   "http://localhost:3000/monitor).",
+                        "endpoints": ["/api/overview", "/api/workers",
+                                      "/api/keys", "/api/benchmarks",
+                                      "/api/tasks?benchmark=terminal-bench-2"],
+                    })
                 else:
                     self._json({"error": "not found"}, 404)
             except BrokenPipeError:
@@ -147,7 +114,8 @@ def make_handler(snapshot, cfg):
 def main():
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--port", type=int, default=8080)
+    # 8081 is what app/site/next.config.ts proxies to by default.
+    p.add_argument("--port", type=int, default=8081)
     p.add_argument("--run-id", default="full-20260729")
     p.add_argument("--bucket", default="kiro-bench-results-178770047227")
     p.add_argument("--queue-url",
@@ -165,7 +133,8 @@ def main():
     snapshot.start()
     server = ThreadingHTTPServer(("127.0.0.1", cfg.port),
                                  make_handler(snapshot, cfg))
-    print(f"dashboard: http://127.0.0.1:{cfg.port}  (Ctrl-C to stop)", flush=True)
+    print(f"monitor API: http://127.0.0.1:{cfg.port}/api  (Ctrl-C to stop)",
+          flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

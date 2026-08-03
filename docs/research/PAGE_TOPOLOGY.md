@@ -73,7 +73,7 @@ which one the viewport is currently over.
 ## Data binding for the clone
 
 Per user decision: **AA appearance, Kiro data.** Charts render
-`app/web/public/data/leaderboard.json`, not AA's own numbers.
+`app/site/src/data/leaderboard.json`, not AA's own numbers.
 
 Shape (see `docs/research/BEHAVIORS.md` for the mode semantics):
 
