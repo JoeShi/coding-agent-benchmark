@@ -140,3 +140,45 @@ the hard-coded `208`.
 - Run `npx tsc --noEmit` from `app/site` and report the result. If any measured
   number cannot be reproduced with recharts 2.15.4, say so explicitly and give
   the arithmetic rather than silently changing it.
+
+## As-built deviations (21 series instead of 15)
+
+Everything above describes the **target**, which plots 15 series. We plot 21
+(6 Kiro + 15 AA), and the target's tick does not survive the narrower band. The
+tick lays logo + text out left-to-right from x −32, so it is 48–77px wide;
+measured with 21 rows at `innerWidth` 1309 the band step is 46.43px, **20 of 21
+ticks overlap, worst case 30.85px**.
+
+Widening the plot cannot fix it: at a 1440 viewport the band is 52.19px as
+shipped, ≈56.75px with the sidebar narrowed, and only ≈62.3px with the sidebar
+deleted outright — all below the 77.28px widest tick. So five things changed:
+
+1. **The tick is centred and hard-wrapped.** Logos share one row (`LOGO_SIZE 13`,
+   `LOGO_GAP 3`), then the agent name and the model base are greedy-wrapped to
+   `MAX_CHARS = 10` at `LINE_HEIGHT 12`. 10 chars caps a line at 49.9px —
+   measured with `getComputedTextLength()` on the widest 10-char line in this
+   data ("Muse Spark"); worst case is 4.94px/char ("Composer 2.5"). Tokens are
+   never split, so a single long token (only `(with fallback)` here) may overflow
+   rather than break mid-phrase.
+2. **Parenthesised suffix lines render at 8px, not 9px.** Suffixes are never
+   wrapped, and at 9px `(with fallback)` (56.74px) and `(Moonshot AI)` (57.67px)
+   were the only lines left wider than the band.
+3. **Duplicate logos are deduplicated.** The target pairs each logo with its own
+   text row, so `anthropic_small.svg` twice (Claude Code + Anthropic) reads fine;
+   side by side on one centred row it reads as a bug.
+4. **A `<Tooltip>` was added** — the spec above says the chart is fully static.
+   At band width the tick can no longer show the agent / model / effort triple,
+   so hover surfaces it, with `cursor={{ fill: "rgba(0,0,0,0.04)" }}` so the
+   whole column is a target. The tick also carries the triple in its `<title>`,
+   because recharts' tooltip only covers the plot area and the axis sits below
+   it. Effort comes from `AgentRow.effort` (see `effortOf()` in
+   `lib/leaderboard.ts`); Kiro rows are all CLI-default `high` except `auto`,
+   which routes per turn and shows "n/a (router)".
+5. **The sidebar rail was narrowed** from `col-span-2` / `col-span-10` to
+   `col-span-1` / `col-span-11` in `app/page.tsx` (~88px at 1440, vs ~204px) to
+   buy the chart the extra ~4.5px of band. See `scroll-spy-sidebar.spec.md`.
+
+Verified at `innerWidth` 1309 (the conservative case — docked DevTools; the real
+QA viewport is 1440): band step 51.45px, widest tick 51.24px, **0 overlapping
+ticks** on all three bar tabs, minimum adjacent gap 4.04px (`cost-to-run`), no
+horizontal spill and no vertical overflow of the 320px surface.

@@ -94,6 +94,12 @@ export interface AgentRow {
   time_seconds: number;
   /** True for the six Kiro rows, which are the highlighted/branded series. */
   isKiro: boolean;
+  /**
+   * Reasoning-effort setting: `high` / `xhigh` / `max`. Undefined where it does
+   * not apply (kiro `auto` routes the model itself) or where the source does not
+   * publish one. See `effortOf()`.
+   */
+  effort?: string;
   /** Kiro rows only. */
   cost_coverage?: number;
   time_coverage?: number;

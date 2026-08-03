@@ -100,6 +100,11 @@ only covers colour properties, so opacity snaps. Reproduce that exactly; do not 
 
 No mobile drawer/accordion replacement — the sidebar simply disappears.
 
+**As-built deviation:** the rail ships at `col-span-1` (~88px at 1440) with the
+chart column at `col-span-11`, not the measured 2/10 split. The 21 plotted series
+need the band width; the labels wrap to two lines at 88px and still read fine.
+See `benchmark-bar-chart.spec.md` → "As-built deviations".
+
 ## Clone notes
 
 - Render from the `benchmarks` + section list; keep label/href pairs hard-coded as above.

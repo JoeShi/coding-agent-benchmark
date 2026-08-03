@@ -60,6 +60,7 @@ function barChart(metric: BarMetric, rows: AgentRow[]): React.ReactElement {
         valueOf={(row) => row.cost_usd}
         labelOf={(row) => formatCost(row.cost_usd)}
         creatorSuffix
+        valueLabel="Cost"
       />
     );
   }
@@ -71,6 +72,7 @@ function barChart(metric: BarMetric, rows: AgentRow[]): React.ReactElement {
         valueOf={(row) => row.time_seconds}
         labelOf={(row) => formatTime(row.time_seconds)}
         creatorSuffix
+        valueLabel="Time"
       />
     );
   }
@@ -82,6 +84,7 @@ function barChart(metric: BarMetric, rows: AgentRow[]): React.ReactElement {
         // Index is a 0–1 fraction; the axis and labels are the 0–100 form.
         valueOf={(row) => row.index * 100}
         labelOf={(row) => String(formatIndex(row.index))}
+        valueLabel="Index"
       />
     );
   }
@@ -96,6 +99,7 @@ function barChart(metric: BarMetric, rows: AgentRow[]): React.ReactElement {
         .sort((a, b) => scoreOf(b) - scoreOf(a))}
       valueOf={(row) => scoreOf(row) * 100}
       labelOf={(row) => formatPercent(scoreOf(row))}
+      valueLabel="pass@1"
     />
   );
 }

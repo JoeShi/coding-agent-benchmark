@@ -11,6 +11,56 @@ export const leaderboard = raw as Leaderboard;
 export const benchmarks: Benchmark[] = leaderboard.benchmarks;
 
 /**
+ * Trailing parenthesised qualifiers of a model name, innermost-last:
+ *   "Opus 5 (xhigh)"                 -> { base: "Opus 5",   suffixes: ["(xhigh)"] }
+ *   "Fable 5 (max) (with fallback)"  -> { base: "Fable 5",  suffixes: ["(max)", "(with fallback)"] }
+ *   "Claude Opus 4.8"                -> { base: "Claude Opus 4.8", suffixes: [] }
+ */
+const TRAILING_GROUP = /\s*(\([^()]*\))$/;
+
+export function splitModel(model: string): { base: string; suffixes: string[] } {
+  let base = model.trim();
+  const suffixes: string[] = [];
+
+  for (;;) {
+    const match = TRAILING_GROUP.exec(base);
+    if (!match) break;
+    suffixes.unshift(match[1]);
+    base = base.slice(0, match.index).trimEnd();
+  }
+
+  return { base, suffixes };
+}
+
+/**
+ * AA encodes reasoning effort as a trailing parenthesised token on the model
+ * name (`Opus 5 (xhigh)`), mixed in with non-effort qualifiers that use the same
+ * syntax (`Fable 5 (max) (with fallback)`) — hence the vocabulary check rather
+ * than "take the last group".
+ */
+const EFFORT_LEVELS = new Set([
+  "minimal",
+  "low",
+  "medium",
+  "high",
+  "xhigh",
+  "max",
+]);
+
+function effortOf(model: string): string | undefined {
+  return splitModel(model)
+    .suffixes.map((suffix) => suffix.slice(1, -1).toLowerCase())
+    .find((token) => EFFORT_LEVELS.has(token));
+}
+
+/**
+ * Every kiro-cli variant in this run ran at the CLI default effort, `high`. The
+ * exception is `auto`, which picks the underlying model per turn — the effort is
+ * not ours to state, so it stays undefined rather than being reported as `high`.
+ */
+const KIRO_DEFAULT_EFFORT = "high";
+
+/**
  * Flatten Kiro rows (for the given scoring mode) + the AA snapshot into one
  * sortable list. 21 series total: 6 Kiro + 15 AA.
  */
@@ -26,6 +76,7 @@ export function getRows(mode: ScoringMode = "official"): AgentRow[] {
     cost_usd: r.cost_usd,
     time_seconds: r.time_seconds,
     isKiro: true,
+    effort: r.id === "auto" ? undefined : KIRO_DEFAULT_EFFORT,
     cost_coverage: r.cost_coverage,
     time_coverage: r.time_coverage,
     n_trials: r.n_trials,
@@ -43,6 +94,7 @@ export function getRows(mode: ScoringMode = "official"): AgentRow[] {
     cost_usd: r.cost_usd,
     time_seconds: r.time_seconds,
     isKiro: false,
+    effort: effortOf(r.model),
   }));
 
   return [...kiro, ...aa].sort((a, b) => b.index - a.index);

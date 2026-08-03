@@ -8,58 +8,74 @@ import {
   Cell,
   LabelList,
   ResponsiveContainer,
+  Tooltip,
   XAxis,
   YAxis,
 } from "recharts";
 
-import { agentLogo, creatorColor, creatorLogo } from "@/lib/leaderboard";
+import {
+  agentLogo,
+  creatorColor,
+  creatorLogo,
+  splitModel,
+} from "@/lib/leaderboard";
 import type { AgentRow } from "@/types/leaderboard";
 
 /**
- * Trailing parenthesised qualifiers of a model name, innermost-last:
- *   "Opus 5 (xhigh)"                 -> { base: "Opus 5",   suffixes: ["(xhigh)"] }
- *   "Fable 5 (max) (with fallback)"  -> { base: "Fable 5",  suffixes: ["(max)", "(with fallback)"] }
- *   "Claude Opus 4.8"                -> { base: "Claude Opus 4.8", suffixes: [] }
+ * DEVIATION FROM THE TARGET (deliberate). AA plots 15 series; we plot 21, and the
+ * target's tick — logo + text laid out left-to-right from x −32, so 48–77px wide —
+ * overlaps once the band drops below ~77px. Measured with 21 rows at innerWidth
+ * 1309: bandStep 46.43px, 20 of 21 ticks overlapping, worst case 30.85px.
+ *
+ * Widening the plot cannot fix it on a 1440 viewport: even deleting the sidebar
+ * outright only takes the band from 52.19px to ~62.3px. So the tick is rebuilt
+ * CENTRED and hard-wrapped instead — logos on their own row, then agent name and
+ * model name wrapped to `MAX_CHARS`.
+ *
+ * `MAX_CHARS = 10` caps a line at 49.9px, measured via `getComputedTextLength()`
+ * on the widest 10-char line in this data ("Muse Spark"); the worst case is
+ * 4.94px/char ("Composer 2.5"). That clears the 51.48px band this page renders at
+ * innerWidth 1309, and so also the ~56.75px band at 1440.
  */
-const TRAILING_GROUP = /\s*(\([^()]*\))$/;
+const LOGO_SIZE = 13;
+const LOGO_GAP = 3;
+const LINE_HEIGHT = 12;
+const MAX_CHARS = 10;
 
-function splitModel(model: string): { base: string; suffixes: string[] } {
-  let base = model.trim();
-  const suffixes: string[] = [];
-
-  for (;;) {
-    const match = TRAILING_GROUP.exec(base);
-    if (!match) break;
-    suffixes.unshift(match[1]);
-    base = base.slice(0, match.index).trimEnd();
-  }
-
-  return { base, suffixes };
+/**
+ * Agent logo then creator logo, deduplicated. The target pairs each logo with its
+ * own line of text, so it can show `anthropic_small.svg` twice for Claude Code +
+ * Anthropic; side by side on one centred row, the repeat reads as a bug.
+ */
+function logosFor(row: AgentRow): string[] {
+  const logos = [agentLogo(row.agent), creatorLogo(row.creator)].filter(
+    (logo): logo is string => Boolean(logo),
+  );
+  return [...new Set(logos)];
 }
 
 /**
- * The base name occupies TWO lines: everything but the last token, then the last
- * token — but only once the name reaches three tokens. Measured across the
- * target's 15 rows, which split exactly here:
- *
- *   "Gemini 3.1 Pro"    -> "Gemini 3.1"   / "Pro"
- *   "DeepSeek V4 Pro"   -> "DeepSeek V4"  / "Pro"
- *   "Composer 2.5 Fast" -> "Composer 2.5" / "Fast"
- *   "Muse Spark 1.1"    -> "Muse Spark"   / "1.1"
- *   "GPT-5.6 Terra"     -> one line
- *
- * Those 15 rows are also consistent with `base.length > 13` and with a pixel
- * threshold near 57.5px (widest unwrapped "GPT-5.6 Terra" = 57.08px, narrowest
- * wrapped "Gemini 3.1 Pro" = 58.29px) — the target offers no row that separates
- * the three. Token count wins because it needs no font metrics (so SSR and the
- * client agree) and because it keeps this repo's four Claude rows consistent:
- * `length > 13` would wrap "Claude Opus 4.8" but leave the 13-char
- * "Claude Opus 5" alone on one 61.95px line, overflowing its 73px band.
+ * Greedy word wrap on a character budget. Deterministic (no font metrics), so SSR
+ * and the client agree; tokens are never broken, so a single long token — only
+ * "(with fallback)" in the current data — is allowed to overflow its band rather
+ * than being split into "(with" / "fallback)".
  */
-function wrapBase(base: string): { line1: string; line2: string } {
-  const tokens = base.split(" ");
-  if (tokens.length < 3) return { line1: base, line2: "" };
-  return { line1: tokens.slice(0, -1).join(" "), line2: tokens[tokens.length - 1] };
+function wrapText(text: string): string[] {
+  const lines: string[] = [];
+  let current = "";
+
+  for (const word of text.split(" ").filter(Boolean)) {
+    const candidate = current ? `${current} ${word}` : word;
+    if (current && candidate.length > MAX_CHARS) {
+      lines.push(current);
+      current = word;
+    } else {
+      current = candidate;
+    }
+  }
+  if (current) lines.push(current);
+
+  return lines.length > 0 ? lines : [text];
 }
 
 interface BenchmarkTickProps {
@@ -76,9 +92,13 @@ interface BenchmarkTickProps {
 }
 
 /**
- * Axis tick: two stacked rows — agent logo + agent name, then creator logo +
- * the model name with each parenthesised suffix on its own greyed line.
- * Structure and attributes mirror the target verbatim.
+ * Axis tick, centred on the band: a row holding the agent logo and the creator
+ * logo, then the agent name and the model name wrapped to `MAX_CHARS`, then each
+ * parenthesised suffix on its own greyed line.
+ *
+ * The `<title>` carries agent / model / effort so hovering the LABEL gets the
+ * same information as hovering the bar (the recharts tooltip only covers the plot
+ * area, which the axis sits below).
  */
 function BenchmarkTick({
   x = 0,
@@ -93,76 +113,120 @@ function BenchmarkTick({
     rows.find((candidate) => candidate.label === payload?.value);
   if (!row) return <g />;
 
-  const logoA = agentLogo(row.agent);
-  const logoB = creatorLogo(row.creator);
+  const logos = logosFor(row);
+  const logosWidth =
+    logos.length * LOGO_SIZE + Math.max(logos.length - 1, 0) * LOGO_GAP;
+
   const { base, suffixes } = splitModel(row.model);
+  /* AA encodes effort into the model name, so its rows already carry `(max)` /
+     `(xhigh)` / `(high)`; Kiro's names don't, so the suffix is synthesized from
+     `row.effort` instead of being left blank. `auto` has no effort — it picks the
+     model per turn — so it gets no parenthesis at all. */
+  if (
+    row.effort &&
+    !suffixes.some((suffix) => suffix.slice(1, -1).toLowerCase() === row.effort)
+  ) {
+    suffixes.push(`(${row.effort})`);
+  }
   if (creatorSuffix) suffixes.push(`(${row.creator})`);
-  const { line1, line2 } = wrapBase(base);
+
+  const lines: { text: string; grey?: boolean }[] = [
+    ...wrapText(row.agent).map((text) => ({ text })),
+    ...wrapText(base).map((text) => ({ text })),
+    ...suffixes.map((text) => ({ text, grey: true })),
+  ];
 
   return (
     <g transform={`translate(${x},208)`} style={{ overflow: "visible" }}>
-      <title>{row.label}</title>
+      <title>{`${row.agent} — ${row.model}${
+        row.effort ? ` · effort ${row.effort}` : ""
+      }`}</title>
       <desc>{`Label for ${row.label}`}</desc>
-      <g transform="translate(-60, 8)">
-        {logoA && (
+      <g transform="translate(0, 8)">
+        {logos.map((logo, i) => (
           <image
-            href={logoA}
-            x="28"
-            y="-7.5"
-            width="13"
-            height="13"
+            key={`${logo}-${i}`}
+            href={logo}
+            x={-logosWidth / 2 + i * (LOGO_SIZE + LOGO_GAP)}
+            y={-LOGO_SIZE / 2}
+            width={LOGO_SIZE}
+            height={LOGO_SIZE}
             preserveAspectRatio="xMidYMid meet"
           />
-        )}
+        ))}
         <text
-          x="43"
-          y="0"
+          x="0"
+          y={LINE_HEIGHT + 4}
+          textAnchor="middle"
           fontSize="9px"
           fontWeight="500"
           dominantBaseline="middle"
         >
-          {row.agent}
-        </text>
-        {logoB && (
-          <image
-            href={logoB}
-            x="28"
-            y="8.5"
-            width="13"
-            height="13"
-            preserveAspectRatio="xMidYMid meet"
-          />
-        )}
-        <text
-          x="43"
-          y="16"
-          fontSize="9px"
-          fontWeight="500"
-          dominantBaseline="middle"
-        >
-          {line1}
-          {/* Always emitted, even when empty — the target ships exactly ONE
-              non-grey tspan here. An empty tspan is inert (it carries no glyph
-              for `dy` to shift), so the greyed suffixes below still begin on
-              line 2, as measured: "Opus 5 (xhigh)" puts "(xhigh)" at y 28. */}
-          <tspan x="43" dy="12">
-            {line2}
-          </tspan>
-          {suffixes.map((suffix, i) => (
+          {lines.map((line, i) => (
             <tspan
-              key={`${suffix}-${i}`}
-              x="43"
-              dy="12"
-              fontSize="9px"
-              fill="#737373"
-              fontWeight="500"
+              key={`${line.text}-${i}`}
+              x="0"
+              dy={i === 0 ? 0 : LINE_HEIGHT}
+              fill={line.grey ? "#737373" : undefined}
+              /* 8px, not the target's 9px: suffixes are never wrapped (splitting
+                 "(with fallback)" mid-phrase reads worse than a wide line), and at
+                 9px the two 13–15 char ones — "(with fallback)", "(Moonshot AI)" —
+                 are the only lines left that exceed the band. */
+              fontSize={line.grey ? "8px" : undefined}
             >
-              {suffix}
+              {line.text}
             </tspan>
           ))}
         </text>
       </g>
     </g>
+  );
+}
+
+/** Hover card: agent, model, effort, and the plotted value. */
+function TooltipCard({
+  row,
+  value,
+  valueLabel,
+}: {
+  row: AgentRow;
+  value: string;
+  valueLabel: string;
+}): React.ReactElement {
+  const { base, suffixes } = splitModel(row.model);
+  const modelSuffixes = suffixes.filter(
+    (suffix) => suffix.slice(1, -1).toLowerCase() !== row.effort,
+  );
+
+  return (
+    <div className="rounded-md border border-neutral-200 bg-white px-3 py-2 text-xs shadow-md">
+      <div className="flex items-center gap-1.5 font-medium">
+        {logosFor(row).map((logo, i) => (
+          <svg
+            key={`${logo}-${i}`}
+            width={LOGO_SIZE}
+            height={LOGO_SIZE}
+            aria-hidden="true"
+          >
+            <image
+              href={logo}
+              width={LOGO_SIZE}
+              height={LOGO_SIZE}
+              preserveAspectRatio="xMidYMid meet"
+            />
+          </svg>
+        ))}
+        {row.agent}
+      </div>
+      <dl className="mt-1.5 grid grid-cols-[auto_auto] gap-x-3 gap-y-0.5">
+        <dt className="text-neutral-500">Model</dt>
+        <dd>{[base, ...modelSuffixes].join(" ")}</dd>
+        <dt className="text-neutral-500">Effort</dt>
+        <dd>{row.effort ?? "n/a (router)"}</dd>
+        <dt className="text-neutral-500">{valueLabel}</dt>
+        <dd className="font-medium">{value}</dd>
+      </dl>
+    </div>
   );
 }
 
@@ -178,6 +242,8 @@ export interface BenchmarkBarChartProps {
    * Measured: the cost and execution-time tabs carry it, the score tabs do not.
    */
   creatorSuffix?: boolean;
+  /** Row label for the plotted value inside the hover card. */
+  valueLabel?: string;
 }
 
 export function BenchmarkBarChart({
@@ -185,6 +251,7 @@ export function BenchmarkBarChart({
   valueOf,
   labelOf,
   creatorSuffix,
+  valueLabel = "Value",
 }: BenchmarkBarChartProps): React.ReactElement {
   return (
     <div className="w-full">
@@ -201,6 +268,24 @@ export function BenchmarkBarChart({
         >
           <CartesianGrid vertical={false} stroke="#ccc" strokeDasharray="2 4" />
           <YAxis hide />
+          {/* Not on the target — added because 21 ticks can no longer show the
+              full agent/model/effort triple at band width. `cursor` highlights
+              the whole band so anywhere in the column works, not just the bar. */}
+          <Tooltip
+            isAnimationActive={false}
+            cursor={{ fill: "rgba(0, 0, 0, 0.04)" }}
+            content={({ active, payload }) => {
+              const row = payload?.[0]?.payload as AgentRow | undefined;
+              if (!active || !row) return null;
+              return (
+                <TooltipCard
+                  row={row}
+                  value={labelOf(row)}
+                  valueLabel={valueLabel}
+                />
+              );
+            }}
+          />
           <XAxis
             dataKey="label"
             tickLine={false}
