@@ -106,11 +106,15 @@ def collect_workers():
 
 def collect_records(bucket, run_id, cache_dir):
     """Mirror trial records via aws s3 sync (incremental after first run) and
-    parse them all into a list. Fast enough (~6k small JSONs) per refresh."""
+    parse them all into a list. Fast enough (~6k small JSONs) per refresh.
+
+    --exact-timestamps is required: a rerun overwrites a record in place and
+    "failed" and "passed" are the same length, so plain sync (size + newer-only)
+    silently keeps the stale copy."""
     cache_dir.mkdir(parents=True, exist_ok=True)
     out = subprocess.run(
         ["aws", "s3", "sync", f"s3://{bucket}/{run_id}/trials/", str(cache_dir),
-         "--quiet"],
+         "--exact-timestamps", "--quiet"],
         capture_output=True, text=True, timeout=900)
     if out.returncode != 0:
         raise RuntimeError(out.stderr.strip() or "aws s3 sync failed")
@@ -225,8 +229,13 @@ def collect_key_usage(secret_id, pat_file):
     usage = _load_usage_module()
     with ThreadPoolExecutor(max_workers=min(len(keys), 8)) as pool:
         records = list(pool.map(
-            lambda k: usage.build_record(k, ["us-east-1", "eu-central-1"], 30),
-            keys))
+            lambda k: usage.build_record(k, ["us-east-1"], 30), keys))
+    # build_record reports a network failure inside the record instead of
+    # raising, which would swap the whole table for "request failed" rows on a
+    # single blip. Raise so the Collector keeps the last good snapshot and only
+    # surfaces the message as an error note.
+    if all(str(r["status"]).startswith("request failed") for r in records):
+        raise RuntimeError(records[0]["status"])
     return {"keys": records, "source": source}
 
 

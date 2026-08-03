@@ -14,8 +14,9 @@ kiro-cli process is spawned. Standard library only, no dependencies.
 
 Environment:
     KIRO_TIMEOUT   Seconds to wait for each API call (default: 30)
-    KIRO_REGIONS   Space-separated regions to try, first hit wins
-                   (default: "us-east-1 eu-central-1")
+    KIRO_REGIONS   Space-separated regions to try, first hit wins (default:
+                   "us-east-1" -- the only region with a codewhisperer
+                   endpoint; other names simply fail to resolve)
     KIRO_WORKERS   Max concurrent requests (default: min(keys, 8))
 """
 
@@ -23,9 +24,10 @@ import argparse
 import json
 import os
 import sys
+import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
-from urllib.error import HTTPError, URLError
+from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
 # aws-sdk-rust-style UA; the service edge rejects unrecognized agents with 403.
@@ -41,6 +43,9 @@ FIELDS = [
     "nextReset", "overages", "overageCredits", "estimatedCost", "status",
 ]
 
+NET_RETRIES = 2    # extra attempts after a transient network failure
+NET_BACKOFF = 1.5  # seconds before the first retry, doubled each time
+
 
 def mask_key(key):
     if len(key) <= 12:
@@ -48,52 +53,54 @@ def mask_key(key):
     return f"{key[:8]}...{key[-4:]}"
 
 
-def get_usage(key, regions, timeout):
+def get_usage(key, regions, timeout, retries=NET_RETRIES):
     """Call GetUsageLimits, trying each region. Returns (data, error).
 
     A definitive answer from the service (an HTTP error with a body) is
     reported in preference to a transient network error from a later region,
     so an invalid key surfaces "token is invalid" rather than a fallback
     region's timeout.
+
+    Network failures are retried with backoff. The endpoint occasionally drops
+    a connection mid-handshake (`SSL: UNEXPECTED_EOF_WHILE_READING`, typically
+    a laptop sleep/wake or a VPN transition) and there is only one region to
+    try, so without a retry a single blip is reported as a hard failure.
     """
     http_err = None
     net_err = None
+    headers = {
+        "Authorization": f"Bearer {key}",
+        "Content-Type": "application/x-amz-json-1.0",
+        "X-Amz-Target": TARGET,
+        "tokentype": "API_KEY",
+        "User-Agent": API_UA,
+        "x-amz-user-agent": API_UA,
+    }
     for region in regions:
         url = (
             f"https://codewhisperer.{region}.amazonaws.com/"
             "?isEmailRequired=true"
         )
-        req = Request(
-            url,
-            data=BODY,
-            method="POST",
-            headers={
-                "Authorization": f"Bearer {key}",
-                "Content-Type": "application/x-amz-json-1.0",
-                "X-Amz-Target": TARGET,
-                "tokentype": "API_KEY",
-                "User-Agent": API_UA,
-                "x-amz-user-agent": API_UA,
-            },
-        )
-        try:
-            with urlopen(req, timeout=timeout) as resp:
-                return json.loads(resp.read().decode("utf-8")), None
-        except HTTPError as exc:
-            body = exc.read().decode("utf-8", "replace")
+        for attempt in range(retries + 1):
+            req = Request(url, data=BODY, method="POST", headers=headers)
             try:
-                parsed = json.loads(body)
-                msg = parsed.get("message") or parsed.get("__type")
-            except ValueError:
-                msg = None
-            if http_err is None:
-                http_err = msg or f"HTTP {exc.code}"
-        except URLError as exc:
-            if net_err is None:
-                net_err = f"request failed: {exc.reason}"
-        except (TimeoutError, OSError) as exc:
-            if net_err is None:
-                net_err = f"request failed: {exc}"
+                with urlopen(req, timeout=timeout) as resp:
+                    return json.loads(resp.read().decode("utf-8")), None
+            except HTTPError as exc:
+                body = exc.read().decode("utf-8", "replace")
+                try:
+                    parsed = json.loads(body)
+                    msg = parsed.get("message") or parsed.get("__type")
+                except ValueError:
+                    msg = None
+                if http_err is None:
+                    http_err = msg or f"HTTP {exc.code}"
+                break  # the service answered; a retry says the same thing
+            except OSError as exc:  # URLError, TimeoutError, ssl.SSLError, ...
+                if net_err is None:
+                    net_err = f"request failed: {getattr(exc, 'reason', exc)}"
+                if attempt < retries:
+                    time.sleep(NET_BACKOFF * 2 ** attempt)
     return None, (http_err or net_err)
 
 
@@ -179,7 +186,7 @@ def main():
     args = parser.parse_args()
 
     timeout = float(os.environ.get("KIRO_TIMEOUT", "30"))
-    regions = os.environ.get("KIRO_REGIONS", "us-east-1 eu-central-1").split()
+    regions = os.environ.get("KIRO_REGIONS", "us-east-1").split()
 
     try:
         with open(args.pat_file, encoding="utf-8") as handle:

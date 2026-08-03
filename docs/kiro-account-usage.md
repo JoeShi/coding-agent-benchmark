@@ -58,7 +58,11 @@ overage credits. The script reports these as `TOTAL USED` and `OVERAGE`.
   KIRO_TIMEOUT=60 python3 scripts/kiro_account_usage.py kiro-pats.txt
   ```
 
-- `KIRO_REGIONS` -- space-separated regions to try, first hit wins
-  (default: `us-east-1 eu-central-1`).
+- `KIRO_REGIONS` -- space-separated regions to try, first hit wins (default:
+  `us-east-1`). `us-east-1` is the only region with a `codewhisperer` endpoint;
+  anything else fails to resolve, so listing a second region buys no
+  redundancy. Transient network failures (a connection dropped mid-handshake
+  shows up as `request failed: [SSL: UNEXPECTED_EOF_WHILE_READING]`) are
+  instead retried twice with backoff against the same endpoint.
 - `KIRO_WORKERS` -- max concurrent requests (default: `min(keys, 8)`); also
   settable with `--workers N`.
