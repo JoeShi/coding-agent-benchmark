@@ -64,10 +64,12 @@ def queue_counts(url: str) -> tuple[int, int]:
 
 def trial_records(bucket: str, run_id: str, cache_dir: Path) -> dict[str, float]:
     """{s3_key: mtime} via a local sync mirror (bulk download, much faster
-    than per-record `aws s3 cp` when thousands of records exist)."""
+    than per-record `aws s3 cp` when thousands of records exist). Needs
+    --exact-timestamps: a requeue overwrites a record in place at the same
+    size, which plain sync skips (see app/collectors.py)."""
     out = subprocess.run(
         ["aws", "s3", "sync", f"s3://{bucket}/{run_id}/trials/", str(cache_dir),
-         "--quiet"],
+         "--exact-timestamps", "--quiet"],
         capture_output=True, text=True, timeout=600)
     if out.returncode != 0:
         raise RuntimeError(out.stderr.strip() or "aws s3 sync failed")

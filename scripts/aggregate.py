@@ -4,7 +4,9 @@
 Input: a directory of normalized trial-record JSON files (one per trial), as
 emitted by the worker (scripts/worker.sh) and mirrored from S3, e.g.:
 
-    aws s3 sync s3://$RESULTS_BUCKET/$RUN_ID/trials results/$RUN_ID/trials
+    # --exact-timestamps, or reruns that overwrote a record in place are skipped
+    aws s3 sync --exact-timestamps \
+        s3://$RESULTS_BUCKET/$RUN_ID/trials results/$RUN_ID/trials
     python3 scripts/aggregate.py results/$RUN_ID/trials \
         --json-out results/$RUN_ID/aggregate.json \
         --markdown-out results/$RUN_ID/report.md

@@ -2,6 +2,7 @@
 """Build the static Kiro + Artificial Analysis leaderboard data artifact."""
 
 import argparse
+import datetime
 import json
 import math
 from collections import defaultdict
@@ -135,7 +136,7 @@ def main() -> int:
     output = {
         "title": "Kiro CLI Coding Agent Benchmark",
         "run_id": "full-20260729",
-        "generated_at": "2026-08-02",
+        "generated_at": datetime.date.today().isoformat(),
         "methodology_version": aa["methodology_version"],
         "benchmarks": [
             {"id": "deep-swe", "label": "DeepSWE", "tasks": 113},
