@@ -4,7 +4,7 @@
  "task": "mailman",
  "model": "claude-sonnet-5",
  "attempt": 1,
- "status": "failed",
+ "status": "passed",
  "credits": null,
  "cost_usd": null,
  "time_seconds": null,

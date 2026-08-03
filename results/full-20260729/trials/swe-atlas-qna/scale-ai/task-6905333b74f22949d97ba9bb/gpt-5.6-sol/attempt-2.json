@@ -7,6 +7,6 @@
   "status": "error",
   "credits": null,
   "cost_usd": null,
-  "time_seconds": null,
+  "time_seconds": 10.0,
   "error_kind": "no_telemetry"
 }

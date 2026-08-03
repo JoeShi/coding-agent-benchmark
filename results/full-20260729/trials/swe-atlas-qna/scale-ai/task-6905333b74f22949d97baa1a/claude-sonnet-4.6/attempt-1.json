@@ -4,9 +4,9 @@
   "task": "scale-ai/task-6905333b74f22949d97baa1a",
   "model": "claude-sonnet-4.6",
   "attempt": 1,
-  "status": "error",
-  "credits": null,
-  "cost_usd": null,
-  "time_seconds": null,
-  "error_kind": "infra"
+  "status": "failed",
+  "credits": 20.7,
+  "cost_usd": 0.828,
+  "time_seconds": 398.0,
+  "error_kind": null
 }

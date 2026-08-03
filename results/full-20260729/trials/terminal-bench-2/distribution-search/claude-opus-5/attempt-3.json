@@ -4,9 +4,9 @@
  "task": "distribution-search",
  "model": "claude-opus-5",
  "attempt": 3,
- "status": "failed",
- "credits": null,
- "cost_usd": null,
- "time_seconds": null,
+ "status": "passed",
+ "credits": 1.9,
+ "cost_usd": 0.076,
+ "time_seconds": 70.0,
  "error_kind": null
 }

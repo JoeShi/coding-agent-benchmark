@@ -1,7 +1,7 @@
 {
   "title": "Kiro CLI Coding Agent Benchmark",
   "run_id": "full-20260729",
-  "generated_at": "2026-08-02",
+  "generated_at": "2026-08-03",
   "methodology_version": "v1.3",
   "benchmarks": [
     {
@@ -28,25 +28,25 @@
       "label": "Kiro CLI - Auto",
       "creator": "Kiro",
       "official": {
-        "index": 0.3653395351225783,
+        "index": 0.3676455706144544,
         "benchmarks": {
-          "terminal-bench-2": 0.5992063492063492,
-          "deep-swe": 0.20648967551622419,
+          "terminal-bench-2": 0.6031746031746031,
+          "deep-swe": 0.2094395280235988,
           "swe-atlas-qna": 0.2903225806451613
         }
       },
       "normalized": {
-        "index": 0.3716781727460807,
+        "index": 0.37400892432382027,
         "benchmarks": {
-          "terminal-bench-2": 0.606425702811245,
-          "deep-swe": 0.20833333333333331,
+          "terminal-bench-2": 0.610441767068273,
+          "deep-swe": 0.21130952380952378,
           "swe-atlas-qna": 0.30027548209366395
         }
       },
-      "cost_usd": 0.41189336384439357,
-      "time_seconds": 499.6842105263158,
-      "cost_coverage": 0.9075804776739356,
-      "time_coverage": 0.9075804776739356,
+      "cost_usd": 0.411537899543379,
+      "time_seconds": 499.1324200913242,
+      "cost_coverage": 0.9096573208722741,
+      "time_coverage": 0.9096573208722741,
       "n_trials": 963,
       "n_errors": 18
     },
@@ -57,17 +57,17 @@
       "label": "Kiro CLI - Claude Opus 4.8",
       "creator": "Kiro",
       "official": {
-        "index": 0.6026021535584768,
+        "index": 0.6052476562039794,
         "benchmarks": {
-          "terminal-bench-2": 0.7301587301587302,
+          "terminal-bench-2": 0.7380952380952381,
           "deep-swe": 0.5722713864306785,
           "swe-atlas-qna": 0.5053763440860215
         }
       },
       "normalized": {
-        "index": 0.6111376493949271,
+        "index": 0.6138476764951982,
         "benchmarks": {
-          "terminal-bench-2": 0.7479674796747968,
+          "terminal-bench-2": 0.7560975609756098,
           "deep-swe": 0.5773809523809524,
           "swe-atlas-qna": 0.5080645161290323
         }
@@ -86,23 +86,23 @@
       "label": "Kiro CLI - Claude Opus 5",
       "creator": "Kiro",
       "official": {
-        "index": 0.6477641235705751,
+        "index": 0.6518196043602837,
         "benchmarks": {
-          "terminal-bench-2": 0.7658730158730158,
-          "deep-swe": 0.6666666666666666,
-          "swe-atlas-qna": 0.510752688172043
+          "terminal-bench-2": 0.7777777777777777,
+          "deep-swe": 0.6696165191740413,
+          "swe-atlas-qna": 0.5080645161290323
         }
       },
       "normalized": {
-        "index": 0.683083160800552,
+        "index": 0.6872757073844031,
         "benchmarks": {
-          "terminal-bench-2": 0.8041666666666666,
-          "deep-swe": 0.6726190476190476,
-          "swe-atlas-qna": 0.572463768115942
+          "terminal-bench-2": 0.8166666666666667,
+          "deep-swe": 0.6755952380952381,
+          "swe-atlas-qna": 0.5695652173913044
         }
       },
-      "cost_usd": 1.5122938364779874,
-      "time_seconds": 884.9471698113208,
+      "cost_usd": 1.5111038993710693,
+      "time_seconds": 884.3572327044025,
       "cost_coverage": 0.8255451713395638,
       "time_coverage": 0.8255451713395638,
       "n_trials": 963,
@@ -115,27 +115,27 @@
       "label": "Kiro CLI - Claude Sonnet 4.6",
       "creator": "Kiro",
       "official": {
-        "index": 0.3574003839490565,
+        "index": 0.3600458865945592,
         "benchmarks": {
-          "terminal-bench-2": 0.6031746031746031,
+          "terminal-bench-2": 0.6111111111111112,
           "deep-swe": 0.13569321533923304,
           "swe-atlas-qna": 0.33333333333333337
         }
       },
       "normalized": {
-        "index": 0.3656029648548109,
+        "index": 0.368280341026163,
         "benchmarks": {
-          "terminal-bench-2": 0.610441767068273,
+          "terminal-bench-2": 0.6184738955823293,
           "deep-swe": 0.1369047619047619,
           "swe-atlas-qna": 0.34946236559139787
         }
       },
-      "cost_usd": 0.6080538812785389,
-      "time_seconds": 515.933789954338,
-      "cost_coverage": 0.9096573208722741,
-      "time_coverage": 0.9096573208722741,
+      "cost_usd": 0.6076159453302962,
+      "time_seconds": 515.2995444191343,
+      "cost_coverage": 0.9117341640706127,
+      "time_coverage": 0.9117341640706127,
       "n_trials": 963,
-      "n_errors": 18
+      "n_errors": 17
     },
     {
       "id": "claude-sonnet-5",
@@ -144,17 +144,17 @@
       "label": "Kiro CLI - Claude Sonnet 5",
       "creator": "Kiro",
       "official": {
-        "index": 0.4573211623597007,
+        "index": 0.4599666650052034,
         "benchmarks": {
-          "terminal-bench-2": 0.6904761904761905,
+          "terminal-bench-2": 0.6984126984126984,
           "deep-swe": 0.3185840707964602,
           "swe-atlas-qna": 0.3629032258064516
         }
       },
       "normalized": {
-        "index": 0.46433098547575336,
+        "index": 0.46704101257602443,
         "benchmarks": {
-          "terminal-bench-2": 0.7073170731707317,
+          "terminal-bench-2": 0.7154471544715447,
           "deep-swe": 0.32142857142857145,
           "swe-atlas-qna": 0.36424731182795694
         }
@@ -189,9 +189,9 @@
         }
       },
       "cost_usd": 0.5669891891891892,
-      "time_seconds": 553.5207631874299,
+      "time_seconds": 552.9035874439462,
       "cost_coverage": 0.9221183800623053,
-      "time_coverage": 0.9252336448598131,
+      "time_coverage": 0.9262720664589823,
       "n_trials": 963,
       "n_errors": 13
     }

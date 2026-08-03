@@ -3,7 +3,7 @@
     "auto": {
       "benchmarks": {
         "terminal-bench-2": {
-          "pass_at_1": 0.5992063492063492,
+          "pass_at_1": 0.6031746031746031,
           "n_tasks": 84,
           "tasks": {
             "adaptive-rejection-sampler": 0.3333333333333333,
@@ -73,7 +73,7 @@
             "qemu-startup": 1.0,
             "query-optimize": 0.6666666666666666,
             "raman-fitting": 0.3333333333333333,
-            "regex-chess": 0.6666666666666666,
+            "regex-chess": 1.0,
             "regex-log": 1.0,
             "reshard-c4-data": 1.0,
             "rstan-to-pystan": 0.0,
@@ -93,14 +93,14 @@
           }
         },
         "deep-swe": {
-          "pass_at_1": 0.20648967551622419,
+          "pass_at_1": 0.2094395280235988,
           "n_tasks": 113,
           "tasks": {
             "abs-module-cache-flags": 0.3333333333333333,
             "abs-stepped-slices": 0.0,
             "actionlint-action-pinning-lint": 0.3333333333333333,
             "adaptix-name-mapping-aliases": 0.3333333333333333,
-            "aiomonitor-task-snapshots-diff": 0.6666666666666666,
+            "aiomonitor-task-snapshots-diff": 1.0,
             "anko-default-function-arguments": 0.3333333333333333,
             "anko-typed-variable-bindings": 0.0,
             "arcane-drift-detection-baselines": 0.0,
@@ -342,16 +342,16 @@
           }
         }
       },
-      "composite_index": 0.3653395351225783,
-      "composite_index_partial": 0.3653395351225783,
-      "total_credits": 8999.87,
-      "total_cost_usd": 359.9948,
+      "composite_index": 0.3676455706144544,
+      "composite_index_partial": 0.3676455706144544,
+      "total_credits": 9012.68,
+      "total_cost_usd": 360.5072,
       "n_trials": 963,
-      "n_credit_trials": 874,
-      "credit_coverage": 0.9075804776739356,
-      "n_timed_trials": 874,
-      "time_coverage": 0.9075804776739356,
-      "mean_time_seconds": 499.7,
+      "n_credit_trials": 876,
+      "credit_coverage": 0.9096573208722741,
+      "n_timed_trials": 876,
+      "time_coverage": 0.9096573208722741,
+      "mean_time_seconds": 499.1,
       "n_error_trials": 18,
       "error_trials": [
         {
@@ -467,7 +467,7 @@
     "claude-opus-4.8": {
       "benchmarks": {
         "terminal-bench-2": {
-          "pass_at_1": 0.7301587301587302,
+          "pass_at_1": 0.7380952380952381,
           "n_tasks": 84,
           "tasks": {
             "adaptive-rejection-sampler": 0.0,
@@ -510,7 +510,7 @@
             "largest-eigenval": 1.0,
             "llm-inference-batching-scheduler": 1.0,
             "log-summary-date-ranges": 1.0,
-            "mailman": 0.6666666666666666,
+            "mailman": 1.0,
             "make-mips-interpreter": 1.0,
             "mcmc-sampling-stan": 0.6666666666666666,
             "merge-diff-arc-agi-task": 1.0,
@@ -523,7 +523,7 @@
             "openssl-selfsigned-cert": 1.0,
             "overfull-hbox": 1.0,
             "password-recovery": 1.0,
-            "path-tracing": 0.6666666666666666,
+            "path-tracing": 1.0,
             "path-tracing-reverse": 1.0,
             "polyglot-c-py": 0.6666666666666666,
             "polyglot-rust-c": 0.3333333333333333,
@@ -806,8 +806,8 @@
           }
         }
       },
-      "composite_index": 0.6026021535584768,
-      "composite_index_partial": 0.6026021535584768,
+      "composite_index": 0.6052476562039794,
+      "composite_index_partial": 0.6052476562039794,
       "total_credits": 23312.86,
       "total_cost_usd": 932.5144,
       "n_trials": 963,
@@ -895,7 +895,7 @@
     "claude-opus-5": {
       "benchmarks": {
         "terminal-bench-2": {
-          "pass_at_1": 0.7658730158730158,
+          "pass_at_1": 0.7777777777777777,
           "n_tasks": 84,
           "tasks": {
             "adaptive-rejection-sampler": 0.0,
@@ -917,7 +917,7 @@
             "crack-7z-hash": 0.0,
             "custom-memory-heap-crash": 1.0,
             "db-wal-recovery": 1.0,
-            "distribution-search": 0.6666666666666666,
+            "distribution-search": 1.0,
             "dna-assembly": 0.6666666666666666,
             "dna-insert": 0.0,
             "extract-elf": 0.6666666666666666,
@@ -938,7 +938,7 @@
             "largest-eigenval": 1.0,
             "llm-inference-batching-scheduler": 1.0,
             "log-summary-date-ranges": 1.0,
-            "mailman": 0.6666666666666666,
+            "mailman": 1.0,
             "make-mips-interpreter": 1.0,
             "mcmc-sampling-stan": 0.6666666666666666,
             "merge-diff-arc-agi-task": 1.0,
@@ -961,7 +961,7 @@
             "pypi-server": 1.0,
             "pytorch-model-cli": 0.3333333333333333,
             "pytorch-model-recovery": 0.0,
-            "qemu-alpine-ssh": 0.3333333333333333,
+            "qemu-alpine-ssh": 0.6666666666666666,
             "qemu-startup": 1.0,
             "query-optimize": 1.0,
             "raman-fitting": 0.3333333333333333,
@@ -985,7 +985,7 @@
           }
         },
         "deep-swe": {
-          "pass_at_1": 0.6666666666666666,
+          "pass_at_1": 0.6696165191740413,
           "n_tasks": 113,
           "tasks": {
             "abs-module-cache-flags": 0.6666666666666666,
@@ -1092,7 +1092,7 @@
             "tomlkit-toml-table-converters": 1.0,
             "true-myth-iterable-collection-combinators": 1.0,
             "ts-pattern-match-each": 1.0,
-            "updo-policy-alerting": 0.0,
+            "updo-policy-alerting": 0.3333333333333333,
             "valibot-recursive-schema-composition": 1.0,
             "vitest-duration-sharding": 0.6666666666666666,
             "vulture-persistent-analysis-cache": 0.0,
@@ -1104,7 +1104,7 @@
           }
         },
         "swe-atlas-qna": {
-          "pass_at_1": 0.510752688172043,
+          "pass_at_1": 0.5080645161290323,
           "n_tasks": 124,
           "tasks": {
             "scale-ai/task-6905333b74f22949d97ba998": 0.3333333333333333,
@@ -1212,7 +1212,7 @@
             "scale-ai/task-6905333b74f22949d97baa16": 1.0,
             "scale-ai/task-6905333b74f22949d97baa17": 0.3333333333333333,
             "scale-ai/task-6905333b74f22949d97baa19": 0.0,
-            "scale-ai/task-6905333b74f22949d97baa1a": 1.0,
+            "scale-ai/task-6905333b74f22949d97baa1a": 0.6666666666666666,
             "scale-ai/task-6905333b74f22949d97baa1b": 0.3333333333333333,
             "scale-ai/task-6905333b74f22949d97baa1c": 0.0,
             "scale-ai/task-6905333b74f22949d97baa1d": 0.0,
@@ -1234,16 +1234,16 @@
           }
         }
       },
-      "composite_index": 0.6477641235705751,
-      "composite_index_partial": 0.6477641235705751,
-      "total_credits": 30056.84,
-      "total_cost_usd": 1202.2736,
+      "composite_index": 0.6518196043602837,
+      "composite_index_partial": 0.6518196043602837,
+      "total_credits": 30033.19,
+      "total_cost_usd": 1201.3276,
       "n_trials": 963,
       "n_credit_trials": 795,
       "credit_coverage": 0.8255451713395638,
       "n_timed_trials": 795,
       "time_coverage": 0.8255451713395638,
-      "mean_time_seconds": 884.9,
+      "mean_time_seconds": 884.4,
       "n_error_trials": 52,
       "error_trials": [
         {
@@ -1563,7 +1563,7 @@
     "claude-sonnet-4.6": {
       "benchmarks": {
         "terminal-bench-2": {
-          "pass_at_1": 0.6031746031746031,
+          "pass_at_1": 0.6111111111111112,
           "n_tasks": 84,
           "tasks": {
             "adaptive-rejection-sampler": 0.3333333333333333,
@@ -1607,10 +1607,10 @@
             "llm-inference-batching-scheduler": 1.0,
             "log-summary-date-ranges": 0.3333333333333333,
             "mailman": 0.0,
-            "make-mips-interpreter": 0.0,
+            "make-mips-interpreter": 0.3333333333333333,
             "mcmc-sampling-stan": 1.0,
             "merge-diff-arc-agi-task": 1.0,
-            "model-extraction-relu-logits": 0.0,
+            "model-extraction-relu-logits": 0.3333333333333333,
             "modernize-scientific-stack": 1.0,
             "mteb-leaderboard": 0.0,
             "mteb-retrieve": 0.0,
@@ -1902,17 +1902,17 @@
           }
         }
       },
-      "composite_index": 0.3574003839490565,
-      "composite_index_partial": 0.3574003839490565,
-      "total_credits": 13316.38,
-      "total_cost_usd": 532.6552,
+      "composite_index": 0.3600458865945592,
+      "composite_index_partial": 0.3600458865945592,
+      "total_credits": 13337.17,
+      "total_cost_usd": 533.4868,
       "n_trials": 963,
-      "n_credit_trials": 876,
-      "credit_coverage": 0.9096573208722741,
-      "n_timed_trials": 876,
-      "time_coverage": 0.9096573208722741,
-      "mean_time_seconds": 515.9,
-      "n_error_trials": 18,
+      "n_credit_trials": 878,
+      "credit_coverage": 0.9117341640706127,
+      "n_timed_trials": 878,
+      "time_coverage": 0.9117341640706127,
+      "mean_time_seconds": 515.3,
+      "n_error_trials": 17,
       "error_trials": [
         {
           "benchmark": "deep-swe",
@@ -1949,12 +1949,6 @@
           "task": "scale-ai/task-6905333b74f22949d97ba9f1",
           "attempt": 3,
           "error_kind": "timeout"
-        },
-        {
-          "benchmark": "swe-atlas-qna",
-          "task": "scale-ai/task-6905333b74f22949d97baa1a",
-          "attempt": 1,
-          "error_kind": "infra"
         },
         {
           "benchmark": "swe-atlas-qna",
@@ -2027,7 +2021,7 @@
     "claude-sonnet-5": {
       "benchmarks": {
         "terminal-bench-2": {
-          "pass_at_1": 0.6904761904761905,
+          "pass_at_1": 0.6984126984126984,
           "n_tasks": 84,
           "tasks": {
             "adaptive-rejection-sampler": 0.0,
@@ -2070,7 +2064,7 @@
             "largest-eigenval": 1.0,
             "llm-inference-batching-scheduler": 0.6666666666666666,
             "log-summary-date-ranges": 1.0,
-            "mailman": 0.0,
+            "mailman": 0.6666666666666666,
             "make-mips-interpreter": 1.0,
             "mcmc-sampling-stan": 1.0,
             "merge-diff-arc-agi-task": 1.0,
@@ -2366,8 +2360,8 @@
           }
         }
       },
-      "composite_index": 0.4573211623597007,
-      "composite_index_partial": 0.4573211623597007,
+      "composite_index": 0.4599666650052034,
+      "composite_index_partial": 0.4599666650052034,
       "total_credits": 26113.85,
       "total_cost_usd": 1044.554,
       "n_trials": 963,
@@ -2789,9 +2783,9 @@
       "n_trials": 963,
       "n_credit_trials": 888,
       "credit_coverage": 0.9221183800623053,
-      "n_timed_trials": 891,
-      "time_coverage": 0.9252336448598131,
-      "mean_time_seconds": 553.5,
+      "n_timed_trials": 892,
+      "time_coverage": 0.9262720664589823,
+      "mean_time_seconds": 552.9,
       "n_error_trials": 13,
       "error_trials": [
         {

@@ -5,8 +5,8 @@
   "model": "claude-sonnet-4.6",
   "attempt": 1,
   "status": "error",
-  "credits": 15.34,
-  "cost_usd": 0.6136,
-  "time_seconds": 270.0,
+  "credits": 13.93,
+  "cost_usd": 0.5572,
+  "time_seconds": 236.0,
   "error_kind": "rate_limit"
 }

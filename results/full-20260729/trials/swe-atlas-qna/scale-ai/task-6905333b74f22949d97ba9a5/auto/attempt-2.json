@@ -5,8 +5,8 @@
   "model": "auto",
   "attempt": 2,
   "status": "error",
-  "credits": 11.32,
-  "cost_usd": 0.4528,
-  "time_seconds": 280.0,
+  "credits": 15.38,
+  "cost_usd": 0.6152,
+  "time_seconds": 391.0,
   "error_kind": "rate_limit"
 }

