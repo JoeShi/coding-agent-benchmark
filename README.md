@@ -44,13 +44,38 @@ enqueue_jobs.py ──► SQS jobs queue ──► EC2 workers (ASG, c7i.8xlarge
 
 The full runbook (batch sizing, timeline, risks) is in [`docs/test-plan.md`](docs/test-plan.md).
 
+## Viewing results
+
+Results live in `results/<run-id>/` (per-trial JSON records + aggregates) and can be viewed three ways:
+
+- **Web UI (recommended)** — `cd app/site && npm install && npm run dev`, then open <http://localhost:3000> (use `localhost`, not `127.0.0.1`, or the page fails to hydrate):
+  - `/` — the Artificial-Analysis-style leaderboard (pass@1, composite index, cost, time per variant), rendered from the static `app/site/src/data/leaderboard.json`.
+  - `/monitor` — run monitoring: queue depth, worker fleet, per-key credit usage, and the task × model × attempt matrix. Defaults to the static snapshot `app/site/public/data/monitor.json`, so no background process is needed once a run is finished.
+- **CLI report** — `python3 scripts/aggregate.py results/<run-id>/trials --markdown-out report.md` produces the pass@1 / credits / cost tables directly from trial records.
+- **Raw records** — each trial uploads a normalized record (`status`, `credits`, `cost_usd`, `time_seconds`, `error_kind`) under `results/<run-id>/trials/` (mirrored from S3).
+
+To refresh the web UI data after new results come in:
+
+```bash
+# Leaderboard (validates model set, task counts, and official-score parity)
+python3 scripts/build_leaderboard_data.py results/<run-id>/trials \
+  --aa-data data/artificial-analysis-coding-agents.json \
+  --aggregate results/<run-id>/aggregate.json \
+  --out app/site/src/data/leaderboard.json
+
+# Monitor snapshot (exact /api/* response shapes, safe to commit — identities masked)
+python3 scripts/build_monitor_snapshot.py --run-id <run-id>
+```
+
+While a run is still in flight, additionally start `python3 app/server.py` (API on 8081, proxied as `/api/*`) and switch `/monitor`'s Source selector to Live for polling. See [`app/README.md`](app/README.md) for details.
+
 ## Repository layout
 
 - `docs/` — methodology alignment notes, recon findings, test plan, full-run retrospective (`full-20260729-retrospective.md`)
 - `adapters/` — Kiro CLI agent adapters for each benchmark harness
 - `scripts/` — run orchestration, scoring, analysis
 - `infra/` — Terraform for the AWS worker fleet (SQS → EC2 workers → S3)
-- `app/` — localhost monitoring dashboard (Python API + Vite/React UI)
+- `app/` — localhost results + monitoring UI (Next.js site + Python API)
 - `results/` — structured run results (JSON) and aggregates
 
 ## Status
